@@ -54,11 +54,12 @@ body.pin-locked #app-root { display:none; }
   background:#26476B; display:flex; align-items:center; gap:32px;
   padding:0 28px; height:66px; border-radius:18px;
 }
-.hgs-header .logo-btn { display:flex; align-items:center; gap:7px; cursor:pointer; }
+.hgs-header .logo-btn { display:flex; align-items:center; gap:7px; cursor:pointer; flex:none; }
 .hgs-header .logo-btn img { height:45px; width:auto; display:block; }
-.hgs-header .divider { width:1px; height:22px; background:#3E5F84; }
+.hgs-header .divider { width:1px; height:22px; background:#3E5F84; flex:none; }
 .hgs-header .spacer { flex:1; min-width:0; }
 .hgs-header .nav-items { display:flex; gap:2px; overflow-x:auto; min-width:0; scrollbar-width:none; }
+.hgs-header .nav-badge { flex:none; }
 .hgs-header .nav-item {
   font-family:'Kanit', sans-serif; font-size:13px; font-weight:500; color:#FFFFFF;
   padding:8px 14px; border-radius:999px; cursor:pointer; white-space:nowrap;
@@ -132,6 +133,33 @@ body.pin-locked #app-root { display:none; }
   line-height:1.3; color:#15283C; cursor:pointer; min-height:58px; display:block; overflow-wrap:break-word;
 }
 .matrix-pj-cell:hover { box-shadow:0 3px 10px rgba(21,40,60,0.14); }
+
+/* ---------- HOME — MOBILE/TABLET NAV (replaces the wide matrix) ---------- */
+.mobile-nav-panel { display:none; }
+.mobile-pf-group {
+  background:#F1F3F8; border-radius:18px; margin:14px 0; padding:6px; overflow:hidden;
+}
+.mobile-pf-head {
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  background:#26476B; border-radius:14px; padding:16px 18px; cursor:pointer;
+}
+.mobile-pf-head:hover { background:#356094; }
+.mobile-pf-name { font-family:'Kanit', sans-serif; font-weight:600; font-size:17px; color:#FFFFFF; line-height:1.2; }
+.mobile-pf-tag { font-family:'Kanit', sans-serif; font-style:italic; font-size:12.5px; color:#C9D6E3; margin-top:3px; }
+.mobile-pf-arrow { color:#ABCF02; font-size:16px; flex:none; }
+.mobile-sp-list { display:flex; flex-direction:column; padding:4px 4px 0; }
+.mobile-sp-row {
+  display:flex; align-items:center; justify-content:space-between; gap:10px;
+  padding:14px 14px; border-bottom:1px solid #E2E9F0; cursor:pointer;
+}
+.mobile-sp-row:last-child { border-bottom:none; }
+.mobile-sp-row:hover { background:#E7EEF6; border-radius:8px; }
+.mobile-sp-name { font-family:'Kanit', sans-serif; font-weight:500; font-size:14.5px; color:#15283C; }
+.mobile-sp-row .mobile-sp-arrow { color:#26476B; font-size:14px; flex:none; }
+
+/* ---------- GRID COLUMN CLASSES (portfolio index) ---------- */
+.strat-grid.cols-4 { grid-template-columns:repeat(4,minmax(0,1fr)); }
+.strat-grid.cols-auto { grid-template-columns:repeat(auto-fill,minmax(430px,1fr)); }
 
 /* ---------- PORTFOLIO INDEX ---------- */
 .strat-pill {
@@ -269,8 +297,61 @@ body.pin-locked #app-root { display:none; }
 .footer-bar img { height:19px; width:auto; display:block; }
 .footer-bar span { font-size:12.5px; color:#C9D6E3; margin-left:12px; }
 
-@media (max-width: 760px) {
-  .project-layout { grid-template-columns:1fr; }
+/* ============ RESPONSIVE ============ */
+
+/* Tablet and phone: swap the wide overview matrix for the stacked list,
+   and stop forcing fixed multi-column grids that don't fit. */
+@media (max-width: 1180px) {
+  .matrix-panel { display:none; }
+  .mobile-nav-panel { display:block; }
+
+  .strat-grid.cols-4 { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .proj-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+
+/* Tablet: stack the project detail two-column layout, tighten spacing */
+@media (max-width: 900px) {
+  .project-layout { grid-template-columns:1fr; padding:24px; gap:20px; }
   .project-side { position:static; }
-  .proj-grid { grid-template-columns:1fr; }
+  .hero-title { font-size:26px; }
+  .hero-banner, .hero-banner.strategic-hero { padding:20px 24px 22px; }
+
+  .flow-strip { position:relative; }
+  .flow-strip::after {
+    content:""; position:absolute; top:0; right:0; bottom:0; width:36px;
+    background:linear-gradient(90deg, rgba(21,40,60,0) 0%, rgba(21,40,60,0.95) 100%);
+    pointer-events:none;
+  }
+}
+
+/* Phone */
+@media (max-width: 640px) {
+  .page-pad { padding:0 12px; }
+  .hgs-header-wrap { padding:10px 12px 0; }
+  .hgs-header { padding:0 14px; gap:14px; height:58px; border-radius:14px; }
+  .hgs-header .logo-btn img { height:34px; }
+  .hgs-header .divider { display:none; }
+  .hgs-header .spacer { display:none; }
+  .hgs-header .nav-items { display:none; }
+  .hgs-header .nav-badge { margin-left:auto; padding:7px 13px; font-size:11px; white-space:nowrap; }
+
+  .hero-banner, .hero-banner.strategic-hero { border-radius:18px; padding:18px 18px 20px; margin-top:10px; }
+  .hero-title { font-size:21px !important; line-height:1.15; }
+  .hero-desc { font-size:13.5px !important; }
+  .hero-eyebrow { font-size:11px; }
+  .crumb { font-size:11px; padding:5px 11px; }
+
+  .section-panel, .matrix-panel { margin:12px 0; }
+  .section-body { padding:8px 14px 16px; }
+  .strat-card, .proj-card, .info-card, .side-card, .outcome-card { padding:18px; }
+  .strat-grid.cols-4, .strat-grid.cols-auto, .proj-grid { grid-template-columns:1fr; }
+
+  .project-layout { padding:16px; gap:16px; border-radius:16px; }
+  .cta-banner { padding:20px; }
+  .cta-banner .cta-title { font-size:18px; }
+
+  .flow-strip { padding:12px 16px; }
+  .mobile-pf-head { padding:14px 15px; }
+  .footer-bar { flex-wrap:wrap; padding:18px 20px; }
+  .footer-bar span { margin-left:0; }
 }

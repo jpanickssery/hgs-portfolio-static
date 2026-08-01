@@ -35,10 +35,7 @@
     return {
       ...pf,
       strategics,
-      stratGridCols:
-        pf.id === "platforms"
-          ? "repeat(4,minmax(0,1fr))"
-          : "repeat(auto-fill,minmax(430px,1fr))",
+      stratGridClass: pf.id === "platforms" ? "cols-4" : "cols-auto",
     };
   });
 
@@ -189,6 +186,39 @@
           </div>
         </div>
       </div>
+
+      ${renderHomeMobileNav()}
+    </div>`;
+  }
+
+  function renderHomeMobileNav() {
+    return `
+    <div class="mobile-nav-panel">
+      ${tree
+        .map(
+          (pf) => `
+        <div class="mobile-pf-group">
+          <div class="mobile-pf-head" data-goto="portfolio" data-pf="${esc(pf.id)}">
+            <div>
+              <div class="mobile-pf-name">${esc(pf.name)}</div>
+              <div class="mobile-pf-tag">${esc(pf.tag)}</div>
+            </div>
+            <span class="mobile-pf-arrow">→</span>
+          </div>
+          <div class="mobile-sp-list">
+            ${pf.strategics
+              .map(
+                (sp) => `
+              <div class="mobile-sp-row" data-goto="strategic" data-pf="${esc(pf.id)}" data-sp="${esc(sp.id)}">
+                <span class="mobile-sp-name">${esc(sp.name)}</span>
+                <span class="mobile-sp-arrow">→</span>
+              </div>`
+              )
+              .join("")}
+          </div>
+        </div>`
+        )
+        .join("")}
     </div>`;
   }
 
@@ -225,7 +255,7 @@
       <div class="section-panel">
         <div class="section-body">
           <div class="section-eyebrow">Strategic Plays in this portfolio</div>
-          <div class="strat-grid" style="grid-template-columns:${pf.stratGridCols}">
+          <div class="strat-grid ${pf.stratGridClass}">
             ${pf.strategics
               .map(
                 (sp) => `
