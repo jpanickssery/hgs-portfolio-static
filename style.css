@@ -341,7 +341,8 @@ body.pin-locked #app-root { display:none; }
   .hgs-header .nav-items { display:none; }
   .hgs-header .nav-badge { margin-left:auto; padding:7px 13px; font-size:11px; white-space:nowrap; }
 
-  .hero-banner, .hero-banner.strategic-hero { border-radius:18px; padding:18px 18px 20px; margin-top:10px; }
+  .hero-banner { border-radius:18px; padding:18px 18px 20px; margin-top:10px; }
+  .hero-banner.strategic-hero { border-radius:18px 18px 0 0; padding:18px 18px 20px; margin-top:10px; }
   .hero-title { font-size:21px !important; line-height:1.15; }
   .hero-desc { font-size:13.5px !important; }
   .hero-eyebrow { font-size:11px; }
@@ -356,7 +357,7 @@ body.pin-locked #app-root { display:none; }
   .cta-banner { padding:20px; }
   .cta-banner .cta-title { font-size:18px; }
 
-  .flow-strip { padding:12px 16px; }
+  .flow-strip { padding:12px 16px; border-radius:0 0 18px 18px; }
   .mobile-pf-head { padding:14px 15px; }
   .footer-bar { flex-wrap:wrap; padding:18px 20px; }
   .footer-bar span { margin-left:0; }
