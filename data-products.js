@@ -9,8 +9,13 @@
 //     "Agentic Enterprise" (everything else — back-office, planning/
 //     delivery, financial/risk, and data/marketing intelligence).
 //   - Agentic CX's three subcategories are AgentX's own three CX modules,
-//     renamed for plain-language clarity: Employee & Agent Assist,
-//     Customer Engagement, Conversational Intelligence.
+//     renamed for plain-language clarity and organized by the stakeholder
+//     who uses them: Employee & Agent Assist, Customer Engagement, and
+//     Supervisor & QA Insights (renamed from "Conversational Intelligence"
+//     per user feedback — it's the same QA/sentiment/compliance dashboard
+//     content, just named for the supervisor/QA-analyst audience who
+//     actually uses it, to match the other two subcategories' role-based
+//     naming).
 //   - Agentic Enterprise has four subcategories:
 //       - Back-Office & Case Automation — AgentX's Agentic Process
 //         Automation pillar: AI agents that read, decide, and act across
@@ -97,10 +102,10 @@ const SUBCATEGORIES = [
     blurb: "Self-service conversational AI across chat, voice, and screen-share, with people sharing the same conversation and context when it's needed.",
   },
   {
-    id: "conversational-intelligence",
+    id: "supervisor-qa-insights",
     categoryId: "agentic-cx",
-    name: "Conversational Intelligence",
-    blurb: "Turning every conversation into measurable quality, insight, and business action.",
+    name: "Supervisor & QA Insights",
+    blurb: "Real-time QA, sentiment, and compliance dashboards that give supervisors and quality teams a measurable view of every conversation.",
   },
   {
     id: "case-document-automation",
@@ -231,6 +236,28 @@ const DEMOS = [
     status: "ready",
     note: null,
   },
+  {
+    id: "customer-360",
+    subcategory: "employee-assist",
+    title: "Customer 360",
+    tagline: "One complete customer view, right where the agent is working",
+    industryTags: ["cross-industry"],
+    product: null,
+    problem: [
+      "Agents piece together profile, history, and open-case details from several systems before they can even start helping",
+      "Context gets lost across channels and handoffs, so customers repeat themselves",
+      "Slow, incomplete context drives longer handle times and inconsistent service",
+    ],
+    whatYouSee: [
+      "Single view of profile, interaction history, open cases, orders, and preferences the moment a conversation opens",
+      "Cross-channel timeline spanning phone, chat, email, and self-service, so nothing needs to be re-explained",
+      "Account and risk signals (e.g., VIP status, past escalations) surfaced automatically, without a separate lookup",
+      "Same view carries across handoffs and channels for continuity from first contact to resolution",
+    ],
+    variants: [{ label: "Default", video: null }],
+    status: "needs-review",
+    note: "New entry, added per user request rather than sourced from a deck — no source material (docx/pptx) exists for it. Content above is a generic, well-understood 'Customer 360' agent-desktop concept, not drawn from any specific HGS asset. Flagged needs-review because it hasn't been checked against an actual HGS offering or demo; replace with sourced content, a screenshot, and/or a case study once available.",
+  },
 
   // ---------------- Customer Engagement ----------------
   {
@@ -352,10 +379,10 @@ const DEMOS = [
     note: "Source deck reused the tagline \"Faster, smarter agent training\" verbatim across this, AI Training Simulator, and Email AI (copy/paste artifact). Wrote a distinct tagline here.",
   },
 
-  // ---------------- Conversational Intelligence ----------------
+  // ---------------- Supervisor & QA Insights ----------------
   {
     id: "interaction-intelligence",
-    subcategory: "conversational-intelligence",
+    subcategory: "supervisor-qa-insights",
     title: "Interaction Intelligence",
     tagline: "Deeper conversation insights. Better business outcomes.",
     industryTags: ["cross-industry"],
