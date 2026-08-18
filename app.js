@@ -830,11 +830,16 @@
                   </div>`
                 : ""
             }
-            <div class="video-placeholder">
-              <div class="play-badge">▶</div>
-              <div class="vp-title">Video coming soon${demo.variants.length > 1 ? " — " + esc(variant.label) : ""}</div>
-              <div class="vp-sub">Video sourcing &amp; hosting is planned for the next phase of this project.</div>
-            </div>
+            ${
+              demo.image
+                ? `<img class="detail-screenshot" src="${esc(demo.image)}" alt="${esc(demo.title)} screenshot">
+                  ${demo.imageCaption ? `<div class="screenshot-caption">${esc(demo.imageCaption)}</div>` : ""}`
+                : `<div class="video-placeholder">
+                    <div class="play-badge">▶</div>
+                    <div class="vp-title">Video coming soon${demo.variants.length > 1 ? " — " + esc(variant.label) : ""}</div>
+                    <div class="vp-sub">Video sourcing &amp; hosting is planned for the next phase of this project.</div>
+                  </div>`
+            }
           </div>
 
           <div class="card">

@@ -6,16 +6,42 @@
 //
 //   - Two top-level categories: "Agentic CX" (AgentX's own pillar name,
 //     covering everything customer/agent-facing in the contact center) and
-//     "Agentic Enterprise" (everything else — back-office, risk,
-//     financial ops, and data/marketing intelligence).
+//     "Agentic Enterprise" (everything else — back-office, planning/
+//     delivery, financial/risk, and data/marketing intelligence).
 //   - Agentic CX's three subcategories are AgentX's own three CX modules,
 //     renamed for plain-language clarity: Employee & Agent Assist,
 //     Customer Engagement, Conversational Intelligence.
-//   - Agentic Enterprise's four subcategories absorb AgentX's Agentic Process
-//     Automation pillar (Back-Office & Case Automation, Risk/Fraud/
-//     Compliance) plus everything from the original deck that isn't part
-//     of AgentX's named taxonomy at all (Financial & Credit Operations,
-//     Data/Marketing/Sales Intelligence).
+//   - Agentic Enterprise has four subcategories:
+//       - Back-Office & Case Automation — AgentX's Agentic Process
+//         Automation pillar: AI agents that read, decide, and act across
+//         case-based work (claims, intake, estate planning).
+//       - Planning & Delivery Operations — project/program delivery
+//         (DeliverAI) alongside demand, pricing, and revenue planning
+//         (Navigator ML, Velocity RGM). Originally two separate
+//         subcategories ("Delivery & Program Operations" and "Planning &
+//         Revenue Intelligence"); merged per user feedback once each only
+//         held 1-2 demos and the split didn't earn its keep.
+//       - Financial, Risk & FinOps — credit/lending and financial-statement
+//         analysis, AML/fraud/KYC investigation, and cloud & AI cost
+//         governance. Originally three separate subcategories ("Financial &
+//         Credit Operations", "Risk, Fraud & Compliance", "Cloud & AI Cost
+//         Operations"); merged the same way.
+//       - Data, Marketing & Sales Intelligence — everything from the
+//         original deck that isn't part of AgentX's named taxonomy at all.
+//   - Several Agentic Enterprise demos (DeliverAI, AMLens, Navigator ML,
+//     Velocity RGM, OpsAtlas, Trend Intelligence, and the Evosense update)
+//     are sourced from docs/Flight Deck Overview.docx (Aug 2026), an
+//     internal deck covering eight Flight Deck application concepts. AI
+//     Playground (the deck's model/prompt evaluation sandbox) was skipped —
+//     not a bucketable product. Flight Deck itself frames every app there
+//     as "demonstrations" or "pilot-stage concepts," not evidence of
+//     completed customer deployments — that caveat is carried onto each
+//     such demo's detail page via imageCaption rather than into the
+//     case-study/status fields. AMLens itself was later consolidated from
+//     three overlapping AML entries (this one plus two AgentX-sourced
+//     demos, "Anti-Money Laundering Portal" and "Anomaly Detection
+//     Automation (AML)") into a single entry, per user feedback that they
+//     were the same solution described three ways.
 //
 // Fields on a demo:
 //   subcategory: id into SUBCATEGORIES (which itself points at a category
@@ -31,6 +57,10 @@
 //   variants: alternate integrations of the same demo (e.g. generic vs.
 //     SAP). video is intentionally null everywhere — sourcing/hosting
 //     video is a later phase (see 01-Docs/Demo-Catalog-Webapp-Requirements.md).
+//   image / imageCaption: optional product-screenshot path (relative to
+//     site/) and a caption shown under it on the detail page. Used for the
+//     Flight Deck entries, which have real screenshots instead of a
+//     "video coming soon" placeholder.
 
 const INDUSTRY_TAGS = [
   { id: "financial-services", name: "Financial Services" },
@@ -49,7 +79,7 @@ const CATEGORIES = [
   {
     id: "non-cx-agentic",
     name: "Agentic Enterprise",
-    blurb: "Agentic automation for everything behind the scenes: back-office case work, financial and risk operations, and the data and marketing intelligence that runs the business.",
+    blurb: "Agentic automation for everything behind the scenes: back-office case work, planning and delivery operations, financial and risk operations, and the data and marketing intelligence that runs the business.",
   },
 ];
 
@@ -79,16 +109,16 @@ const SUBCATEGORIES = [
     blurb: "AI agents that read, decide, and act across case-based work — claims, intake, estate planning — while people handle the exceptions.",
   },
   {
-    id: "financial-credit-ops",
+    id: "planning-delivery-ops",
     categoryId: "non-cx-agentic",
-    name: "Financial & Credit Operations",
-    blurb: "Automating the data-heavy middle of lending, credit, and financial statement analysis.",
+    name: "Planning & Delivery Operations",
+    blurb: "Connecting project scope, staffing, and delivery evidence to sign-off, and turning demand, pricing, and revenue decisions into scenarios with the model evidence behind them.",
   },
   {
-    id: "risk-fraud-compliance",
+    id: "financial-risk-finops",
     categoryId: "non-cx-agentic",
-    name: "Risk, Fraud & Compliance",
-    blurb: "AI-assisted detection, investigation, and verification for fraud, AML, and identity risk.",
+    name: "Financial, Risk & FinOps",
+    blurb: "Automating credit and financial-statement analysis, AI-assisted AML/fraud/KYC investigation, and cloud & AI cost governance — the financial and risk control layer of the enterprise.",
   },
   {
     id: "data-marketing-intelligence",
@@ -354,28 +384,6 @@ const DEMOS = [
 
   // ---------------- Back-Office & Case Automation ----------------
   {
-    id: "agentic-process-automation",
-    subcategory: "case-document-automation",
-    title: "Agentic Process Automation",
-    tagline: "Agentic automation that adapts, where RPA breaks",
-    industryTags: ["cross-industry"],
-    product: "HGS AgentX",
-    problem: [
-      "High volume of repetitive back-office tasks",
-      "Inability to process unstructured data",
-      "Rising costs and service delays",
-    ],
-    whatYouSee: [
-      "Optimized buildout in resource and time compared to traditional RPA",
-      "Context-based instructions drive back-office automations",
-      "Agentic model has full control of desktop, applications, and web browser",
-      "Low maintenance — can reason through unexpected errors to still deliver the task",
-    ],
-    variants: [{ label: "Default", video: null }],
-    status: "ready",
-    note: null,
-  },
-  {
     id: "case-worker",
     subcategory: "case-document-automation",
     title: "Case Worker",
@@ -424,31 +432,86 @@ const DEMOS = [
     status: "needs-review",
     note: "The source deck's recap slide (82) copy-pasted the Interaction Intelligence recap text verbatim under a \"Recap | Claim Automation\" header — factually wrong as written. Tagline rewritten here instead of reused.",
   },
+  // ---------------- Planning & Delivery Operations ----------------
   {
-    id: "family-tree-planning",
-    subcategory: "case-document-automation",
-    title: "Legacy: Family Tree Planning",
-    tagline: "AI-infused support for both clients and financial institutions",
-    industryTags: ["financial-services"],
+    id: "deliverai",
+    subcategory: "planning-delivery-ops",
+    title: "DeliverAI",
+    tagline: "One connected record for scope, staffing, delivery, and approval",
+    industryTags: ["cross-industry"],
     product: null,
+    image: "assets/flightdeck-deliverai.png",
+    imageCaption: "Flight Deck application concept (Aug 2026) — demonstration / pilot-stage screenshot, not evidence of a completed customer deployment.",
     problem: [
-      "Manual estate tracking causes delays and a lack of asset clarity",
-      "Risk of disputes with no real-time, tamper-proof governance",
+      "The project brief, staffing plan, delivery evidence, and approval record live in separate systems",
+      "Leaders can't easily see what's ready, what's missing, or where progress is at risk",
+      "Drafting requirements, plans, and project documents from scratch consumes delivery time",
     ],
     whatYouSee: [
-      "AI-assisted estate and family-tree planning for clients and advisors",
-      "Real-time, tamper-proof governance of asset records",
-      "Clearer, shared visibility into estate plans reduces disputes",
+      "AI Daily Brief flags SLA risk, overdue items, and open approvals across the portfolio",
+      "Actions Required queue ranks urgent items by project, owner, and age",
+      "Scoping, staffing, requirements, and action items organized around the same engagement",
+      "Document Explorer, Document Composition, and Tracker connect drafts to delivery evidence and sign-off",
+      "AI can draft requirements, plans, and project documents from available source material, with project leaders retaining responsibility for scope, staffing, acceptance, and approval",
     ],
     variants: [{ label: "Default", video: null }],
-    status: "needs-review",
-    note: "No explicit \"what you'll see\" slide existed for this section in the source deck (slides 89-91 were video-only) — bullets above were inferred from the problem-statement slide (88). Not explicitly named as an AgentX-branded module in the positioning docs, so left unbranded (product: null).",
+    status: "ready",
+    note: "New entry sourced from docs/Flight Deck Overview.docx (Aug 2026), one of eight Flight Deck application concepts.",
+  },
+  {
+    id: "navigator-ml",
+    subcategory: "planning-delivery-ops",
+    title: "Navigator ML",
+    tagline: "Forecasts planners can inspect, explain, and trust",
+    industryTags: ["cross-industry"],
+    product: null,
+    image: "assets/flightdeck-navigatorml.png",
+    imageCaption: "Flight Deck application concept (Aug 2026) — demonstration / pilot-stage screenshot, not evidence of a completed customer deployment.",
+    problem: [
+      "Forecasting processes that depend heavily on spreadsheets give planners limited visibility into model evidence",
+      "Planners can receive a demand number without the underlying reasoning needed to defend or adjust it",
+      "Gaps in the underlying data are hard to spot before they show up as forecast error",
+    ],
+    whatYouSee: [
+      "AI Executive Summary narrates forecast accuracy, active anomalies, and recommended actions in plain language",
+      "Model Analytics compares model runs (e.g., MAPE, R²) and active vs. candidate models side by side",
+      "Data Explorer surfaces data-quality findings — such as null records and a data-health score — behind the forecast",
+      "Active Alerts flag critical anomalies and safety-stock risk by SKU and location, sorted by severity",
+      "Report Builder prepares forecast findings for stakeholder and business review",
+    ],
+    variants: [{ label: "Default", video: null }],
+    status: "ready",
+    note: "New entry sourced from docs/Flight Deck Overview.docx (Aug 2026), one of eight Flight Deck application concepts.",
+  },
+  {
+    id: "velocity-rgm",
+    subcategory: "planning-delivery-ops",
+    title: "Velocity RGM",
+    tagline: "Pricing, promotion, and assortment decisions with the numbers behind them",
+    industryTags: ["retail-marketing"],
+    product: null,
+    image: "assets/flightdeck-velocityrgm.png",
+    imageCaption: "Flight Deck application concept (Aug 2026) — demonstration / pilot-stage screenshot, not evidence of a completed customer deployment.",
+    problem: [
+      "Demand forecasting, pricing, promotions, assortment, and financial review get evaluated in separate spreadsheets with inconsistent assumptions",
+      "A pricing or promotion recommendation often arrives without the forecast, elasticity, or financial effect behind it",
+      "Scenarios take too long to produce to inform a live commercial decision",
+    ],
+    whatYouSee: [
+      "Home dashboard tracks projected demand, commercial spend, ranked actions, and governance events in one place",
+      "Recommended Actions rank cross-domain moves — pricing, trade, assortment — with confidence, top drivers, and expected impact",
+      "Explain and Adjust Manually let a user see the reasoning behind a recommendation or override it",
+      "Open Scenario compares how a proposed price, promotion, or assortment change could affect the business before approval",
+    ],
+    variants: [{ label: "Default", video: null }],
+    status: "ready",
+    note: "New entry sourced from docs/Flight Deck Overview.docx (Aug 2026), one of eight Flight Deck application concepts.",
   },
 
-  // ---------------- Financial & Credit Operations ----------------
+  // ---------------- Financial, Risk & FinOps ----------------
   {
     id: "financial-analysis",
-    subcategory: "financial-credit-ops",
+    subcategory: "financial-risk-finops",
     title: "Financial Analysis (HGS FSX)",
     tagline: "Credit assessment ratios in just one click",
     industryTags: ["financial-services"],
@@ -471,7 +534,7 @@ const DEMOS = [
   },
   {
     id: "credit-decisioning",
-    subcategory: "financial-credit-ops",
+    subcategory: "financial-risk-finops",
     title: "Credit Decisioning",
     tagline: "Simultaneous, AI-driven verification for mortgage decisioning",
     industryTags: ["financial-services"],
@@ -493,35 +556,9 @@ const DEMOS = [
     note: "Source deck's \"what you'll see\" slide (42) reused the Agentic Digital Assistant bullets verbatim and carried an internal note (\"if we're doing this, must revise this slide\"). Rewrote bullets to reflect the mortgage-decisioning use case described on slide 43 (simultaneous verification across customer & sales / underwriting / compliance / audit).",
   },
 
-  // ---------------- Risk, Fraud & Compliance ----------------
-  {
-    id: "anomaly-detection-automation",
-    subcategory: "risk-fraud-compliance",
-    title: "Anomaly Detection Automation (AML)",
-    tagline: "Faster intervention and resolution with higher reliability",
-    industryTags: ["financial-services"],
-    product: "HGS AgentX",
-    problem: [
-      "High false positives and manual investigations",
-      "Slow response times",
-      "Inadequate risk analysis",
-    ],
-    whatYouSee: [
-      "Anomaly detection case management with role-based access control",
-      "Unified platform with integrations across multiple systems",
-      "Multi-modal agentic automation for additional case review",
-      "Human-in-the-loop intervention for review and decision-making",
-    ],
-    variants: [{ label: "Default", video: null }],
-    caseStudies: [
-      { client: "Bancorp", result: "AI-driven fraud/AML case scoring engagement aimed at cutting false positives and speeding up investigation response." },
-    ],
-    status: "needs-review",
-    note: "One clip in the source deck was explicitly marked \"Update coming soon 10/3/25\" and never followed up before this catalog was built. Case study added from the HGS AgentX positioning doc — this is the closest match to AgentX's \"Fraud & Anomaly Detection\" module.",
-  },
   {
     id: "know-your-customer",
-    subcategory: "risk-fraud-compliance",
+    subcategory: "financial-risk-finops",
     title: "Know Your Customer (KYC)",
     tagline: "Faster, smarter customer verification",
     industryTags: ["financial-services"],
@@ -542,26 +579,58 @@ const DEMOS = [
     note: null,
   },
   {
-    id: "aml-portal",
-    subcategory: "risk-fraud-compliance",
-    title: "Anti-Money Laundering Portal",
-    tagline: "Faster, smarter money-laundering detection and resolution",
+    id: "amlens",
+    subcategory: "financial-risk-finops",
+    title: "AMLens",
+    tagline: "Evidence-led AML investigation, from alert to decision",
     industryTags: ["financial-services"],
     product: "HGS AgentX",
+    image: "assets/flightdeck-amlens.png",
+    imageCaption: "Flight Deck application concept (Aug 2026) — demonstration / pilot-stage screenshot, not evidence of a completed customer deployment.",
     problem: [
-      "Case loading and document review are largely manual",
-      "Analysts must piece together evidence from many disconnected sources",
-      "Investigation decisions need a clear, defensible trail",
+      "Case evidence — transactions, related entities, screening results, and decisions — is scattered across disconnected tools, so analysts spend more time assembling a case than assessing it",
+      "High false positives and manual investigations slow response times and strain analyst capacity",
+      "Compliance leadership lacks a clear view of case volume, severity, and investigation history",
     ],
     whatYouSee: [
-      "Cases can be loaded manually or via automation",
-      "AI analyzes a large number of provided documents and online searches",
-      "Alerts and investigations are initiated with an AI analysis",
-      "Users review the AI's findings to choose the next step — no actions are taken by the AI itself",
+      "Control Center summarizing today's AML workload — cases needing review, high-risk counts, approvals, and queue total",
+      "Case Overview connecting alert to transaction detail, related entities, screening results, and audit history",
+      "Cases can be loaded manually or via automation; AI analyzes a large number of provided documents and online searches",
+      "Unified, role-based platform with integrations across multiple systems for multi-modal case review",
+      "AI-assisted signals direct attention to unusual transactions or relationships — the analyst remains responsible for clearing or escalating each case, with the reasoning documented",
+    ],
+    variants: [{ label: "Default", video: null }],
+    caseStudies: [
+      { client: "Bancorp", result: "AI-driven fraud/AML case scoring engagement aimed at cutting false positives and speeding up investigation response." },
+    ],
+    status: "ready",
+    note: "Consolidated three overlapping AML entries (AMLens, Anti-Money Laundering Portal, Anomaly Detection Automation (AML)) into this one, per user request — same underlying AML case-investigation solution described across three source materials (this real Flight Deck app screenshot, AI-Demos-MAIN.pptx, and HGS AgentX positioning copy). Kept the real screenshot as the visual, merged the strongest problem/what-you'll-see points, and kept the Bancorp case study and product: \"HGS AgentX\" tag from the AgentX-sourced entries.",
+  },
+
+  {
+    id: "opsatlas",
+    subcategory: "financial-risk-finops",
+    title: "OpsAtlas",
+    tagline: "Cloud and AI spend, connected to the services and owners behind it",
+    industryTags: ["cross-industry"],
+    product: null,
+    image: "assets/flightdeck-opsatlas.png",
+    imageCaption: "Flight Deck application concept (Aug 2026) — demonstration / pilot-stage screenshot, not evidence of a completed customer deployment.",
+    problem: [
+      "Provider billing tools show what was charged, without a consistent view across platforms",
+      "Cost changes are hard to investigate without context on the services, usage, or projects that produced them",
+      "No shared way to identify who should own and review a spending anomaly",
+    ],
+    whatYouSee: [
+      "Home dashboard surfaces cloud spend, AI spend, budget burn, and active anomalies in one view, for a chosen reporting period",
+      "AI Summary calls out specific anomalies — e.g., a cluster scale-up spike — with a link straight to the relevant review",
+      "Platform health breaks spend and alerts down by Analytics, Storage, Database, Compute, and AI",
+      "Cloud Costs and AI Spend views compare spend trend by platform, team, or service type",
+      "Governance view tracks policy compliance and pending control reviews",
     ],
     variants: [{ label: "Default", video: null }],
     status: "ready",
-    note: null,
+    note: "New entry sourced from docs/Flight Deck Overview.docx (Aug 2026), one of eight Flight Deck application concepts.",
   },
 
   // ---------------- Data, Marketing & Sales Intelligence ----------------
@@ -630,6 +699,30 @@ const DEMOS = [
     note: "Source deck (slides 83-86) titled this section \"Agentic Digital Assistant\" — a leftover header from copy/paste. Retitled to match the actual content (Speed to Lead sales acceleration).",
   },
   {
+    id: "trend-intelligence",
+    subcategory: "data-marketing-intelligence",
+    title: "Trend Intelligence",
+    tagline: "Turn market signals into a structured, decision-ready brief",
+    industryTags: ["retail-marketing"],
+    product: null,
+    image: "assets/flightdeck-trendintelligence.png",
+    imageCaption: "Flight Deck application concept (Aug 2026) — demonstration / pilot-stage screenshot, not evidence of a completed customer deployment.",
+    problem: [
+      "Research on an emerging trend is scattered across sources, geography, and category context",
+      "It's hard to tell a signal worth monitoring from one that justifies a brand, product, or commercial response",
+      "The evidence behind a trend assessment is easy to lose once a brief gets summarized",
+    ],
+    whatYouSee: [
+      "Discovery and Current Trends organize signals by source, trajectory, geography, and category relevance",
+      "What's New surfaces recently added trends, documents, and storylines across the platform",
+      "Hot Trends ranks top trending insights by department, with an Action Required queue for trends needing updates",
+      "Storylines and a Knowledge Base turn scattered research into a structured, reviewable brief",
+    ],
+    variants: [{ label: "Default", video: null }],
+    status: "ready",
+    note: "New entry sourced from docs/Flight Deck Overview.docx (Aug 2026), one of eight Flight Deck application concepts.",
+  },
+  {
     id: "alchemy",
     subcategory: "data-marketing-intelligence",
     title: "Alchemy: AI-Powered Performance Marketing",
@@ -656,18 +749,20 @@ const DEMOS = [
     subcategory: "data-marketing-intelligence",
     title: "EvoSense: Emotion-Aware Social Engagement",
     tagline: "Understand how customers feel, not just what they say",
-    industryTags: ["retail-marketing"],
+    industryTags: ["cross-industry", "retail-marketing"],
     product: "EvoSense",
+    image: "assets/flightdeck-evosense.png",
+    imageCaption: "Flight Deck application concept (Aug 2026) — demonstration / pilot-stage screenshot, not evidence of a completed customer deployment.",
     problem: [
-      "Conventional social/ORM tools automate replies without understanding emotion or brand voice",
-      "Rude, inaccurate, or off-voice responses can go out before anyone catches them",
-      "Early warning signs of a brewing PR crisis are easy to miss in the noise",
+      "Customer feedback across social comments, product reviews, and support requests arrives faster than teams can triage it",
+      "Conventional social/ORM tools can send off-voice or inaccurate replies before anyone catches them",
+      "Early warning signs of a brewing issue are easy to miss in the noise, without a shared operating view",
     ],
     whatYouSee: [
-      "Detects emotion and brand voice in incoming social conversations",
-      "Predicts the likely impact of a response before it goes live",
-      "Flags rude, inaccurate, or off-voice replies for quality control",
-      "Crisis early-warning surfaces high-risk conversations for prioritization and escalation",
+      "Signal Command Center gives a live view across inbound conversations, emerging themes, governed knowledge, and channel health",
+      "Detects emotion and brand voice in incoming conversations, and flags rude, inaccurate, or off-voice replies before they go out",
+      "Theme Clusters surface emerging and escalated issues; a crisis early-warning highlights high-risk conversations for prioritization",
+      "Users review the original context, prepare a response, edit it, and route it for approval, with an operational view of queue volume, priority, and status",
       "Available as an HGS-managed layer or a white-label API embedded into a client's own ecosystem",
     ],
     variants: [{ label: "Default", video: null }],
@@ -675,6 +770,6 @@ const DEMOS = [
       { client: "Automotive brand (case study)", result: "80% increase in positive brand sentiment; 3 crises averted through proactive early-warning alerts." },
     ],
     status: "needs-review",
-    note: "New entry, sourced from Products.docx positioning copy rather than the original demo deck — no demo video identified yet. Products.docx places EvoSense under Intelligent Interactions > Sales Transformation in the separate HGS Plays Portfolio — that placement looks like a copy/paste mismatch given the content is 100% social/ORM, but it doesn't affect this catalog's placement.",
+    note: "Originally sourced from Products.docx positioning copy with no demo video identified. Merged in the real screenshot/content from docs/Flight Deck Overview.docx (Aug 2026), which shows an actual running build of this product under the same name — problem/whatYouSee rewritten to match that build. Kept status needs-review because the retained case study is inherited from the original positioning copy and hasn't been verified against this specific build. Products.docx placement note (Intelligent Interactions > Sales Transformation in the separate HGS Plays Portfolio) still stands and still doesn't affect this catalog's placement.",
   },
 ];
