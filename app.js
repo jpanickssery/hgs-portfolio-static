@@ -30,6 +30,204 @@
       .replace(/"/g, "&quot;");
   }
 
+  /* =========================================================================
+     BATTLECARDS — shared placeholder body used by both Services (project play)
+     and Products (product) battlecard pages.
+     Adapted from 01-Designs/Battlecards/Sales Play Battlecard Template v4 —
+     every bracketed field here is a placeholder to be swapped for this play's
+     real sales-enablement content later. The section-nav strip links to real
+     in-page anchors (#bc-buyer etc.), so it works without extra JS.
+     ========================================================================= */
+  function battlecardSectionsHTML() {
+    return `
+    <div class="bc-nav-strip">
+      <a href="#bc-buyer">Buyer &amp; Challenges</a><span class="bc-nav-arrow">&rarr;</span>
+      <a href="#bc-pitch">Quick Pitch</a><span class="bc-nav-arrow">&rarr;</span>
+      <a href="#bc-capabilities">Capabilities</a><span class="bc-nav-arrow">&rarr;</span>
+      <a href="#bc-why">Why HGS</a><span class="bc-nav-arrow">&rarr;</span>
+      <a href="#bc-objections">Objections</a>
+    </div>
+
+    <div class="bc-placeholder-banner">
+      Placeholder battlecard, built from the Sales Play Battlecard template — swap the bracketed copy below for this play's real buyer, pitch, and objection-handling content.
+    </div>
+
+    <div class="bc-grid">
+      <div class="bc-col">
+        <div class="card" id="bc-buyer">
+          <div class="bc-card-eyebrow">Who is the buyer?</div>
+          <div class="bc-buyer-table">
+            ${[1, 2, 3, 4, 5]
+              .map(
+                (n) => `
+            <div class="bc-buyer-row">
+              <div class="bc-buyer-title">[Buyer Title ${n}]</div>
+              <div class="bc-buyer-challenge">[Top challenge this buyer faces that the offering solves.]</div>
+            </div>`
+              )
+              .join("")}
+          </div>
+        </div>
+        <div class="card bc-card-dark">
+          <div class="bc-card-eyebrow bc-card-eyebrow-light">Key messages to emphasize</div>
+          <p class="bc-dark-text">[2&ndash;3 sentence narrative that ties the offering to the buyer's priorities, states the outcome delivered, and reinforces why HGS is the right partner.]</p>
+          <p class="bc-dark-text">[Proof point or track record line, e.g. industries served or scale of delivery.]</p>
+        </div>
+      </div>
+
+      <div class="bc-col">
+        <div class="card" id="bc-pitch">
+          <div class="bc-card-eyebrow">Quick pitch</div>
+          <p class="bc-body-text">[2&ndash;3 sentence pitch: what we do, how, and the outcome for the buyer.]</p>
+          <ul class="bullet-list">
+            <li class="bullet-row"><span class="bullet-dot"></span><span class="bullet-text">[Differentiating capability or proof point #1]</span></li>
+            <li class="bullet-row"><span class="bullet-dot"></span><span class="bullet-text">[Differentiating capability or proof point #2]</span></li>
+            <li class="bullet-row"><span class="bullet-dot"></span><span class="bullet-text">[Call to action &ndash; e.g. offer a POC or roadmap]</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="bc-card-eyebrow">Platforms, tools &amp; tech</div>
+          <div class="bc-chip-row">
+            <span class="bc-chip">[Platform / tool #1]</span>
+            <span class="bc-chip">[Platform / tool #2]</span>
+            <span class="bc-chip">[Platform / tool #3]</span>
+          </div>
+        </div>
+        <div class="card" id="bc-capabilities">
+          <div class="bc-card-eyebrow">Core capabilities</div>
+          <div class="bc-subhead">Strategy, Technology &amp; Tools</div>
+          <ul class="bullet-list">
+            ${[1, 2, 3, 4, 5]
+              .map(
+                (n) =>
+                  `<li class="bullet-row"><span class="bullet-dot"></span><span class="bullet-text">[Core capability #${n}]</span></li>`
+              )
+              .join("")}
+          </ul>
+        </div>
+      </div>
+
+      <div class="bc-col">
+        <div class="card" id="bc-why">
+          <div class="bc-card-eyebrow">Why HGS?</div>
+          ${[1, 2, 3, 4]
+            .map(
+              (n) => `
+          <div class="bc-why-item">
+            <div class="bc-why-reason">[Reason ${n}]</div>
+            <div class="bullet-row"><span class="bullet-dot"></span><span class="bullet-text bc-why-proof">[Supporting proof point]</span></div>
+          </div>`
+            )
+            .join("")}
+        </div>
+        <div class="card" id="bc-objections">
+          <div class="bc-card-eyebrow">Objections?</div>
+          ${[1, 2, 3, 4]
+            .map(
+              (n) => `
+          <div class="bc-objection">
+            <div class="bullet-row"><span class="bullet-dot bc-objection-dot"></span><span class="bullet-text">[Objection ${n} the buyer commonly raises.]</span></div>
+            <div class="bullet-row"><span class="bullet-dot"></span><span class="bullet-text bc-why-proof">[Answer ${n}]</span></div>
+          </div>`
+            )
+            .join("")}
+        </div>
+      </div>
+    </div>`;
+  }
+
+  // Real battlecard content for a play, once it's been written — same layout
+  // and CSS classes as the placeholder above, filled from a play's
+  // `battlecard` data object instead of bracketed copy.
+  function battlecardContentHTML(bc) {
+    return `
+    <div class="bc-nav-strip">
+      <a href="#bc-buyer">Buyer &amp; Challenges</a><span class="bc-nav-arrow">&rarr;</span>
+      <a href="#bc-pitch">Quick Pitch</a><span class="bc-nav-arrow">&rarr;</span>
+      <a href="#bc-capabilities">Capabilities</a><span class="bc-nav-arrow">&rarr;</span>
+      <a href="#bc-why">Why HGS</a><span class="bc-nav-arrow">&rarr;</span>
+      <a href="#bc-objections">Objections</a>
+    </div>
+
+    <div class="bc-grid">
+      <div class="bc-col">
+        <div class="card" id="bc-buyer">
+          <div class="bc-card-eyebrow">Who is the buyer?</div>
+          <div class="bc-buyer-table">
+            ${bc.buyers
+              .map(
+                (b) => `
+            <div class="bc-buyer-row">
+              <div class="bc-buyer-title">${esc(b.title)}</div>
+              <div class="bc-buyer-challenge">${esc(b.challenge)}</div>
+            </div>`
+              )
+              .join("")}
+          </div>
+        </div>
+        <div class="card bc-card-dark">
+          <div class="bc-card-eyebrow bc-card-eyebrow-light">Key messages to emphasize</div>
+          ${bc.keyMessages.map((m) => `<p class="bc-dark-text">${esc(m)}</p>`).join("")}
+        </div>
+      </div>
+
+      <div class="bc-col">
+        <div class="card" id="bc-pitch">
+          <div class="bc-card-eyebrow">Quick pitch</div>
+          <p class="bc-body-text">${esc(bc.quickPitch.pitch)}</p>
+          <ul class="bullet-list">
+            ${bc.quickPitch.points
+              .map((p) => `<li class="bullet-row"><span class="bullet-dot"></span><span class="bullet-text">${esc(p)}</span></li>`)
+              .join("")}
+            <li class="bullet-row"><span class="bullet-dot"></span><span class="bullet-text">${esc(bc.quickPitch.cta)}</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="bc-card-eyebrow">Platforms, tools &amp; tech</div>
+          <div class="bc-chip-row">
+            ${bc.platforms.map((p) => `<span class="bc-chip">${esc(p)}</span>`).join("")}
+          </div>
+        </div>
+        <div class="card" id="bc-capabilities">
+          <div class="bc-card-eyebrow">Core capabilities</div>
+          <div class="bc-subhead">${esc(bc.capabilities.subhead)}</div>
+          <ul class="bullet-list">
+            ${bc.capabilities.items
+              .map((c) => `<li class="bullet-row"><span class="bullet-dot"></span><span class="bullet-text">${esc(c)}</span></li>`)
+              .join("")}
+          </ul>
+        </div>
+      </div>
+
+      <div class="bc-col">
+        <div class="card" id="bc-why">
+          <div class="bc-card-eyebrow">Why HGS?</div>
+          ${bc.whyHGS
+            .map(
+              (w) => `
+          <div class="bc-why-item">
+            <div class="bc-why-reason">${esc(w.reason)}</div>
+            <div class="bullet-row"><span class="bullet-dot"></span><span class="bullet-text bc-why-proof">${esc(w.proof)}</span></div>
+          </div>`
+            )
+            .join("")}
+        </div>
+        <div class="card" id="bc-objections">
+          <div class="bc-card-eyebrow">Objections?</div>
+          ${bc.objections
+            .map(
+              (o) => `
+          <div class="bc-objection">
+            <div class="bullet-row"><span class="bullet-dot bc-objection-dot"></span><span class="bullet-text">${esc(o.objection)}</span></div>
+            <div class="bullet-row"><span class="bullet-dot"></span><span class="bullet-text bc-why-proof">${esc(o.answer)}</span></div>
+          </div>`
+            )
+            .join("")}
+        </div>
+      </div>
+    </div>`;
+  }
+
   // ---- navigation ----
   function goServices(view, pfId, spId, pjId) {
     state.section = "services";
@@ -424,33 +622,17 @@
                 .join("")}
             </div>
           </div>
-
-          <div class="cta-banner">
-            <div class="cta-text">
-              <div class="cta-title">Prove it in 90 days</div>
-              <p class="cta-sub">Assess in weeks 1–3, pilot through week 8, measured business outcome by day 90 — then scale.</p>
-            </div>
-            <div class="cta-btn">Schedule a consultation</div>
-          </div>
         </div>
 
         <div class="project-side">
-          <div class="side-card">
-            <div class="side-eyebrow">Play details</div>
-            <div class="side-field">
-              <div>
-                <div class="field-label">Portfolio play</div>
-                <div class="field-value-link" data-goto="portfolio" data-pf="${esc(pf.id)}">${esc(pf.name)}</div>
-              </div>
-              <div>
-                <div class="field-label">Strategic play</div>
-                <div class="field-value-link" data-goto="strategic" data-pf="${esc(pf.id)}" data-sp="${esc(sp.id)}">${esc(sp.name)}</div>
-              </div>
-              <div>
-                <div class="field-label">Sequence</div>
-                <div class="field-value">${esc(pj.step)}</div>
-              </div>
+          <div class="side-cta-card" data-goto="battlecard" data-pf="${esc(pf.id)}" data-sp="${esc(sp.id)}" data-pj="${esc(pj.id)}">
+            <div class="side-cta-eyebrow">For sales teams</div>
+            <div class="side-cta-title-row">
+              <span class="side-cta-title">Sales Battlecard</span>
+              <span class="side-cta-arrow">&#8599;</span>
             </div>
+            <div class="side-cta-sub">Objections, competitive positioning &amp; talk tracks</div>
+            ${pj.battlecard ? "" : `<div class="side-cta-note">Placeholder &mdash; content coming soon</div>`}
           </div>
 
           <div class="side-card">
@@ -472,11 +654,39 @@
     </div>`;
   }
 
+  function renderBattlecard(pf, sp, pj) {
+    const bc = pj.battlecard;
+    return `
+    <div class="page-pad">
+      <div class="crumbs">
+        <span class="crumb" data-goto="portfolio" data-pf="${esc(pf.id)}">${esc(pf.name)}</span>
+        <span class="crumb" data-goto="strategic" data-pf="${esc(pf.id)}" data-sp="${esc(sp.id)}">${esc(sp.name)}</span>
+        <span class="crumb" data-goto="project" data-pf="${esc(pf.id)}" data-sp="${esc(sp.id)}" data-pj="${esc(pj.id)}">${esc(pj.name)}</span>
+      </div>
+      <div class="hero-banner">
+        <img class="hero-art" src="assets/image1.svg" alt="">
+        <div class="hero-inner">
+          ${
+            bc
+              ? `<div class="hero-eyebrow">Offering Battlecard</div>
+                 <h1 class="hero-title">${esc(pj.name)} &ndash; ${esc(bc.valueProp)}</h1>
+                 <p class="hero-desc">${esc(bc.description)}</p>`
+              : `<div class="hero-eyebrow">Offering Battlecard &middot; Placeholder</div>
+                 <h1 class="hero-title">${esc(pj.name)} &ndash; [One-line value proposition]</h1>
+                 <p class="hero-desc">[One-sentence description of who this offering is for and the outcome it delivers.]</p>`
+          }
+        </div>
+      </div>
+      ${bc ? battlecardContentHTML(bc) : battlecardSectionsHTML()}
+    </div>`;
+  }
+
   function renderServicesBody() {
     const { pf, sp, pj } = findCurrentServices();
     if (state.svView === "portfolio" && pf) return renderPortfolio(pf);
     if (state.svView === "strategic" && sp) return renderStrategic(sp);
     if (state.svView === "project" && pj) return renderProject(pf, sp, pj);
+    if (state.svView === "battlecard" && pj) return renderBattlecard(pf, sp, pj);
     return renderServicesHome();
   }
 
@@ -526,6 +736,7 @@
           `data-goto="${esc(it.goto)}"`,
           it.cat ? `data-cat="${esc(it.cat)}"` : "",
           it.tag ? `data-tag="${esc(it.tag)}"` : "",
+          it.demo ? `data-demo="${esc(it.demo)}"` : "",
         ].join(" ");
         return `${sep}<span class="crumb" ${attrs}>${esc(it.label)}</span>`;
       })
@@ -861,6 +1072,12 @@
 
         <div class="detail-side">
           <div class="side-card">
+            <div class="side-eyebrow">Battlecards</div>
+            <div class="field-value-link" data-goto="battlecard" data-demo="${esc(demo.id)}">View sales battlecard &rarr;</div>
+            <div style="margin-top:10px;"><span class="status-badge">Placeholder &mdash; content coming soon</span></div>
+          </div>
+
+          <div class="side-card">
             <div class="side-eyebrow">Details</div>
             <div class="side-field">
               <div class="field-label">Portfolio Play</div>
@@ -915,10 +1132,36 @@
     </div>`;
   }
 
+  function renderProductBattlecard() {
+    const demo = byId(DEMOS)[state.demoId];
+    if (!demo) return renderProductsHome();
+    const cat = categoryOf(demo);
+
+    return `
+    <div class="page-pad">
+      ${renderProductCrumbs([
+        { label: "Home", goto: "home" },
+        { label: cat.name, goto: "category", cat: cat.id },
+        { label: demo.title, goto: "demo", demo: demo.id },
+        { label: "Battlecard" },
+      ])}
+      <div class="hero-banner">
+        <img class="hero-art" src="assets/hero-art.svg" alt="">
+        <div class="hero-inner">
+          <div class="hero-eyebrow">Offering Battlecard &middot; Placeholder</div>
+          <h1 class="hero-title">${esc(demo.title)} &ndash; [One-line value proposition]</h1>
+          <p class="hero-desc">[One-sentence description of who this offering is for and the outcome it delivers.]</p>
+        </div>
+      </div>
+      ${battlecardSectionsHTML()}
+    </div>`;
+  }
+
   function renderProductsBody() {
     if (state.pdView === "category") return renderCategory();
     if (state.pdView === "browse") return renderBrowse();
     if (state.pdView === "demo") return renderDemo();
+    if (state.pdView === "battlecard") return renderProductBattlecard();
     return renderProductsHome();
   }
 
@@ -1061,15 +1304,11 @@
   }
 
   function renderFooter() {
-    const tagline =
-      state.section === "products"
-        ? "Packaged Products Portfolio — internal showcase, adapted from AI-Demos-MAIN.pptx and the HGS AgentX positioning docs"
-        : "Portfolio · Strategic · Project Plays — internal navigator";
     return `
     <div class="footer-wrap">
       <div class="footer-bar">
         <img src="assets/hgs-logo-white.svg" alt="HGS">
-        <span>${tagline}</span>
+        <span>Prove it in 90 days. Assess in weeks 1&ndash;3, pilot through week 8, measure business outcome by day 90, then scale.</span>
       </div>
     </div>`;
   }

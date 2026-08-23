@@ -294,21 +294,27 @@ body.pin-locked #app-root { display:none; }
 .flow-position .fp-idle { background:#F1F5F8; color:#5C6D72; border-radius:4px; padding:8px 12px; font-size:13px; }
 .flow-position .fp-arrow { color:#B7C7D4; }
 
-.cta-banner {
-  background:#26476B; border-radius:6px; padding:26px 28px; display:flex;
-  align-items:center; gap:24px; flex-wrap:wrap;
-}
-.cta-banner .cta-text { flex:1 1 340px; }
-.cta-banner .cta-title { font-family:'Kanit', sans-serif; font-weight:600; font-size:21px; color:#FFFFFF; line-height:1.25; }
-.cta-banner .cta-sub { margin:8px 0 0; font-size:15px; line-height:1.55; color:#C9D6E3; }
-.cta-banner .cta-btn {
-  background:transparent; border:1.5px solid #ABCF02; color:#ABCF02;
-  font-family:'Kanit', sans-serif; font-weight:600; font-size:14px; padding:13px 26px;
-  border-radius:999px; cursor:pointer;
-}
-.cta-banner .cta-btn:hover { background:#ABCF02; color:#15283C; }
-
 .project-side { position:sticky; top:118px; display:flex; flex-direction:column; gap:16px; }
+
+/* Sales Battlecard CTA card — from "Sales play detail page redesign-v2" */
+.side-cta-card {
+  display:block; background:#ABCF02; border-radius:18px; padding:22px; cursor:pointer;
+  box-shadow:0 4px 14px rgba(21,40,60,0.18); transition:transform 0.15s ease, box-shadow 0.15s ease;
+}
+.side-cta-card:hover { transform:translateY(-2px); box-shadow:0 10px 24px rgba(21,40,60,0.24); }
+.side-cta-eyebrow {
+  font-family:'Kanit', sans-serif; font-size:11.5px; font-weight:700; letter-spacing:0.08em;
+  text-transform:uppercase; color:#15283C; opacity:0.7; margin-bottom:8px;
+}
+.side-cta-title-row { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.side-cta-title { font-family:'Kanit', sans-serif; font-weight:700; font-size:19px; color:#15283C; }
+.side-cta-arrow { font-size:20px; color:#15283C; line-height:1; }
+.side-cta-sub { margin-top:6px; font-size:13px; color:#2c4a63; line-height:1.4; }
+.side-cta-note {
+  margin-top:10px; font-size:11px; font-weight:700; letter-spacing:0.03em; text-transform:uppercase;
+  color:#15283C; opacity:0.65;
+}
+
 .side-card { background:#FFFFFF; border-radius:18px; box-shadow:0 2px 10px rgba(21,40,60,0.06); padding:22px; }
 .side-card .side-eyebrow {
   font-family:'Kanit', sans-serif; font-size:11.5px; font-weight:500; letter-spacing:0.14em;
@@ -391,8 +397,7 @@ body.pin-locked #app-root { display:none; }
   .strat-grid.cols-4, .strat-grid.cols-auto, .proj-grid { grid-template-columns:1fr; }
 
   .project-layout { padding:16px; gap:16px; border-radius:16px; }
-  .cta-banner { padding:20px; }
-  .cta-banner .cta-title { font-size:18px; }
+  .side-cta-card { padding:18px; }
 
   .flow-strip { padding:12px 16px; border-radius:0 0 18px 18px; }
   .mobile-pf-head { padding:14px 15px; }
@@ -558,4 +563,63 @@ body.pin-locked #app-root { display:none; }
   .detail-title { font-size:21px; }
   .demo-card, .card { padding:18px; }
   .mobile-cat-head { padding:14px 15px; }
+}
+
+/* =====================================================================
+   BATTLECARDS — sales-enablement placeholder page for a project play
+   (Services) or a product (Products). Adapted from
+   01-Designs/Battlecards/Sales Play Battlecard Template v4.
+   ===================================================================== */
+.bc-nav-strip {
+  background:#15283C; border-radius:14px; padding:14px 22px; margin:16px 0;
+  display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+}
+.bc-nav-strip a { font-family:'Kanit', sans-serif; font-size:13px; font-weight:600; color:#FFFFFF; }
+.bc-nav-strip a:hover { color:#ABCF02; }
+.bc-nav-strip .bc-nav-arrow { color:#5C6D72; font-size:14px; }
+
+.bc-placeholder-banner {
+  background:#FDF1DC; border-radius:14px; padding:14px 18px; margin:16px 0;
+  font-size:13.5px; color:#8A5A0C; line-height:1.5;
+}
+
+.bc-grid { display:grid; grid-template-columns:1fr 1.7fr 1.7fr; gap:18px; margin:20px 0; align-items:start; }
+.bc-col { display:flex; flex-direction:column; gap:18px; }
+
+.bc-card-eyebrow {
+  font-family:'Kanit', sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.1em;
+  text-transform:uppercase; color:#3D9B99; margin-bottom:14px;
+}
+.bc-card-eyebrow-light { color:#ABCF02; }
+.bc-card-dark { background:#15283C; }
+.bc-dark-text { color:#C9D6E3; font-size:14px; line-height:1.55; margin:0 0 12px; }
+.bc-dark-text:last-child { margin-bottom:0; }
+
+.bc-buyer-table { display:flex; flex-direction:column; }
+.bc-buyer-row { display:grid; grid-template-columns:1fr 1.3fr; gap:8px; padding:12px 0; border-bottom:1px solid #EEF1F5; }
+.bc-buyer-row:last-child { border-bottom:none; }
+.bc-buyer-title { font-weight:500; font-size:14px; color:#15283C; }
+.bc-buyer-challenge { font-size:13.5px; color:#5C6D72; line-height:1.45; }
+
+.bc-body-text { font-size:14px; color:#15283C; line-height:1.55; margin:0 0 12px; }
+.bc-subhead { font-weight:600; font-size:13px; color:#15283C; margin-bottom:10px; }
+
+.bc-chip-row { display:flex; gap:8px; flex-wrap:wrap; }
+.bc-chip { font-size:12.5px; color:#26476B; background:#F1F3F8; border-radius:999px; padding:8px 16px; }
+
+.bc-why-item + .bc-why-item { margin-top:12px; }
+.bc-why-reason { font-weight:600; font-size:14px; color:#15283C; margin-bottom:3px; }
+.bc-why-proof { color:#5C6D72; font-size:13.5px; }
+
+.bc-objection + .bc-objection { margin-top:14px; padding-top:14px; border-top:1px solid #EEF1F5; }
+.bc-objection .bullet-row + .bullet-row { margin-top:6px; }
+.bc-objection-dot { background:#E4626F; }
+
+@media (max-width: 1180px) {
+  .bc-grid { grid-template-columns:1fr; }
+}
+
+@media (max-width: 640px) {
+  .bc-nav-strip { padding:12px 16px; gap:8px; }
+  .bc-grid { margin:16px 0; }
 }
