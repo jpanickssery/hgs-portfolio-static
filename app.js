@@ -1071,10 +1071,14 @@
         </div>
 
         <div class="detail-side">
-          <div class="side-card">
-            <div class="side-eyebrow">Battlecards</div>
-            <div class="field-value-link" data-goto="battlecard" data-demo="${esc(demo.id)}">View sales battlecard &rarr;</div>
-            <div style="margin-top:10px;"><span class="status-badge">Placeholder &mdash; content coming soon</span></div>
+          <div class="side-cta-card" data-goto="battlecard" data-demo="${esc(demo.id)}">
+            <div class="side-cta-eyebrow">For sales teams</div>
+            <div class="side-cta-title-row">
+              <span class="side-cta-title">Sales Battlecard</span>
+              <span class="side-cta-arrow">&#8599;</span>
+            </div>
+            <div class="side-cta-sub">Objections, competitive positioning &amp; talk tracks</div>
+            ${demo.battlecard ? "" : `<div class="side-cta-note">Placeholder &mdash; content coming soon</div>`}
           </div>
 
           <div class="side-card">
@@ -1136,6 +1140,7 @@
     const demo = byId(DEMOS)[state.demoId];
     if (!demo) return renderProductsHome();
     const cat = categoryOf(demo);
+    const bc = demo.battlecard;
 
     return `
     <div class="page-pad">
@@ -1148,12 +1153,18 @@
       <div class="hero-banner">
         <img class="hero-art" src="assets/hero-art.svg" alt="">
         <div class="hero-inner">
-          <div class="hero-eyebrow">Offering Battlecard &middot; Placeholder</div>
-          <h1 class="hero-title">${esc(demo.title)} &ndash; [One-line value proposition]</h1>
-          <p class="hero-desc">[One-sentence description of who this offering is for and the outcome it delivers.]</p>
+          ${
+            bc
+              ? `<div class="hero-eyebrow">Offering Battlecard</div>
+                 <h1 class="hero-title">${esc(demo.title)} &ndash; ${esc(bc.valueProp)}</h1>
+                 <p class="hero-desc">${esc(bc.description)}</p>`
+              : `<div class="hero-eyebrow">Offering Battlecard &middot; Placeholder</div>
+                 <h1 class="hero-title">${esc(demo.title)} &ndash; [One-line value proposition]</h1>
+                 <p class="hero-desc">[One-sentence description of who this offering is for and the outcome it delivers.]</p>`
+          }
         </div>
       </div>
-      ${battlecardSectionsHTML()}
+      ${bc ? battlecardContentHTML(bc) : battlecardSectionsHTML()}
     </div>`;
   }
 

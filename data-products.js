@@ -630,8 +630,60 @@ const DEMOS = [
     caseStudies: [
       { client: "Bancorp", result: "AI-driven fraud/AML case scoring engagement aimed at cutting false positives and speeding up investigation response." },
     ],
+    battlecard: {
+      valueProp: "An AI-powered investigation layer that overlays your existing AML detection stack and cuts case disposition time by 75%.",
+      description: "For AML/BSA compliance and financial-crime operations leaders drowning in false-positive alerts and rising SAR volume — overlays the detection system a bank already owns via API, so analysts spend their time deciding cases instead of assembling them.",
+      buyers: [
+        { title: "Chief Compliance Officer / BSA Officer", challenge: "Proving programme effectiveness to examiners while alert volumes and SAR filings keep climbing." },
+        { title: "Head of Financial Crime / AML Ops", challenge: "Clearing an L1 queue where 85–95% of alerts are false positives and only 1–5% ever become a SAR." },
+        { title: "COO / Head of Shared Services", challenge: "Analyst cost scaling linearly with alert volume, and attrition resetting capability every quarter." },
+        { title: "CIO / Head of Technology", challenge: "Adding AI without impacting Actimize, Oracle FCCM or Verafin — or re-validating detection models." },
+        { title: "CRO / Head of Model Risk", challenge: "Adopting GenAI with explainability, human-in-the-loop control and an audit trail that survives exam." },
+      ],
+      keyMessages: [
+        "AMLens accelerates the investigation, not the alert. It overlays NICE Actimize, Oracle FCCM, Verafin, SAS or an in-house rules engine via API — no detection change, no model re-validation, live in weeks rather than an 18–36 month replacement programme.",
+        "Explainable AI with human-in-the-loop: the machine assembles the evidence, the analyst owns the decision, and every override is logged as audit evidence. Regulators have opened the door — FinCEN's April 2026 proposal names effective use of AI as evidence of an effective programme. Only HGS pairs the platform with managed investigation operations and outcome-based pricing.",
+      ],
+      quickPitch: {
+        pitch: "AMLens is an AI-powered investigation layer for anti-money laundering. It sits on top of the detection system a bank already owns and collapses the time an analyst spends assembling evidence, contextualising a case and drafting the SAR narrative.",
+        points: [
+          "We do not replace the detection engine — AMLens is modular and API-first, so detection logic and the model inventory stay untouched; coverage is unchanged, only disposition time moves",
+          "Proven in production: 75% less case analysis time, false positives down from 18% to 7%, 3x investigator productivity, turnaround from 48 hours to 12",
+        ],
+        cta: "And HGS can run the queue behind it — no software vendor in this category can also carry the SLA",
+      },
+      platforms: [
+        "Adaptive Risk Propensity Engine (ML) + entity & narrative NLP",
+        "API-first overlay on NICE Actimize, Oracle FCCM, Verafin, SAS or in-house engines",
+        "Bank-owned cloud tenant, VPC or approved enterprise AI environment; model-agnostic LLM layer",
+        "External data via public records, adverse media and LexisNexis",
+      ],
+      capabilities: {
+        subhead: "Four Modules, One Investigation Layer",
+        items: [
+          "Adaptive Risk Propensity Engine — ML scoring re-ranks the queue by severity and learns from dispositions; false positives fall 18% to 7%",
+          "Unified Evidence Fabric — transaction logs, notes, public records and adverse media in one case view; source of the 75% time cut",
+          "RFAI Human-in-the-Loop — in-workflow Request for Additional Information, escalation and override; analyst authority by design",
+          "SAR Narrative Studio & Audit Ledger — cited draft narratives plus a persistent record of model reasoning and every analyst edit",
+        ],
+      },
+      whyHGS: [
+        { reason: "Overlay, Not Rip-and-Replace", proof: "API-first and modular. The detection engine, thresholds and model inventory stay untouched — live in weeks, not an 18–36 month replacement programme." },
+        { reason: "Explainable by Design", proof: "Every AI conclusion is challengeable and every override logged. The audit ledger produces the tuning and outcome evidence examiners now expect." },
+        { reason: "Proven in Production", proof: "Live at a US private-label banking and payments institution: under 200 seconds per case, 96% recommendation accuracy, zero security findings." },
+        { reason: "Platform Plus Operations", proof: "Software vendors sell a tool. HGS can also run the L1/L2 queue, priced per case cleared — 18,000+ people, 30 delivery centres, nine countries." },
+        { reason: "90-Day Value Realisation", proof: "ROIX sprint: one process, one queue, live in 90 days with defined metrics and shared accountability." },
+      ],
+      objections: [
+        { objection: "We just invested in NICE Actimize / Oracle / Verafin.", answer: "Good — AMLens protects that investment. We overlay it via API and make it produce faster dispositions. No detection change, no re-tuning, nothing written off." },
+        { objection: "Model risk will make us validate this under SR 11-7.", answer: "SR 11-7 was replaced by SR 26-2 / OCC 2026-13 in April 2026, and generative AI sits outside model-risk scope. Governance still applies; the gating validation does not." },
+        { objection: "We cannot put case data into an LLM.", answer: "AMLens has run in production inside a bank's own approved enterprise AI environment — no case data left the perimeter. Deploy in your tenant or VPC, model-agnostic." },
+        { objection: "Who is accountable if the AI gets it wrong?", answer: "The analyst, by design. AMLens assembles evidence and drafts; the human in the loop accepts, challenges or overrides — and every decision is logged for examination." },
+        { objection: "Verafin already offers an agentic overlay.", answer: "HGS delivers the platform and can run the investigation queue behind it under an SLA and outcome-based pricing." },
+      ],
+    },
     status: "ready",
-    note: "Consolidated three overlapping AML entries (AMLens, Anti-Money Laundering Portal, Anomaly Detection Automation (AML)) into this one, per user request — same underlying AML case-investigation solution described across three source materials (this real Flight Deck app screenshot, AI-Demos-MAIN.pptx, and HGS AgentX positioning copy). Kept the real screenshot as the visual, merged the strongest problem/what-you'll-see points, and kept the Bancorp case study and product: \"HGS AgentX\" tag from the AgentX-sourced entries.",
+    note: "Consolidated three overlapping AML entries (AMLens, Anti-Money Laundering Portal, Anomaly Detection Automation (AML)) into this one, per user request — same underlying AML case-investigation solution described across three source materials (this real Flight Deck app screenshot, AI-Demos-MAIN.pptx, and HGS AgentX positioning copy). Kept the real screenshot as the visual, merged the strongest problem/what-you'll-see points, and kept the Bancorp case study and product: \"HGS AgentX\" tag from the AgentX-sourced entries. Battlecard content sourced from 07-Portfolio/z01-Battlecards/Products/HGS_AMLens_Battlecard.pptx.",
   },
 
   {
