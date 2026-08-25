@@ -140,8 +140,8 @@ const DEMOS = [
   {
     id: "knowledge-assist",
     subcategory: "employee-assist",
-    title: "Knowledge Assist",
-    tagline: "Faster, smarter agent support",
+    title: "AgentX KB",
+    tagline: "One always-current knowledge base for agents and bots alike",
     industryTags: ["cross-industry"],
     product: "HGS AgentX",
     problem: [
@@ -150,10 +150,11 @@ const DEMOS = [
       "No visibility into which articles actually help vs. get ignored",
     ],
     whatYouSee: [
+      "Centralized knowledge base shared by human agents and AgentX's own bots",
+      "AI-assisted search surfaces answers instantly, without manual lookup",
       "Real-time content management — admins update articles on the fly",
       "Actionable analytics dashboard on usage and feedback trends",
-      "SME support & feedback loop keeps content accurate",
-      "AI-powered response suggestions surfaced to agents in the moment",
+      "SME support & feedback loop keeps content always-current and improves accuracy",
     ],
     variants: [{ label: "Default", video: null }],
     caseStudies: [
@@ -161,7 +162,7 @@ const DEMOS = [
       { client: "Envu", result: "Gave the entire field sales team instant, conversational access to product, pricing, and account knowledge." },
     ],
     status: "needs-review",
-    note: "This section appeared twice in the source deck (slides 64-66 and 105-107) with near-identical content. Merged into a single entry. Case studies added from HGS AgentX positioning doc.",
+    note: "This section appeared twice in the source deck (slides 64-66 and 105-107) with near-identical content. Merged into a single entry. Case studies added from HGS AgentX positioning doc. Retitled from \"Knowledge Assist\" to \"AgentX KB\" and whatYouSee updated to match docs/AgentX.png (Aug 2026), which now names this module as one of AgentX's six unified capabilities and frames it as a KB shared by agents and bots, not just agents; id kept unchanged since nothing outside this file references it.",
   },
   {
     id: "ai-training-simulator",
@@ -187,6 +188,27 @@ const DEMOS = [
     ],
     status: "needs-review",
     note: "Source deck reused the tagline \"Faster, smarter agent training\" verbatim across this, CoBrowse, and Email AI (copy/paste artifact). Wrote a distinct tagline here. Case studies added from HGS AgentX positioning doc.",
+  },
+  {
+    id: "coaching-intelligence",
+    subcategory: "employee-assist",
+    title: "Coaching Intelligence",
+    tagline: "Coaching priorities ranked for you, not left to a manager's gut feel",
+    industryTags: ["cross-industry"],
+    product: "HGS AgentX",
+    problem: [
+      "Supervisors can't tell which agents most need coaching, or on what, until performance already slipped",
+      "Quality and adherence get scored on separate, disconnected scorecards",
+      "Coaching plans are built from stale, batch-reviewed data instead of what's happening on the floor right now",
+    ],
+    whatYouSee: [
+      "Predictive insights rank coaching priorities across the team automatically",
+      "Weighted scorecard spans quality and adherence in one view",
+      "RIME coaching framework applied with real-time tracking of progress",
+    ],
+    variants: [{ label: "Default", video: null }],
+    status: "needs-review",
+    note: "New entry, added per user request from docs/AgentX.png (Aug 2026), one of six capability tiles on HGS AgentX's current \"Unified Solution\" slide. No prior entry existed for this module. Flagged needs-review because problem framing is inferred from the tile's solution bullets (source doesn't state pain points directly) and no case study or screenshot has been sourced yet.",
   },
   {
     id: "email-ai",
