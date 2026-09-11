@@ -669,10 +669,12 @@
           ${
             bc
               ? `<div class="hero-eyebrow">Offering Battlecard</div>
-                 <h1 class="hero-title">${esc(pj.name)} &ndash; ${esc(bc.valueProp)}</h1>
+                 <h1 class="hero-title">${esc(pj.name)}</h1>
+                 <p class="hero-tagline">${esc(bc.valueProp)}</p>
                  <p class="hero-desc">${esc(bc.description)}</p>`
               : `<div class="hero-eyebrow">Offering Battlecard &middot; Placeholder</div>
-                 <h1 class="hero-title">${esc(pj.name)} &ndash; [One-line value proposition]</h1>
+                 <h1 class="hero-title">${esc(pj.name)}</h1>
+                 <p class="hero-tagline">[One-line value proposition]</p>
                  <p class="hero-desc">[One-sentence description of who this offering is for and the outcome it delivers.]</p>`
           }
         </div>
@@ -1156,10 +1158,12 @@
           ${
             bc
               ? `<div class="hero-eyebrow">Offering Battlecard</div>
-                 <h1 class="hero-title">${esc(demo.title)} &ndash; ${esc(bc.valueProp)}</h1>
+                 <h1 class="hero-title">${esc(demo.title)}</h1>
+                 <p class="hero-tagline">${esc(bc.valueProp)}</p>
                  <p class="hero-desc">${esc(bc.description)}</p>`
               : `<div class="hero-eyebrow">Offering Battlecard &middot; Placeholder</div>
-                 <h1 class="hero-title">${esc(demo.title)} &ndash; [One-line value proposition]</h1>
+                 <h1 class="hero-title">${esc(demo.title)}</h1>
+                 <p class="hero-tagline">[One-line value proposition]</p>
                  <p class="hero-desc">[One-sentence description of who this offering is for and the outcome it delivers.]</p>`
           }
         </div>
