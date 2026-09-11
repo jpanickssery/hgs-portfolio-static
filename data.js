@@ -14,8 +14,8 @@ const DATA = [
             outcomes: ["One agreed plan of record across brand, product and region", "Budget reallocated to channels that actually convert", "Quarterly planning cycle cut from weeks to days"],
             scope: ["Audience, category and competitor baseline", "Channel and budget scenario modeling", "Campaign calendar and governance model", "Marketing KPI tree tied to revenue"],
             battlecard: {
-              valueProp: "One evidence-based plan of record that turns marketing spend into measurable growth.",
-              description: "For CMOs and marketing leaders running fragmented brand, product and regional plans — replaces spreadsheet-and-slideware planning with one governed plan of record, modeled budget allocation, and a KPI tree tied to revenue.",
+              valueProp: "One plan of record. Budget decisions backed by evidence.",
+              description: "For CMOs and marketing leaders running fragmented brand, product, and regional plans, unify planning into one governed plan of record with a KPI tree tied to revenue.",
               buyers: [
                 { title: "CMO", challenge: "Can't get one number for total marketing spend or prove it's working, so the budget has to defend itself in every renewal cycle." },
                 { title: "VP / Head of Marketing Strategy", challenge: "Plans live in disconnected slide decks and spreadsheets across brand, product and region, so nothing reconciles." },
@@ -64,8 +64,8 @@ const DATA = [
             outcomes: ["Faster brief-to-live cycle times", "Reuse of existing assets instead of net-new spend", "Brand consistency across markets"],
             scope: ["Brief intake and workflow design", "Modular content model and asset taxonomy", "Review, approval and rights management", "Studio and localization operating model"],
             battlecard: {
-              valueProp: "An AI-enabled global content engine that turns creative from a bottleneck into a growth lever.",
-              description: "For CMOs and creative leaders whose current agencies and studios can't keep up with content demand — industrializes how creative gets briefed, produced, approved and reused, so teams get more variants, more markets and more moments without blowing up cost.",
+              valueProp: "One content engine. More output, the same team.",
+              description: "For CMOs and creative leaders whose agencies can't keep pace with demand, industrialize how creative gets briefed, produced, and reused with AI-enabled workflows to raise output and lower cost per asset.",
               buyers: [
                 { title: "CMO / VP Marketing", challenge: "Brand and performance teams need more content than current agencies and studios can deliver." },
                 { title: "Head of Brand / Creative Director", challenge: "Quality-versus-volume trade-offs mean teams are burned out and can't keep up with channel demands." },
@@ -114,8 +114,8 @@ const DATA = [
             outcomes: ["Higher match rates on paid platforms", "Consent and suppression handled by default", "Segments refreshed continuously, not quarterly"],
             scope: ["Identity resolution and profile unification", "CDP configuration and segment design", "Consent, privacy and suppression logic", "Destination integrations and activation QA"],
             battlecard: {
-              valueProp: "First-party data turned into addressable, consented audiences that actually reach the platforms where spend happens.",
-              description: "For CMOs and CRM leaders whose customer data is incomplete and siloed — builds identity resolution, CDP configuration and consent-safe activation so segments refresh continuously and match rates on paid platforms actually go up.",
+              valueProp: "One customer view. Audiences that actually convert.",
+              description: "For CMOs and CRM leaders working from siloed customer data, unify identity resolution and consent into one CDP-based activation layer to raise match rates and keep segments continuously fresh.",
               buyers: [
                 { title: "CMO / VP Marketing", challenge: "Data lives in silos across 10+ tools, so there's no single view of marketing performance or customer journey ROI." },
                 { title: "Head of Performance / Growth Marketing", challenge: "Struggles to prove which channels actually drive conversions when attribution models conflict across platforms." },
@@ -160,12 +160,12 @@ const DATA = [
                 { objection: "Our data is too messy for this.", answer: "Data quality issues are universal — we bring proven frameworks for cleaning, identity resolution and governance that turn messy data into addressable audiences within your existing infrastructure." }
               ]
             } },
-          { name: "Digital Growth & Demand Generation", blurb: "Run paid, organic and lifecycle programs as one growth engine with a shared view of pipeline contribution.",
+          { name: "Digital Growth & Demand Generation", blurb: "Run paid, organic and lifecycle campaigns as one growth engine with a shared view of pipeline contribution.",
             outcomes: ["Lower blended cost per acquisition", "Pipeline contribution visible by channel", "Always-on testing rather than campaign bursts"],
-            scope: ["Paid media planning and buying", "SEO, site and conversion optimization", "Lifecycle and nurture programs", "Experimentation backlog and test cadence"],
+            scope: ["Paid media planning and buying", "SEO, site and conversion optimization", "Lifecycle and nurture campaigns/journeys", "Experimentation backlog and test cadence"],
             battlecard: {
-              valueProp: "One growth engine across paid, organic and lifecycle — with AI-driven optimization and a shared view of pipeline contribution.",
-              description: "For CMOs and growth leaders battling rising CAC and declining ROAS — unifies paid search, paid social, programmatic and lifecycle programs into one optimized engine instead of channels competing against each other for the same budget.",
+              valueProp: "One growth engine. Lower CAC, higher ROAS.",
+              description: "For CMOs and growth leaders battling rising acquisition costs, unify paid, organic, and lifecycle channels on one AI-optimized engine to lower CAC and prove pipeline contribution.",
               buyers: [
                 { title: "VP / Head of Performance / Growth Marketing", challenge: "High customer acquisition cost and declining ROAS, with no clear proof of which channels actually drive conversions across complex journeys." },
                 { title: "CMO / VP Marketing", challenge: "Marketing spend keeps growing but can't be clearly tied to revenue outcomes." },
@@ -214,8 +214,8 @@ const DATA = [
             outcomes: ["Response time reduced to minutes", "Escalations routed before they trend", "Community sentiment tracked continuously"],
             scope: ["Listening taxonomy and alerting", "Response playbooks and tone guidance", "Moderation and escalation workflow", "Coverage model across time zones"],
             battlecard: {
-              valueProp: "Listen, respond and moderate across social so service issues and brand risk get handled in public, fast — not after they trend.",
-              description: "For CX and brand leaders whose social channels are a reputation risk, not just a marketing channel — builds 24/7 moderation, escalation playbooks and sentiment tracking so response time drops to minutes and issues get caught before they trend.",
+              valueProp: "One social frontline. Issues caught before they trend.",
+              description: "For CX and brand leaders exposed on social, unify listening, moderation, and escalation into one 24/7 operation to cut response time and contain brand risk in public.",
               buyers: [
                 { title: "Head of Customer Experience / CRM", challenge: "Social inquiries go unanswered or take too long to resolve, putting brand reputation at risk from poor social customer service." },
                 { title: "CMO / VP Marketing", challenge: "Social issues and brand risk surface in public before anyone internally sees them, with no clear ownership of the response." },
@@ -264,8 +264,8 @@ const DATA = [
             outcomes: ["Marketing spend defensible to finance", "Incrementality proven, not assumed", "Continuous optimization under SLA"],
             scope: ["Measurement framework and attribution model", "Executive and channel reporting", "Incrementality and media-mix testing", "Managed optimization service"],
             battlecard: {
-              valueProp: "A measurement framework and a managed team that closes the loop — attribution and incrementality proven, not assumed, and continuously optimized under SLA.",
-              description: "For CFOs and CMOs who can't get a number for marketing ROI that survives a finance review — builds a governed attribution and incrementality framework, then keeps a managed team accountable for improving it every cycle, not just reporting on it once.",
+              valueProp: "One measurement framework. Numbers finance signs off on.",
+              description: "For CFOs and CMOs who can't defend marketing ROI, prove attribution and incrementality under a managed team that stays accountable for improving the numbers every cycle.",
               buyers: [
                 { title: "CFO / Finance Business Partner (Marketing)", challenge: "Marketing spend keeps growing but nobody can tie it to revenue outcomes with numbers finance will sign off on." },
                 { title: "CMO", challenge: "Needs a measurement framework that survives an executive review, not just a dashboard the marketing team trusts internally." },
@@ -317,12 +317,12 @@ const DATA = [
         promise: "Modernize the service platform, then progressively shift resolution to self-service, assisted intelligence and automation.",
         flow: ["Modernize Platform", "Enable Self-Service", "Empower Agents", "Optimize Routing", "Generate Insights", "Automate Resolution"],
         projects: [
-          { name: "CX Platform & Contact Center Modernization", blurb: "Replace fragmented telephony and ticketing with a cloud contact center that other plays can build on.",
+          { name: "CX Platform & Contact Center Modernization", blurb: "Replace fragmented telephony and ticketing with a unified cloud contact center.",
             outcomes: ["Single platform across voice and digital", "Lower cost per contact", "Change delivered in weeks, not releases"],
             scope: ["Current-state platform and integration audit", "Target CCaaS architecture and migration plan", "Channel and CRM integration", "Cutover, hypercare and adoption"],
             battlecard: {
-              valueProp: "One cloud contact center across voice and digital that every other service play builds on — change delivered in weeks, not the next platform release.",
-              description: "For CX and IT leaders running fragmented, on-premise telephony and disconnected ticketing — replaces it with a modern CCaaS platform integrated to CRM and digital channels, so cost per contact drops and change stops waiting on a vendor's release cycle.",
+              valueProp: "One contact center platform. Faster change, faster outcomes.",
+              description: "For CX and IT leaders modernizing service operations, unify voice, digital, and CRM on a single CCaaS platform to reduce cost and accelerate change.",
               buyers: [
                 { title: "VP Customer Service / CX", challenge: "Runs voice, chat and ticketing on separate platforms that don't share a customer record, so every handoff loses context." },
                 { title: "CIO", challenge: "The current contact center platform is on-premise, end-of-life or both, and every change request waits months for a vendor release." },
@@ -367,12 +367,12 @@ const DATA = [
                 { objection: "This feels like just a phone system upgrade.", answer: "It's the foundation for every other service transformation play — self-service, agent assist, routing and automation all depend on this platform being modern and integrated first." }
               ]
             } },
-          { name: "Customer Self-Service & Automation", blurb: "Deflect predictable demand into conversational and web self-service that customers actually complete.",
-            outcomes: ["Meaningful containment on top intents", "24/7 resolution without added headcount", "Fewer repeat contacts per issue"],
+          { name: "Customer Self-Service & Automation", blurb: "Guide customers to fast, successful resolutions through intuitive conversational and digital self-service.",
+            outcomes: ["Deflect top intents to self-service", "24/7 resolution without added headcount", "Fewer repeat contacts per issue"],
             scope: ["Intent and contact-driver analysis", "Conversational and IVR journey design", "Knowledge and backend integration", "Containment tuning and guardrails"],
             battlecard: {
-              valueProp: "Predictable demand deflected into conversational and web self-service customers actually complete — not another chatbot people abandon halfway through.",
-              description: "For customer service leaders whose self-service containment rate never moves past single digits — analyzes real contact drivers, designs conversational and IVR journeys people actually finish, and tunes containment against guardrails so deflection doesn't just create a worse experience.",
+              valueProp: "Self-service customers actually finish. Not another chatbot.",
+              description: "For customer service leaders stuck at single-digit containment, design conversational and IVR journeys around real contact drivers to deflect volume without adding repeat contacts.",
               buyers: [
                 { title: "Head of Customer Service", challenge: "Self-service containment has stalled in the single digits because the chatbot answers questions nobody's actually asking." },
                 { title: "VP Digital CX", challenge: "Customers abandon the self-service flow and call anyway, so it adds a frustrating step instead of removing one." },
@@ -421,8 +421,8 @@ const DATA = [
             outcomes: ["Shorter handle time and after-call work", "Faster onboarding for new advisors", "More consistent quality scores"],
             scope: ["Unified agent desktop design", "Real-time assist and knowledge surfacing", "Auto-summarization and disposition", "Coaching and QA integration"],
             battlecard: {
-              valueProp: "A single agent desktop with real-time assist, summarization and next-best-action — so advisors spend less time hunting for answers and more time helping the customer.",
-              description: "For contact center operations leaders whose advisors juggle six systems and still can't find the right answer fast enough — unifies the desktop with real-time knowledge surfacing, auto-summarization and next-best-action, so handle time drops and quality gets more consistent.",
+              valueProp: "One agent desktop. Answers found, not hunted.",
+              description: "For contact center leaders whose advisors juggle six systems, unify the desktop with real-time assist and next-best-action to cut handle time and lift quality consistency.",
               buyers: [
                 { title: "VP Contact Center Operations", challenge: "Advisors toggle between five or six systems on every call, and handle time and after-call work both suffer for it." },
                 { title: "Head of Workforce / Training", challenge: "New advisor ramp time is long because there's no real-time assist to compensate for incomplete knowledge in the first few months." },
@@ -471,8 +471,8 @@ const DATA = [
             outcomes: ["Higher first-contact resolution", "Better use of specialist skills", "Priority customers reliably prioritized"],
             scope: ["Routing strategy and skills model", "Predictive intent and value scoring", "Decisioning rules and orchestration", "Continuous routing optimization"],
             battlecard: {
-              valueProp: "Every contact matched to the right skill, channel or automation using intent, value and predicted effort — not a static skill-based queue.",
-              description: "For contact center leaders whose routing logic hasn't evolved past static skill-based queues — builds predictive intent and value scoring into routing and decisioning, so first-contact resolution goes up, specialist skills get used where they matter, and priority customers actually get prioritized.",
+              valueProp: "Every contact, right destination, first time.",
+              description: "For contact center leaders stuck on static skill-based queues, route every contact by intent, value, and predicted effort to lift first-contact resolution and protect specialist time.",
               buyers: [
                 { title: "VP Contact Center Operations", challenge: "Routing logic is a static skill-based queue that doesn't account for predicted effort or customer value, so first-contact resolution suffers." },
                 { title: "Head of Customer Experience", challenge: "High-value or at-risk customers get routed the same way as everyone else, undermining retention efforts that depend on prioritized treatment." },
@@ -518,11 +518,11 @@ const DATA = [
               ]
             } },
           { name: "Experience & Interaction Intelligence", blurb: "Analyze every interaction across channels to see why customers contact you and what it costs.",
-            outcomes: ["Root causes visible to the business, not just to service", "Compliance and quality reviewed at 100% coverage", "Journey friction quantified in cost terms"],
+            outcomes: ["Root causes visible to the business, not just within the contact center", "Compliance and quality reviewed at 100% coverage", "Journey friction quantified in cost terms"],
             scope: ["Interaction analytics deployment", "Driver and root-cause taxonomy", "Automated quality monitoring", "Journey and VoC reporting"],
             battlecard: {
-              valueProp: "Every interaction across channels analyzed to see why customers actually contact you and what it costs — root causes visible to the whole business, not just to service.",
-              description: "For CX and operations leaders who only sample a fraction of interactions for quality and have no idea what root causes are actually driving contact volume — deploys interaction analytics across 100% of contacts, so quality and compliance get full coverage and journey friction gets quantified in cost terms the rest of the business can act on.",
+              valueProp: "Every interaction analyzed. Root causes made visible.",
+              description: "For CX and operations leaders sampling a fraction of contacts, analyze 100% of interactions across channels to surface root causes and quantify friction in terms the whole business can act on.",
               buyers: [
                 { title: "VP Customer Experience", challenge: "Only a small sample of interactions ever gets reviewed, so most of what's actually happening with customers is invisible." },
                 { title: "Head of Quality / Compliance", challenge: "Compliance and quality reviews cover a fraction of contacts, leaving real exposure in the 95%+ that never gets checked." },
@@ -571,8 +571,8 @@ const DATA = [
             outcomes: ["Whole journeys resolved without an advisor", "Cost to serve structurally lower", "Human effort concentrated on exceptions"],
             scope: ["Agentic use-case selection and risk assessment", "Orchestration across systems of record", "Human-in-the-loop and escalation design", "Performance, safety and drift monitoring"],
             battlecard: {
-              valueProp: "Agentic resolution that completes whole journeys end to end, with human oversight — not another deflection layer in front of the same manual process.",
-              description: "For COOs and service leaders whose automation has plateaued at deflecting simple questions — selects and orchestrates agentic use cases that complete entire journeys across systems of record, with human-in-the-loop escalation, so cost to serve drops structurally and human effort concentrates on real exceptions.",
+              valueProp: "Whole journeys resolved. Structurally lower cost to serve.",
+              description: "For COOs and service leaders whose automation has plateaued at deflection, orchestrate agentic resolution across systems of record with human oversight to resolve whole journeys end to end.",
               buyers: [
                 { title: "Chief Operating Officer", challenge: "Automation has plateaued at deflecting simple FAQs, and cost to serve hasn't structurally moved because the complex journeys still require a human end to end." },
                 { title: "Head of Customer Service / Operations", challenge: "Wants whole journeys — not just individual questions — resolved without an advisor touching them, but doesn't know which ones are safe to automate." },
@@ -628,8 +628,8 @@ const DATA = [
             outcomes: ["New storefronts launched in weeks", "Site performance and conversion lift", "Lower total cost of ownership"],
             scope: ["Commerce platform selection and architecture", "Catalog, pricing and promotions model", "Checkout, payments and fulfillment integration", "Migration and launch"],
             battlecard: {
-              valueProp: "A composable commerce foundation that launches new storefronts in weeks and carries new markets, models and channels — not a monolithic platform that has to be replaced again in three years.",
-              description: "For ecommerce and technology leaders stuck on a monolithic, expensive-to-change commerce platform — re-platforms onto a composable foundation with the catalog, pricing, checkout and fulfillment integration to launch new storefronts fast and lower total cost of ownership.",
+              valueProp: "One composable foundation. Storefronts launched in weeks.",
+              description: "For ecommerce and technology leaders stuck on a monolithic platform, re-platform onto a composable commerce foundation to launch new storefronts faster and lower total cost of ownership.",
               buyers: [
                 { title: "VP Ecommerce / Digital Commerce", challenge: "Launching a new storefront or market takes months because the current platform is monolithic and every change touches everything else." },
                 { title: "CTO", challenge: "The commerce platform's total cost of ownership keeps climbing, and vendor lock-in makes even incremental change expensive." },
@@ -678,8 +678,8 @@ const DATA = [
             outcomes: ["Complete, accurate product records", "Share-of-shelf and availability visible daily", "Content gaps closed before they cost sales"],
             scope: ["PIM and product data model", "Syndication to marketplaces and retailers", "Digital shelf monitoring and scorecards", "Data stewardship workflow"],
             battlecard: {
-              valueProp: "One trusted product view, syndicated everywhere you sell, with daily visibility into how it actually performs on every digital shelf.",
-              description: "For ecommerce and category leaders whose product data is incomplete in some retailers and wrong in others — builds a single product information model, syndicates it to every marketplace and retailer, and monitors share-of-shelf and content gaps daily, before they cost sales.",
+              valueProp: "One product view. Daily visibility on every shelf.",
+              description: "For ecommerce and category leaders with inconsistent product data across retailers, unify product information and syndication into one model to close content gaps before they cost sales.",
               buyers: [
                 { title: "Head of Ecommerce / Digital Shelf", challenge: "Product content is inconsistent across retailers and marketplaces, and there's no daily visibility into where it's actually failing." },
                 { title: "VP Sales (Retail / Marketplace)", challenge: "Can't tell retail buyers with confidence what share of shelf or availability looks like across channels without a manual, weeks-old report." },
@@ -728,8 +728,8 @@ const DATA = [
             outcomes: ["Higher search visibility and click-through", "Larger average order value", "Recommendations tuned to margin, not just clicks"],
             scope: ["Content quality scoring and enrichment", "Search and attribution optimization", "Recommendation and NBA models", "Test-and-learn on merchandising rules"],
             battlecard: {
-              valueProp: "Product content optimized for discovery, paired with next-best-action recommendations tuned to margin — not just to clicks.",
-              description: "For ecommerce and merchandising leaders whose product pages don't get found and whose recommendation engine drives clicks but not profit — enriches content for search visibility and pairs it with NBA models tuned to margin, so average order value grows without giving away margin to chase engagement.",
+              valueProp: "Content built for discovery. Recommendations tuned to margin.",
+              description: "For ecommerce and merchandising leaders whose recommendations drive clicks but not profit, optimize product content for search and tune next-best-action models to margin to grow average order value profitably.",
               buyers: [
                 { title: "Head of Ecommerce", challenge: "Product pages have inconsistent content quality, so search visibility and click-through vary wildly across the catalog." },
                 { title: "Head of Merchandising", challenge: "The recommendation engine drives clicks but the team suspects it's pushing low-margin items, and there's no way to confirm or fix it." },
@@ -778,8 +778,8 @@ const DATA = [
             outcomes: ["Retail media ROAS measured consistently", "Trade and media planning joined up", "Operational load taken off brand teams"],
             scope: ["Retailer network and budget planning", "Campaign build and daily optimization", "Cross-retailer measurement standard", "Managed operations and reporting"],
             battlecard: {
-              valueProp: "Trade dollars that behave like measurable performance media — retail media planned, run and reported to one ROAS standard across every retailer.",
-              description: "For CPG and retail marketing leaders juggling a dozen retail media networks with a dozen different reporting standards — plans, runs and reports retail media as one measurable program, so ROAS is consistent across retailers and brand teams stop carrying the operational load themselves.",
+              valueProp: "One ROAS standard. Trade dollars that perform like media.",
+              description: "For CPG and retail marketing leaders juggling a dozen retail media networks, plan, run, and report retail media as one program to standardize ROAS and take the operational load off brand teams.",
               buyers: [
                 { title: "VP Retail Media / Ecommerce Marketing", challenge: "Runs campaigns across Amazon, Walmart Connect, Instacart and others, each with its own reporting standard that doesn't roll up to one number." },
                 { title: "Head of Trade Marketing", challenge: "Retail media spend and traditional trade investment are planned separately, so nobody has one view of total retailer investment ROI." },
@@ -828,8 +828,8 @@ const DATA = [
             outcomes: ["More hours returned to selling", "CRM hygiene without chasing", "Consistent qualification and follow-up"],
             scope: ["Seller assistant design and rollout", "CRM automation and data capture", "Proposal and RFP acceleration", "Pipeline hygiene and forecasting support"],
             battlecard: {
-              valueProp: "An assistant beside every seller and automation that eats the administration, not the selling time — more hours back for the pipeline that actually closes.",
-              description: "For sales leaders whose reps spend more time on CRM entry and proposal admin than selling — puts an AI sales assistant beside every seller and automates CRM capture, proposal drafting and pipeline hygiene, so administration stops eating selling time and forecasting stops depending on whether reps remembered to log the deal.",
+              valueProp: "An assistant beside every seller. More hours to sell.",
+              description: "For sales leaders whose reps spend more time on admin than selling, automate CRM capture, proposal drafting, and pipeline hygiene to return selling hours and make forecasting trustworthy.",
               buyers: [
                 { title: "VP Sales", challenge: "Reps spend a meaningful share of their week on CRM entry, proposal drafting and admin instead of selling." },
                 { title: "Head of Sales Operations", challenge: "CRM hygiene depends entirely on reps remembering to log activity, which means forecasting is only as good as the laziest rep's habits." },
@@ -878,8 +878,8 @@ const DATA = [
             outcomes: ["Shorter quote-to-cash cycle time", "Fewer pricing and billing errors", "Revenue recognized sooner"],
             scope: ["CPQ and pricing rule design", "Contract lifecycle automation", "Order, billing and revenue integration", "Exception handling and controls"],
             battlecard: {
-              valueProp: "The path from quote to cash compressed by removing manual handoffs across CPQ, contracting and billing — cash collected sooner, with fewer errors along the way.",
-              description: "For CFOs and sales operations leaders watching deals stall between quote, contract and invoice — automates CPQ pricing rules, contract lifecycle and billing integration end to end, so quote-to-cash cycle time shortens, pricing and billing errors drop, and revenue gets recognized sooner.",
+              valueProp: "Quote to cash, compressed. Cash collected sooner.",
+              description: "For CFOs and sales operations leaders watching deals stall between quote and invoice, automate CPQ, contracting, and billing end to end to shorten cycle time and cut errors.",
               buyers: [
                 { title: "CRO / VP Sales Operations", challenge: "Deals stall for days or weeks between an approved quote and a signed, billable contract because of manual handoffs between systems." },
                 { title: "CFO / Controller", challenge: "Pricing and billing errors keep showing up in revenue reconciliation, and revenue recognition lags behind when the deal actually closed." },
@@ -941,8 +941,8 @@ const DATA = [
             outcomes: ["Close and re-forecast cycles shortened", "One connected plan across finance", "Audit trail on every assumption"],
             scope: ["Planning platform selection and design", "Chart of accounts and driver model", "Budget, forecast and close workflows", "Spreadsheet retirement and enablement"],
             battlecard: {
-              valueProp: "One connected planning platform that replaces spreadsheets with a single version of the plan.",
-              description: "For CFOs and finance leaders running budgeting and forecasting on Excel and legacy tools like Hyperion or BPC — replaces disconnected planning with a governed, driver-based platform that closes and re-forecasts in days, not weeks.",
+              valueProp: "One planning platform. One version of the plan.",
+              description: "For CFOs and finance leaders running budgeting and forecasting on spreadsheets and legacy tools, replace disconnected planning with a governed, driver-based platform to close and re-forecast in days.",
               buyers: [
                 { title: "CFO / VP Finance", challenge: "Budgeting and forecasting live in disconnected spreadsheets with no audit trail, and re-forecast cycles take weeks instead of days." },
                 { title: "Head of FP&A / Director of Finance", challenge: "Manual, error-prone consolidation across business units leaves no time for analysis before the numbers are due." },
@@ -991,8 +991,8 @@ const DATA = [
             outcomes: ["Functional plans that tie back to finance", "Fewer reconciliation arguments", "Faster cross-functional replanning"],
             scope: ["Functional driver models", "Workforce and capacity planning", "Demand and supply planning integration", "Cross-functional plan reconciliation"],
             battlecard: {
-              valueProp: "Extend one driver-based planning model into workforce, supply chain, marketing and sales so every functional plan reconciles to finance.",
-              description: "For finance and functional planning leaders whose workforce, supply chain, marketing and sales plans live in separate spreadsheets that never tie back to the corporate plan — connects them to one driver model so numbers reconcile instead of getting re-argued every cycle.",
+              valueProp: "One driver model. Every functional plan reconciles.",
+              description: "For finance and functional planning leaders whose workforce, supply chain, marketing, and sales plans never tie back to the corporate plan, extend one driver-based model across every function to end the reconciliation arguments.",
               buyers: [
                 { title: "CFO / Head of FP&A", challenge: "Functional plans (workforce, supply chain, marketing, sales) never reconcile to the corporate plan, so every quarter starts with a reconciliation argument instead of a decision." },
                 { title: "VP Workforce Planning / HR", challenge: "Headcount and capacity plans are built in isolation from the revenue and cost plans they're supposed to support." },
@@ -1041,8 +1041,8 @@ const DATA = [
             outcomes: ["Trade spend effectiveness quantified", "Price and promo decisions modeled first", "Growth plans agreed with commercial teams"],
             scope: ["Revenue growth management framework", "Trade promotion planning and settlement", "Price pack architecture analysis", "Promotion post-event evaluation"],
             battlecard: {
-              valueProp: "Plan price, promotion and trade investment with visibility into what every dollar actually returns.",
-              description: "For commercial and finance leaders running trade and pricing decisions on spreadsheets and gut feel — replaces it with a revenue growth management framework that models price-pack architecture and promotion ROI before the money is spent, not after.",
+              valueProp: "Trade spend planned, not guessed. ROI before the spend.",
+              description: "For commercial and finance leaders running pricing and trade decisions on gut feel, model price-pack architecture and promotion ROI up front to plan trade investment with visibility into what it returns.",
               buyers: [
                 { title: "CFO / VP Finance (Revenue)", challenge: "Trade spend is one of the largest line items on the P&L with the least visibility into what it actually returns." },
                 { title: "VP Revenue Growth Management / Commercial Strategy", challenge: "Price-pack architecture and promotion decisions are made on history and gut feel, not modeled ROI." },
@@ -1091,8 +1091,8 @@ const DATA = [
             outcomes: ["Forecast accuracy improved against baseline", "Scenarios produced in hours, not weeks", "Risk ranges instead of single-point plans"],
             scope: ["Forecast baselining and accuracy diagnostics", "Predictive model development", "Scenario and simulation library", "Forecast governance and overrides"],
             battlecard: {
-              valueProp: "Statistical and ML forecasts plus scenario modeling that replace single-point guesses with risk ranges.",
-              description: "For FP&A, planning and supply chain leaders stuck with flat, spreadsheet-driven forecasts — adds baselined predictive models and a scenario library so decisions are made against a range of outcomes, not one brittle number.",
+              valueProp: "Forecasts with risk ranges, not single-point guesses.",
+              description: "For FP&A, planning, and supply chain leaders stuck with flat spreadsheet forecasts, add statistical and ML models plus a scenario library to plan against a range of outcomes.",
               buyers: [
                 { title: "Head of FP&A / Planning", challenge: "Forecasts are single-point guesses with no sense of the range of outcomes, so every plan is wrong the moment reality shifts." },
                 { title: "Supply Chain / Demand Planning Leader", challenge: "Manual, spreadsheet-based forecasting can't keep up with demand volatility or run scenarios fast enough to matter." },
@@ -1141,8 +1141,8 @@ const DATA = [
             outcomes: ["Decisions supported by consistent numbers", "Analyst time shifted from prep to insight", "Recommendations tracked to outcomes"],
             scope: ["Planning data model and semantic layer", "Self-service analytics for planners", "Recommendation and alerting logic", "Decision logging and follow-through"],
             battlecard: {
-              valueProp: "Wrap your planning data in analytics that recommend the next move, not just report the last one.",
-              description: "For planning leaders whose platform produces numbers but no next step — adds a semantic layer, self-service analytics and recommendation logic so planners spend their time deciding, not preparing reports.",
+              valueProp: "Planning data that recommends the next move.",
+              description: "For planning leaders whose platform reports numbers but suggests no next step, add a semantic layer and recommendation logic so planners spend time deciding, not preparing reports.",
               buyers: [
                 { title: "Head of FP&A / Planning Analytics", challenge: "Planners spend most of their time preparing numbers for review, not analyzing what the numbers mean." },
                 { title: "VP Business Intelligence / Enterprise Analytics", challenge: "Planning data sits in its own silo, disconnected from the semantic layer the rest of the business already trusts." },
@@ -1191,8 +1191,8 @@ const DATA = [
             outcomes: ["Board and executive packs produced automatically", "Variance narratives generated, then reviewed", "Single set of numbers across the leadership team"],
             scope: ["Executive KPI framework", "Automated reporting and packs", "Variance and driver analysis", "Performance review cadence design"],
             battlecard: {
-              valueProp: "One executive performance view with variance explained before the CFO has to ask.",
-              description: "For CFOs and executive teams drowning in board-deck prep every cycle — replaces manual pack-building with an automated executive KPI framework that narrates variance and drivers before the meeting starts.",
+              valueProp: "One executive view. Variance explained before you ask.",
+              description: "For CFOs and executive teams drowning in board-deck prep, automate the executive KPI framework to narrate variance and drivers before the meeting starts.",
               buyers: [
                 { title: "CFO", challenge: "Spends days before every board meeting building and re-checking the executive pack instead of deciding what to do about the numbers in it." },
                 { title: "CEO / COO", challenge: "Gets a different version of 'the numbers' depending on who prepared the deck this month." },
@@ -1244,12 +1244,12 @@ const DATA = [
         promise: "Modernize data platforms, establish trust, publish data products, then operationalize and govern AI on top of them.",
         flow: ["Data Foundation", "Data Trust", "Data Products", "Analytics", "AI Platform", "AI Governance"],
         projects: [
-          { name: "Data & Platform Modernization", blurb: "Consolidate legacy warehouses and pipelines onto a modern lakehouse that can carry AI workloads.",
+          { name: "Data Platform Modernization", blurb: "Consolidate legacy warehouses and pipelines onto a modern lakehouse that can carry AI workloads.",
             outcomes: ["Legacy platform costs retired", "Pipelines that run reliably and on time", "Compute that scales with demand"],
             scope: ["Platform architecture and migration plan", "Ingestion and pipeline rebuild", "Storage, compute and cost optimization", "Legacy decommissioning"],
             battlecard: {
-              valueProp: "A scalable, governed, cost-efficient data platform that turns fragmented data into a trusted, AI-ready foundation.",
-              description: "For IT and data leaders stuck on legacy warehouses that can't scale or support self-service — consolidates pipelines onto a modern lakehouse so analytics, AI and GenAI have a foundation that doesn't need rework every time a new use case shows up.",
+              valueProp: "One data platform. AI-ready from day one.",
+              description: "For IT and data leaders stuck on legacy warehouses that can't scale, consolidate pipelines onto a modern lakehouse to give analytics and AI a foundation that doesn't need rework.",
               buyers: [
                 { title: "VP – IT / Enterprise Data", challenge: "The legacy data environment has scalability, availability and cost challenges that keep getting worse, not better." },
                 { title: "Chief Information Officer (CIO)", challenge: "Current data infrastructure doesn't support data democratization, self-service, or advanced analytics." },
@@ -1298,8 +1298,8 @@ const DATA = [
             outcomes: ["Data quality measured and improving", "Lineage traceable end to end", "Privacy obligations met by design"],
             scope: ["Data ownership and stewardship model", "Quality rules and monitoring", "Lineage and cataloging", "Privacy, retention and access controls"],
             battlecard: {
-              valueProp: "Turn your data into a trusted, compliant, reusable corporate asset instead of a liability nobody wants to own.",
-              description: "For CIOs, CDOs and finance leaders who don't trust their own data — builds ownership, quality rules, lineage and privacy controls that stand up to an audit, not just a dashboard that looks clean.",
+              valueProp: "Data governed. An asset, not a liability.",
+              description: "For CIOs, CDOs, and finance leaders who don't trust their own data, build ownership, quality rules, lineage, and privacy controls that stand up to audit.",
               buyers: [
                 { title: "Chief Information Officer (CIO)", challenge: "The business doesn't trust the data, and every reporting conversation starts by re-litigating whose numbers are right." },
                 { title: "Chief Data Officer (CDO)", challenge: "Conflicting reports and data sets with no single source of truth, and poor data quality underneath all of them." },
@@ -1348,8 +1348,8 @@ const DATA = [
             outcomes: ["Teams reuse data instead of rebuilding it", "Consistent definitions across functions", "Time-to-first-insight measured in days"],
             scope: ["Data product catalog and contracts", "Customer and product 360 build", "Consumption interfaces and APIs", "Adoption and SLA management"],
             battlecard: {
-              valueProp: "Reusable customer, product and operations 360 views published as governed data products with real consumers — not another one-off integration.",
-              description: "For CDOs and data platform leaders tired of rebuilding the same customer or product view for every new project — publishes governed, reusable data products with clear contracts and SLAs, so teams consume trusted data instead of re-extracting it.",
+              valueProp: "One 360 view, published once. Reused everywhere.",
+              description: "For CDOs and data platform leaders tired of rebuilding the same customer or product view for every project, publish governed, reusable data products with clear contracts so teams consume trusted data instead of re-extracting it.",
               buyers: [
                 { title: "Chief Data Officer (CDO)", challenge: "Every team rebuilds its own version of 'customer' or 'product' because there's no reusable, trusted data product to consume." },
                 { title: "Head of Data Products / Data Platform", challenge: "No catalog or contract exists for what data products are available, who owns them, or what SLA they're held to." },
@@ -1398,8 +1398,8 @@ const DATA = [
             outcomes: ["Report sprawl reduced", "One definition per metric", "Business users self-serving safely"],
             scope: ["Semantic layer and metric definitions", "Dashboard rationalization", "Self-service enablement and training", "Usage and value tracking"],
             battlecard: {
-              valueProp: "One governed semantic layer and self-service analytics people actually trust — instead of forty dashboards with forty versions of 'revenue.'",
-              description: "For CIOs and BI leaders drowning in report sprawl — rationalizes dashboards into a governed semantic layer with one definition per metric, so self-service analytics is safe instead of another source of conflicting numbers.",
+              valueProp: "One semantic layer. One version of every metric.",
+              description: "For CIOs and BI leaders drowning in report sprawl, rationalize dashboards into a governed semantic layer with one definition per metric to make self-service analytics safe to trust.",
               buyers: [
                 { title: "CIO / Head of Enterprise BI", challenge: "Report sprawl has gotten out of control — hundreds of dashboards, no ownership, and nobody knows which ones are still trusted." },
                 { title: "CFO", challenge: "There are multiple versions of 'revenue' or 'margin' depending on which dashboard you open, and finance has to reconcile them by hand." },
@@ -1448,8 +1448,8 @@ const DATA = [
             outcomes: ["Repeatable path from prototype to production", "Model performance monitored continuously", "Reusable components across use cases"],
             scope: ["MLOps and LLMOps tooling", "Feature and prompt management", "Deployment, evaluation and rollback", "Cost and performance monitoring"],
             battlecard: {
-              valueProp: "The platform that gets GenAI models and agents from pilot into production — and keeps them healthy once they're there.",
-              description: "For AI product owners and platform leads stuck with GenAI pilots that never scale — stands up MLOps/LLMOps, prompt and feature management, and cost/performance monitoring so models move from notebook to production with guardrails, not just enthusiasm.",
+              valueProp: "GenAI from pilot to production. Kept healthy at scale.",
+              description: "For AI product owners and platform leads stuck with pilots that never scale, stand up MLOps/LLMOps and cost and performance monitoring to move models into production with guardrails.",
               buyers: [
                 { title: "Head of AI / AI Product Owner / CAIO", challenge: "Needs to move GenAI and computer vision from pilots to production with clear guardrails, cost control and enterprise adoption." },
                 { title: "Digital Transformation / Automation Lead", challenge: "Needs to drive productivity and cycle-time reduction using GenAI without disrupting core operations." },
@@ -1498,8 +1498,8 @@ const DATA = [
             outcomes: ["Every AI use case inventoried and risk-tiered", "Regulatory obligations evidenced", "Deployment decisions made with clear criteria"],
             scope: ["AI readiness assessment", "Policy, risk tiering and approval gates", "Evaluation, bias and safety testing", "Oversight forum and reporting"],
             battlecard: {
-              valueProp: "The inventory, risk tiering, evaluation and oversight that turn AI governance from a slide into evidence regulators and the board actually accept.",
-              description: "For risk, legal and AI leaders scaling AI use cases faster than they can govern them — builds an AI use-case inventory, risk-tiering model and approval gates so deployment decisions are made on clear criteria, before scale becomes exposure.",
+              valueProp: "AI governance you can prove, not just present.",
+              description: "For risk, legal, and AI leaders scaling AI faster than they can govern it, build a use-case inventory, risk-tiering model, and approval gates to make deployment decisions defensible before scale becomes exposure.",
               buyers: [
                 { title: "Chief AI Officer / Head of AI", challenge: "AI use cases are multiplying faster than anyone can inventory or risk-tier them, and nobody can say with confidence what's actually in production." },
                 { title: "Chief Risk Officer / CISO", challenge: "No consistent risk-tiering or approval gate exists before an AI use case goes live, so exposure is discovered after the fact, not before." },
@@ -1555,8 +1555,8 @@ const DATA = [
             outcomes: ["Single source of truth per content type", "Duplicate and stale content removed", "Faster publication cycles"],
             scope: ["Content inventory and audit", "Taxonomy and metadata standards", "Authoring and publishing workflow", "Lifecycle and archival policy"],
             battlecard: {
-              valueProp: "Control over how enterprise content gets created, stored, versioned and retired — the foundation every knowledge and AI initiative downstream depends on.",
-              description: "For content and knowledge leaders drowning in duplicate, stale and ungoverned content across systems — builds a content inventory, taxonomy and lifecycle policy so there's a single source of truth per content type before anything gets turned into knowledge or AI context.",
+              valueProp: "One source of truth per content type. Built to last.",
+              description: "For content and knowledge leaders drowning in duplicate, stale content across systems, build an inventory, taxonomy, and lifecycle policy to establish a single source of truth before it feeds AI or knowledge initiatives.",
               buyers: [
                 { title: "Head of Content Operations / Enterprise Content", challenge: "Content is duplicated across a dozen systems with no single source of truth, and nobody knows which version is current." },
                 { title: "CIO / Head of Digital Workplace", challenge: "Content sprawl is driving up storage and search costs with no lifecycle or archival policy to control it." },
@@ -1605,8 +1605,8 @@ const DATA = [
             outcomes: ["Unstructured content made retrievable", "Knowledge maintained by owners, not projects", "Answer coverage measurably wider"],
             scope: ["Source prioritization and extraction", "Chunking, tagging and structuring", "Knowledge authoring standards", "Freshness and review cycles"],
             battlecard: {
-              valueProp: "Documents, tickets and transcripts turned into structured, machine-usable knowledge — so answer coverage actually gets wider, not just faster to search.",
-              description: "For knowledge and AI leaders whose unstructured content sits unused because nothing can retrieve it reliably — extracts, chunks and structures documents, tickets and transcripts into knowledge that's maintained by its owners, not by a project team that disbands after go-live.",
+              valueProp: "Unstructured content turned into answers, not archives.",
+              description: "For knowledge and AI leaders whose unstructured content can't be reliably retrieved, extract and structure documents, tickets, and transcripts into knowledge maintained by its owners to widen answer coverage.",
               buyers: [
                 { title: "Head of Knowledge Management", challenge: "Most of the organization's knowledge sits in unstructured documents and tickets that no search tool or assistant can retrieve reliably." },
                 { title: "Head of Customer Service / Support", challenge: "Agents and bots keep giving inconsistent answers because the underlying knowledge was never structured or reviewed for freshness." },
@@ -1655,8 +1655,8 @@ const DATA = [
             outcomes: ["Consistent answers across channels", "One knowledge asset serving many use cases", "Reduced duplicate knowledge maintenance"],
             scope: ["Knowledge graph and entity model", "Glossary and canonical definitions", "Federation across source systems", "Governance and ownership"],
             battlecard: {
-              valueProp: "One shared knowledge base — entities, relationships, canonical definitions — that every assistant and channel draws from instead of building its own.",
-              description: "For AI and data leaders running five assistants that give five different answers to the same question — builds a knowledge graph and canonical definition set that federates across source systems, so every assistant relies on the same shared foundation.",
+              valueProp: "One knowledge base. Every assistant, one answer.",
+              description: "For AI and data leaders running assistants that give different answers to the same question, build a federated knowledge graph and canonical definitions every assistant draws from.",
               buyers: [
                 { title: "Chief Data / Knowledge Officer", challenge: "Every business unit maintains its own version of core entities and definitions, so nothing reconciles across the enterprise." },
                 { title: "Head of AI / Conversational Assistants", challenge: "Each assistant or channel has built its own knowledge base independently, and they give inconsistent answers to the same question." },
@@ -1705,8 +1705,8 @@ const DATA = [
             outcomes: ["Answers respect existing entitlements", "Every response traceable to a source", "Sensitive content kept out of prompts"],
             scope: ["Context layer architecture", "Permission and entitlement propagation", "Provenance and citation handling", "Policy enforcement and redaction"],
             battlecard: {
-              valueProp: "Precise control over what context every AI system can see — permissions, provenance and policy attached to every response, not just the model.",
-              description: "For CISOs and AI platform leads worried that GenAI will surface something it shouldn't — controls exactly what context each AI system can see, so answers respect existing entitlements, every response is traceable to a source, and sensitive content never reaches a prompt.",
+              valueProp: "Every AI response, governed by permission and source.",
+              description: "For CISOs and AI platform leads worried GenAI will surface what it shouldn't, control exactly what context each AI system can see so responses respect entitlements and stay traceable to a source.",
               buyers: [
                 { title: "Chief Information Security Officer (CISO)", challenge: "Worried that GenAI assistants will surface sensitive or entitlement-restricted content to users who shouldn't see it." },
                 { title: "Head of AI / AI Platform", challenge: "Every new AI use case has to re-solve permissions and context filtering from scratch, because there's no shared context layer to build on." },
@@ -1755,8 +1755,8 @@ const DATA = [
             outcomes: ["Answer accuracy measured and improving", "Hallucination rate driven down", "Agents grounded in approved sources"],
             scope: ["Retrieval architecture and tuning", "Evaluation harness and golden sets", "Grounding and citation design", "Continuous quality monitoring"],
             battlecard: {
-              valueProp: "Retrieval tuned and evaluated well enough that agents are actually accurate — not just fast to answer.",
-              description: "For AI and product leaders whose agents hallucinate or give inconsistent answers — tunes retrieval architecture, builds an evaluation harness with golden sets, and grounds every response in approved sources so accuracy is measured and improving, not just hoped for.",
+              valueProp: "Retrieval tuned for accuracy, not just speed.",
+              description: "For AI and product leaders whose agents hallucinate or answer inconsistently, tune retrieval and build an evaluation harness grounded in approved sources to measure and improve accuracy.",
               buyers: [
                 { title: "Head of AI / ML Engineering", challenge: "Retrieval quality is the actual bottleneck on agent accuracy, but there's no evaluation harness to measure or improve it systematically." },
                 { title: "Head of Customer Service / CX", challenge: "Agents give confident-sounding but wrong answers often enough that agents and customers have stopped trusting them." },
@@ -1805,8 +1805,8 @@ const DATA = [
             outcomes: ["Presence in AI-generated answers tracked", "Inaccurate representations corrected", "Structured data working for machines and people"],
             scope: ["AI answer-engine monitoring", "Structured data and schema markup", "Authoritative source publishing", "Ongoing optimization program"],
             battlecard: {
-              valueProp: "Make sure your brand is found, quoted and represented correctly by ChatGPT, Perplexity, Google AI Overviews and every other AI answer engine — before someone else's content answers for you.",
-              description: "For CMOs and brand leaders discovering their competitors get quoted by AI answer engines and they don't — tracks brand presence in AI-generated answers, corrects inaccurate representations, and publishes the structured data and authoritative sources that get a brand cited correctly.",
+              valueProp: "Found, quoted, and represented correctly by AI.",
+              description: "For CMOs and brand leaders whose competitors get quoted by AI answer engines and they don't, track brand presence and publish the structured data that earns accurate citation.",
               buyers: [
                 { title: "CMO / VP Marketing", challenge: "Has no visibility into whether or how the brand is represented in ChatGPT, Perplexity or Google AI Overviews — and increasingly, that's where buyers are getting answers." },
                 { title: "Head of SEO / Digital", challenge: "Traditional SEO tactics don't translate directly to how generative answer engines select and cite sources, and the team has no playbook for the difference." },
@@ -1862,8 +1862,8 @@ const DATA = [
             outcomes: ["Legacy maintenance burden reduced", "Release frequency increased", "Modernization sequenced by value, not by age"],
             scope: ["Application portfolio assessment", "Disposition strategy per application", "Refactor and re-architecture delivery", "Decommissioning and data migration"],
             battlecard: {
-              valueProp: "A phased, low-risk path to modernize the applications where the business case is strongest — without disrupting the business they run.",
-              description: "For CTOs and application owners running expensive, brittle legacy systems — assesses the estate and modernizes what's worth modernizing, in a phased way that keeps business and customer experience uninterrupted.",
+              valueProp: "Modernize what matters most. Low risk, phased.",
+              description: "For CTOs and application owners running expensive, brittle legacy systems, assess the estate and modernize where the business case is strongest without disrupting the business it runs.",
               buyers: [
                 { title: "Chief Technology Officer (CTO)", challenge: "Legacy systems are expensive to run, depend on scarce skills, and increase the risk of outages and business disruption." },
                 { title: "Head of IT, Security & Digital Experience", challenge: "Older platforms struggle to integrate with modern cloud, data, AI and customer-experience technologies, slowing innovation." },
@@ -1908,12 +1908,12 @@ const DATA = [
                 { objection: "We just modernized our infrastructure — isn't that enough?", answer: "Infrastructure and applications are different problems — a modern cloud running the same brittle application only moves where the risk lives, it doesn't remove it." }
               ]
             } },
-          { name: "Commerce & Digital Platform Engineering", blurb: "Engineer the digital platforms — commerce, portals, DX — that customer-facing teams build on.",
+          { name: "Commerce & Digital Platforms", blurb: "Engineer the digital platforms — commerce, portals, DX — that customer-facing teams build on.",
             outcomes: ["Faster delivery of new experiences", "Shared components across channels", "Performance and accessibility standards met"],
             scope: ["Composable platform architecture", "Front-end and design system engineering", "Headless integration patterns", "Performance and accessibility hardening"],
             battlecard: {
-              valueProp: "Digital platform engineering — commerce, portals, experience — built for speed, personalization and scale, without rebuilding your engineering team.",
-              description: "For CMOs and CTOs whose martech roadmap moves too slowly to compete — engineers composable, headless commerce and experience platforms so campaigns and experiences ship in weeks, not quarters.",
+              valueProp: "Digital platforms engineered for speed and scale.",
+              description: "For CMOs and CTOs whose martech roadmap moves too slowly to compete, engineer composable, headless commerce and experience platforms to ship campaigns in weeks.",
               buyers: [
                 { title: "CMO / VP Marketing", challenge: "The technology roadmap moves too slowly; campaigns and experiences can't launch fast enough to compete." },
                 { title: "CTO / VP Engineering", challenge: "Marketing technology demands compete with the core product roadmap, and specialized martech skills are scarce internally." },
@@ -1958,12 +1958,12 @@ const DATA = [
                 { objection: "Our current platform can't support personalization at scale — replacing it feels risky.", answer: "We design the composable architecture and migration path so personalization and experimentation capabilities can be added without a disruptive full re-platform." }
               ]
             } },
-          { name: "Integration & Cloud Transformation", blurb: "Migrate workloads and connect them with an integration layer that doesn't become the next legacy.",
+          { name: "Integration & Cloud Transformation", blurb: "Unify applications and data with an integration layer designed for continuous change.",
             outcomes: ["Workloads running on target cloud", "Point-to-point interfaces replaced by APIs", "Cloud spend under active management"],
             scope: ["Migration waves and landing zones", "API and event architecture", "Integration platform build", "FinOps and cost governance"],
             battlecard: {
-              valueProp: "Migrate, modernize and connect workloads with an integration layer that doesn't become the next legacy stack.",
-              description: "For CTOs and infrastructure leaders migrating to cloud — replaces point-to-point interfaces with an API and event architecture, and puts FinOps in place from day one so cloud spend stays under active management, not a surprise.",
+              valueProp: "Cloud migration with an integration layer built to last.",
+              description: "For CTOs and infrastructure leaders migrating to cloud, replace point-to-point interfaces with an API and event architecture and put FinOps in place to keep spend under active management.",
               buyers: [
                 { title: "Chief Technology Officer (CTO)", challenge: "Needs to assess infrastructure footprint and design a strategy to migrate, modernize and hit optimal performance." },
                 { title: "Chief Finance Officer (CFO)", challenge: "Needs to analyze infrastructure spend and ROI, and implement ongoing cost optimization and savings." },
@@ -2008,12 +2008,12 @@ const DATA = [
                 { objection: "We don't have the internal team to run this after migration.", answer: "We offer 24x7 monitoring and managed support models, so operations stay smooth without requiring you to staff up internally." }
               ]
             } },
-          { name: "Platform Engineering & Developer Enablement", blurb: "Give engineering teams paved roads: golden paths, self-service environments and reusable pipelines.",
+          { name: "Developer Experience & Engineering Transformation", blurb: "Give engineering teams paved roads: golden paths, self-service environments and reusable pipelines.",
             outcomes: ["Lead time from commit to production reduced", "Environments provisioned in minutes", "Standards adopted because they're easier"],
             scope: ["Internal developer platform design", "CI/CD and golden path templates", "Environment and infrastructure automation", "Developer experience measurement"],
             battlecard: {
-              valueProp: "Golden paths, self-service environments and reusable pipelines that make the right way the easy way for every engineering team.",
-              description: "For CTOs and VPs of Engineering losing developer time to environment setup and inconsistent tooling — builds an internal developer platform with golden paths and self-service infrastructure, so standards get adopted because they're easier, not because they're mandated.",
+              valueProp: "Golden paths. The easy way is the right way.",
+              description: "For CTOs and VPs of Engineering losing developer time to environment setup, build an internal developer platform with golden paths and self-service infrastructure so standards get adopted because they're easier.",
               buyers: [
                 { title: "CTO / VP Engineering", challenge: "Lead time from commit to production varies wildly by team, and nobody has a consistent view of why." },
                 { title: "Head of Platform Engineering / DevOps", challenge: "Every team maintains its own CI/CD pipelines and environment setup, duplicating effort and drifting out of sync with each other." },
@@ -2058,12 +2058,12 @@ const DATA = [
                 { objection: "We tried an internal developer platform before and it stalled.", answer: "Most stalled IDPs skip developer experience measurement and adoption tracking — we treat those as first-class deliverables, not an afterthought once the platform ships." }
               ]
             } },
-          { name: "Secure & Efficient Operations", blurb: "Build security and observability into the run model rather than bolting them on after incidents.",
+          { name: "Service Reliability Engineering", blurb: "Build security and observability into the engineering lifecycle rather than bolting them on after incidents.",
             outcomes: ["Mean time to detect and recover reduced", "Security controls evidenced continuously", "Fewer high-severity incidents"],
             scope: ["Observability and SRE practices", "Security controls and shift-left testing", "Incident and problem management", "Resilience and DR testing"],
             battlecard: {
-              valueProp: "Security and observability built into how the estate runs, not bolted on after the next incident.",
-              description: "For CISOs and SRE leaders tired of finding out about incidents from customers before their own monitoring — builds observability, shift-left security testing and resilience testing into the run model, so mean time to detect and recover actually drops instead of being a slide in the postmortem.",
+              valueProp: "Security and observability, built in from day one.",
+              description: "For CISOs and SRE leaders who find out about incidents from customers first, build observability, shift-left security, and resilience testing into the run model to cut time to detect and recover.",
               buyers: [
                 { title: "Chief Information Security Officer (CISO)", challenge: "Security controls exist on paper but can't be evidenced continuously, which becomes a scramble every audit cycle." },
                 { title: "VP Engineering / Site Reliability", challenge: "Mean time to detect and recover from incidents is inconsistent across services because observability practices vary team by team." },
@@ -2112,8 +2112,8 @@ const DATA = [
             outcomes: ["Predictable run cost", "Committed availability and response SLAs", "Continuous improvement built into the contract"],
             scope: ["Service transition and knowledge capture", "L1–L3 support model", "Release and change management", "Continuous improvement backlog"],
             battlecard: {
-              valueProp: "Run the estate under SLA with a team that keeps improving it — predictable cost and committed availability, not just a headcount replacement.",
-              description: "For CIOs and CFOs tired of unpredictable run costs and firefighting-only support teams — takes over the estate under committed SLAs with an L1–L3 support model and a continuous improvement backlog built into the contract, so the platform gets better every quarter, not just kept alive.",
+              valueProp: "Run under SLA. Improving every quarter, not just alive.",
+              description: "For CIOs and CFOs tired of unpredictable run costs and firefighting-only support, run the estate under committed SLAs with a continuous improvement backlog built into the contract.",
               buyers: [
                 { title: "CIO", challenge: "Run costs are unpredictable and support quality varies by whoever happens to be on call that week." },
                 { title: "CFO", challenge: "Wants a fixed, predictable cost for running the estate instead of variable costs that spike whenever something breaks." },
@@ -2173,22 +2173,304 @@ const DATA = [
         projects: [
           { name: "Workforce Enablement & Employee Experience", blurb: "Give employees the same quality of service the business gives customers — HR, IT and payroll included.",
             outcomes: ["Faster resolution of employee requests", "Higher employee satisfaction with internal services", "Manual HR administration reduced"],
-            scope: ["Employee journey mapping", "HR and payroll service operations", "Self-service and assistant deployment", "Case management and analytics"] },
+            scope: ["Employee journey mapping", "HR and payroll service operations", "Self-service and assistant deployment", "Case management and analytics"],
+            battlecard: {
+              valueProp: "One employee experience. Answers as fast as customers get.",
+              description: "For CHROs and IT leaders running HR, IT, and payroll as separate support silos, unify employee journeys onto one service model with self-service and assisted resolution to raise satisfaction and cut resolution time.",
+              buyers: [
+                { title: "CHRO", challenge: "HR service delivery still runs on email and shared inboxes, so simple requests take days and employees notice the gap with how customers get served." },
+                { title: "CIO / Head of IT Service", challenge: "IT, HR and payroll each run separate ticketing and case tools, so an employee's request bounces between systems before anyone owns it." },
+                { title: "VP People Operations", challenge: "Manual HR administration — the same document requests, status checks and policy questions — consumes the team instead of higher-value people work." },
+                { title: "CFO", challenge: "Employee support cost per case keeps climbing, and there's no consistent measure of employee satisfaction to justify further investment." },
+                { title: "Head of Employee Experience", challenge: "Employees compare internal service to what they get as a customer elsewhere, and the comparison isn't close." }
+              ],
+              keyMessages: [
+                "We give employees the same quality of service the business gives customers — HR, IT and payroll unified into one employee journey with self-service and assisted resolution, so faster answers don't depend on which system happens to own the request.",
+                "This is the first step in Employee & Enterprise Operations: journeys and case data captured here feed directly into the shared service desk, automation, and risk and customer operations that follow, instead of each function building its own silo."
+              ],
+              quickPitch: {
+                pitch: "We map the employee journey across HR, IT and payroll, then deploy self-service and assistant-led resolution against the requests that actually drive volume — so employees get faster answers and the team stops drowning in repetitive administration.",
+                points: [
+                  "Employee journey mapping that targets the highest-volume, most frustrating moments first, not a generic HR process review",
+                  "Self-service and assistant deployment integrated with HR, IT and payroll systems, so requests get resolved, not just logged",
+                  "Case management and analytics that make resolution time and satisfaction visible by request type, not just in aggregate"
+                ],
+                cta: "Offer an employee journey and request-volume audit to identify the top 5 request types worth automating first"
+              },
+              platforms: ["HR service delivery (ServiceNow HRSD, Workday)", "IT service management (ServiceNow, Jira Service Management)", "Conversational assistants and self-service portals"],
+              capabilities: {
+                subhead: "Journey, Self-Service & Case Analytics",
+                items: [
+                  "Employee journey mapping",
+                  "HR and payroll service operations design",
+                  "Self-service and assistant deployment",
+                  "Case management and analytics",
+                  "Employee satisfaction measurement"
+                ]
+              },
+              whyHGS: [
+                { reason: "Journeys mapped to real request volume", proof: "Employee journey mapping starts from actual request data, so the highest-volume, highest-frustration moments get fixed first, not whichever process is easiest to document." },
+                { reason: "Same discipline as customer experience work", proof: "Self-service and case management design draws on the same containment and journey-design discipline applied to customer self-service, not a separate, less rigorous internal-facing standard." },
+                { reason: "Feeds the rest of Employee & Enterprise Operations", proof: "Case data and journey maps built here are the direct input to the shared service desk and automation work that follows, so nothing gets rebuilt downstream." },
+                { reason: "Satisfaction measured, not assumed", proof: "Employee satisfaction is baselined and tracked by request type, so improvement is evidenced against a real number, not a generic engagement survey." }
+              ],
+              objections: [
+                { objection: "We already have an HR ticketing system.", answer: "A ticketing system logs requests; it doesn't unify HR, IT and payroll into one journey or resolve anything through self-service — that's the gap this closes." },
+                { objection: "Employees won't trust a bot with HR or payroll questions.", answer: "Self-service starts on the highest-volume, lowest-risk requests and escalates gracefully to a person, the same containment discipline used in customer-facing self-service." },
+                { objection: "This feels like an HR project, not something IT should be funding.", answer: "It's designed to serve HR, IT and payroll requests together, which is exactly why it needs to sit above any single function's budget or tool." },
+                { objection: "How do we know this will actually improve satisfaction?", answer: "Employee satisfaction is baselined by request type before anything ships, so improvement gets measured against your own numbers, not a vendor claim." }
+              ]
+            } },
           { name: "Enterprise Service Operations", blurb: "Run internal service desks as one operation with shared intake, routing and knowledge.",
             outcomes: ["Single front door for internal requests", "Lower cost per ticket", "Fewer tickets bounced between teams"],
-            scope: ["Unified service catalog and intake", "Routing and fulfillment automation", "Knowledge and self-help", "Service level design and reporting"] },
+            scope: ["Unified service catalog and intake", "Routing and fulfillment automation", "Knowledge and self-help", "Service level design and reporting"],
+            battlecard: {
+              valueProp: "One front door for every internal request.",
+              description: "For CIOs and shared-services leaders running separate service desks per function, unify intake, routing, and knowledge into one operation to lower cost per ticket and stop requests bouncing between teams.",
+              buyers: [
+                { title: "CIO / Head of Shared Services", challenge: "Employees don't know which of five service desks to contact, so requests bounce between teams before landing with the right owner." },
+                { title: "Head of Service Delivery", challenge: "Cost per ticket keeps climbing because every function runs its own intake, routing and knowledge base instead of sharing one." },
+                { title: "Chief Operating Officer", challenge: "No single view of service performance exists across HR, IT, finance and facilities, so problems get spotted by complaint, not by data." },
+                { title: "Head of Knowledge Management", challenge: "Knowledge articles are duplicated and inconsistent across service desks, so the same question gets answered differently depending on who picks up the ticket." },
+                { title: "VP Employee Experience", challenge: "Employees give up on a request and escalate informally because they can't tell if it's stuck or just slow." }
+              ],
+              keyMessages: [
+                "We run internal service desks as one operation with shared intake, routing and knowledge — a single front door for every request, so employees stop guessing which team to contact and requests stop bouncing between them.",
+                "This is the second step in Employee & Enterprise Operations: once one operation exists, the automation, finance and risk plays that follow route through it instead of standing up their own intake and reporting layer."
+              ],
+              quickPitch: {
+                pitch: "We consolidate service desks into one operation with a shared catalog, intake and knowledge base — so cost per ticket drops and requests stop bouncing between teams that don't share a system.",
+                points: [
+                  "Unified service catalog and intake that gives employees one place to ask, regardless of which function owns the answer",
+                  "Routing and fulfillment automation that gets a request to the right owner the first time, not after two reassignments",
+                  "Service level design and reporting that gives one performance view across every function sharing the desk"
+                ],
+                cta: "Offer a service desk consolidation audit comparing current cost-per-ticket and reassignment rates across functions"
+              },
+              platforms: ["ITSM & shared services platforms (ServiceNow, Jira Service Management)", "Knowledge management & self-help tooling", "Workflow and routing automation"],
+              capabilities: {
+                subhead: "Catalog, Routing & Knowledge Consolidation",
+                items: [
+                  "Unified service catalog and intake design",
+                  "Routing and fulfillment automation",
+                  "Knowledge and self-help consolidation",
+                  "Service level design and reporting",
+                  "Cross-functional performance dashboards"
+                ]
+              },
+              whyHGS: [
+                { reason: "One operation, not a federation of desks", proof: "Intake, routing and knowledge are consolidated into a single operating model, not a shared ticket tool sitting on top of desks that still work independently." },
+                { reason: "Reassignments measured and reduced", proof: "Routing automation is designed and measured specifically against reassignment rate, which is the real driver of both cost per ticket and employee frustration." },
+                { reason: "Built on the same foundation as Workforce Enablement", proof: "Service operations here consume the same employee journey and case data captured in Workforce Enablement & Employee Experience, so the two plays reinforce rather than duplicate each other." },
+                { reason: "Reporting the business can act on", proof: "Service level design and reporting give one performance view across functions, replacing the per-desk dashboards nobody outside that function ever sees." }
+              ],
+              objections: [
+                { objection: "Each function wants to keep its own service desk.", answer: "Consolidation is at the intake, routing and knowledge layer, not a mandate to give up functional ownership — each team keeps its process, employees just stop having to know which one to ask." },
+                { objection: "This sounds like a big platform migration.", answer: "We can start by unifying intake and knowledge on top of existing tools before any platform consolidation is on the table, proving the model before a migration decision is needed." },
+                { objection: "How do we know cost per ticket will actually go down?", answer: "The audit baselines current cost-per-ticket and reassignment rates by function, so the improvement is measured against your own numbers." },
+                { objection: "IT will resist losing control of its own queue.", answer: "IT keeps ownership of IT resolution — what changes is the shared front door and routing layer in front of it, not who does the work once a ticket lands." }
+              ]
+            } },
           { name: "Finance & Back-Office Operations", blurb: "Operate order-to-cash, procure-to-pay and record-to-report with automation embedded in the process.",
             outcomes: ["Touchless processing on high-volume transactions", "Cycle times and error rates reduced", "Cleaner close with fewer adjustments"],
-            scope: ["Process discovery and standardization", "Document and invoice automation", "Exception handling and controls", "Managed transaction operations"] },
+            scope: ["Process discovery and standardization", "Document and invoice automation", "Exception handling and controls", "Managed transaction operations"],
+            battlecard: {
+              valueProp: "Touchless finance ops. Faster close, fewer errors.",
+              description: "For CFOs and finance operations leaders running order-to-cash and procure-to-pay manually, embed automation directly into the process to raise touchless processing and shorten close cycles.",
+              buyers: [
+                { title: "CFO", challenge: "Manual processing on high-volume transactions drives up cost and error rates in exactly the processes that should be the most standardized." },
+                { title: "Controller", challenge: "Close takes longer than it should because reconciliation and adjustments depend on manual review that automation could catch earlier." },
+                { title: "Head of Finance Operations / Shared Services", challenge: "Order-to-cash and procure-to-pay run as separate manual processes with no consistent exception handling." },
+                { title: "Head of Accounts Payable", challenge: "Invoice processing is still largely manual, so exceptions pile up and payment terms get missed." },
+                { title: "Head of Internal Controls", challenge: "Controls exist on paper but depend on people remembering to apply them consistently across every transaction." }
+              ],
+              keyMessages: [
+                "We operate order-to-cash, procure-to-pay and record-to-report with automation embedded in the process — touchless processing on high-volume transactions, not automation bolted on after the manual work is already done.",
+                "Cycle times and error rates come down together, and the close gets cleaner with fewer adjustments, because exception handling and controls catch problems at the point they occur instead of during a painful reconciliation."
+              ],
+              quickPitch: {
+                pitch: "We embed document and invoice automation, exception handling and controls directly into order-to-cash, procure-to-pay and record-to-report — so high-volume transactions process touchless and the close gets faster and cleaner.",
+                points: [
+                  "Process discovery and standardization that targets the highest-volume, most error-prone transaction types first",
+                  "Document and invoice automation that removes manual entry, not just digitizes the paper trail",
+                  "Managed transaction operations that keep the numbers improving after go-live, not just at launch"
+                ],
+                cta: "Offer a touchless-processing diagnostic on their highest-volume transaction type to size the automation opportunity"
+              },
+              platforms: ["ERP & finance platforms (SAP, Oracle, NetSuite)", "Invoice & document automation (OCR, RPA, intelligent document processing)", "Managed finance operations and controls tooling"],
+              capabilities: {
+                subhead: "Process, Automation & Managed Operations",
+                items: [
+                  "Process discovery and standardization",
+                  "Document and invoice automation",
+                  "Exception handling and controls design",
+                  "Managed transaction operations",
+                  "Cycle time and error rate measurement"
+                ]
+              },
+              whyHGS: [
+                { reason: "Touchless rate measured, not assumed", proof: "Touchless processing rate is baselined and tracked by transaction type, so the automation gain is evidenced against a real starting point." },
+                { reason: "Controls built into the process, not around it", proof: "Exception handling and controls are designed into the transaction flow itself, catching errors at the point they occur instead of during a reconciliation weeks later." },
+                { reason: "Managed operations, not just a one-time build", proof: "Transaction operations are run and continuously improved under a managed service, so gains compound instead of eroding after the project team leaves." },
+                { reason: "Proven across finance shared services at scale", proof: "Delivered order-to-cash, procure-to-pay and record-to-report operations for enterprise clients running high transaction volumes across multiple ERPs and regions." }
+              ],
+              objections: [
+                { objection: "We already have RPA on some of these processes.", answer: "Point RPA on individual steps rarely reaches touchless end to end — we look at the whole transaction flow, including the exceptions bots usually can't handle." },
+                { objection: "Automation projects here always take longer than promised.", answer: "We start with the highest-volume, most standardized transaction type, so touchless gains show up quickly instead of waiting on a full-process rebuild." },
+                { objection: "We're worried automation will hide errors instead of catching them.", answer: "Exception handling and controls are designed to surface and route problems, not silently pass them through — that's the difference between automation and unmonitored automation." },
+                { objection: "How is this different from just outsourcing the function?", answer: "The value is automation embedded in the process; managed operations run on top of it, so cost comes down structurally, not just from moving headcount to a lower-cost location." }
+              ]
+            } },
           { name: "Procurement & Compliance Operations", blurb: "Run sourcing, supplier and compliance operations so obligations are met without slowing the business.",
             outcomes: ["Supplier onboarding time reduced", "Contract and policy compliance evidenced", "Maverick spend visible and reduced"],
-            scope: ["Source-to-contract operations", "Supplier onboarding and due diligence", "Contract and policy compliance monitoring", "Spend analytics and reporting"] },
+            scope: ["Source-to-contract operations", "Supplier onboarding and due diligence", "Contract and policy compliance monitoring", "Spend analytics and reporting"],
+            battlecard: {
+              valueProp: "Sourcing and compliance that don't slow the business.",
+              description: "For procurement and compliance leaders whose supplier onboarding and contract compliance rely on manual checks, run source-to-contract and compliance monitoring as one operation to cut onboarding time and reduce maverick spend.",
+              buyers: [
+                { title: "CPO / Head of Procurement", challenge: "Supplier onboarding takes weeks because due diligence and contract setup are handled manually, one supplier at a time." },
+                { title: "Chief Compliance Officer", challenge: "Contract and policy compliance is asserted, not evidenced, so every audit becomes a scramble to prove obligations were actually met." },
+                { title: "CFO", challenge: "Maverick spend outside approved contracts and suppliers is invisible until it shows up in a spend analysis months later." },
+                { title: "Head of Supplier Management", challenge: "Supplier due diligence and risk monitoring aren't consistently applied, so the business inherits risk it never assessed." },
+                { title: "General Counsel", challenge: "Contract compliance monitoring is manual and reactive, so breaches or missed obligations surface only after they matter." }
+              ],
+              keyMessages: [
+                "We run sourcing, supplier and compliance operations so obligations are met without slowing the business — supplier onboarding time comes down and contract and policy compliance gets evidenced continuously, not reconstructed for the next audit.",
+                "Maverick spend becomes visible and reduced because spend analytics and compliance monitoring run as part of the same operation, not a separate reporting exercise nobody acts on."
+              ],
+              quickPitch: {
+                pitch: "We run source-to-contract, supplier onboarding and compliance monitoring as one operation — so obligations get met and evidenced continuously, and suppliers get onboarded in days, not weeks.",
+                points: [
+                  "Source-to-contract operations that standardize sourcing and contracting instead of leaving each category team to run its own process",
+                  "Supplier onboarding and due diligence that gets a supplier ready to transact faster without skipping risk checks",
+                  "Spend analytics and reporting that surface maverick spend as it happens, not in a quarterly retrospective"
+                ],
+                cta: "Offer a supplier onboarding and compliance audit to baseline current cycle time and maverick spend"
+              },
+              platforms: ["Source-to-contract platforms (Coupa, SAP Ariba, Jaggaer)", "Supplier risk & due diligence tooling", "Spend analytics and compliance monitoring tooling"],
+              capabilities: {
+                subhead: "Sourcing, Onboarding & Compliance Monitoring",
+                items: [
+                  "Source-to-contract operations",
+                  "Supplier onboarding and due diligence",
+                  "Contract and policy compliance monitoring",
+                  "Spend analytics and reporting",
+                  "Maverick spend identification and remediation"
+                ]
+              },
+              whyHGS: [
+                { reason: "Onboarding time measured and reduced", proof: "Supplier onboarding cycle time is baselined by category, so the improvement from standardized due diligence is evidenced, not assumed." },
+                { reason: "Compliance evidenced continuously", proof: "Contract and policy compliance monitoring produces ongoing evidence, replacing the scramble to reconstruct proof before every audit cycle." },
+                { reason: "Maverick spend surfaced, not just reported", proof: "Spend analytics are built to flag maverick spend as it happens, so category owners can act on it instead of discovering it in a retrospective report." },
+                { reason: "Proven procurement operations at scale", proof: "Delivered source-to-contract and supplier operations for enterprise clients managing large, multi-category supplier bases across regions." }
+              ],
+              objections: [
+                { objection: "We already have a procurement platform.", answer: "A platform supports the process; it doesn't run onboarding, due diligence and compliance monitoring as an operation — that discipline is what actually shortens cycle time and reduces maverick spend." },
+                { objection: "Compliance monitoring sounds like it will slow down sourcing.", answer: "Monitoring runs alongside sourcing, not as a gate in front of it — the goal is continuous evidence, not an added approval step for every transaction." },
+                { objection: "Our supplier base is too fragmented and complex.", answer: "We start with the highest-risk or highest-spend supplier categories first, proving the model before extending it across the full supplier base." },
+                { objection: "How do we know maverick spend will actually go down?", answer: "The audit baselines current maverick spend by category, so the reduction is measured against your own numbers, not a generic industry benchmark." }
+              ]
+            } },
           { name: "Risk, Fraud & Revenue Operations", blurb: "Detect and act on fraud, leakage and risk with analysts and models working the same queues.",
             outcomes: ["Fraud losses and revenue leakage reduced", "False positives cut without raising risk", "Case handling time shortened"],
-            scope: ["Risk and fraud detection models", "Alert triage and case operations", "Revenue assurance and leakage analysis", "Regulatory reporting support"] },
+            scope: ["Risk and fraud detection models", "Alert triage and case operations", "Revenue assurance and leakage analysis", "Regulatory reporting support"],
+            battlecard: {
+              valueProp: "Fraud and leakage caught, not discovered later.",
+              description: "For risk and revenue assurance leaders running fraud and leakage detection on stretched analyst queues, pair detection models with analyst case operations to cut losses and false positives together.",
+              buyers: [
+                { title: "Chief Risk Officer", challenge: "Fraud losses and revenue leakage keep recurring because detection and investigation operate as separate, poorly coordinated functions." },
+                { title: "Head of Fraud Operations", challenge: "Analysts work through the same case queues as detection models but without a shared workflow, so effort duplicates and cases still take too long." },
+                { title: "Head of Revenue Assurance", challenge: "Revenue leakage is discovered through periodic audits instead of continuous monitoring, so the business loses months of exposure before anyone notices." },
+                { title: "CFO", challenge: "False positive rates are high enough that cutting them without raising real risk feels like an unsolved trade-off." },
+                { title: "Chief Compliance Officer", challenge: "Regulatory reporting on fraud and risk cases depends on manual case reconstruction instead of a system that documents decisions as they happen." }
+              ],
+              keyMessages: [
+                "We detect and act on fraud, leakage and risk with analysts and models working the same queues — fraud losses and revenue leakage come down because detection and investigation run as one operation, not two disconnected functions.",
+                "False positives get cut without raising risk, and case handling time shortens, because alert triage and case operations are designed together instead of treating investigation as whatever's left over after detection flags something."
+              ],
+              quickPitch: {
+                pitch: "We run risk and fraud detection models and analyst case operations as one workflow — so alerts get triaged faster, false positives come down, and leakage gets caught before it compounds.",
+                points: [
+                  "Risk and fraud detection models tuned against your actual loss and false-positive data, not a generic industry model",
+                  "Alert triage and case operations designed as one workflow, so analysts spend time on real risk, not re-qualifying what the model already flagged",
+                  "Revenue assurance and leakage analysis that runs continuously, not as a periodic audit that finds problems months late"
+                ],
+                cta: "Offer a fraud and leakage diagnostic on their highest-volume queue to quantify the false-positive and leakage opportunity"
+              },
+              platforms: ["Fraud detection & case management (NICE Actimize, SAS, FICO Falcon)", "Revenue assurance and leakage analytics tooling", "Regulatory reporting and audit trail tooling"],
+              capabilities: {
+                subhead: "Detection, Case Operations & Revenue Assurance",
+                items: [
+                  "Risk and fraud detection model tuning",
+                  "Alert triage and case operations",
+                  "Revenue assurance and leakage analysis",
+                  "Regulatory reporting support",
+                  "False-positive and case-time measurement"
+                ]
+              },
+              whyHGS: [
+                { reason: "Detection and investigation run as one operation", proof: "Analysts and models work the same queues under one workflow, instead of investigation being a disconnected function reacting to whatever detection hands over." },
+                { reason: "False positives cut without raising risk", proof: "Alert triage is tuned and measured against both false-positive rate and case handling time together, so one doesn't improve at the expense of the other." },
+                { reason: "Leakage caught continuously", proof: "Revenue assurance runs as ongoing monitoring, not a periodic audit, so exposure gets caught in weeks instead of the months a retrospective audit takes to surface it." },
+                { reason: "Audit-ready by design", proof: "Case operations document decisions and evidence as they happen, so regulatory reporting draws on a real audit trail instead of reconstructed case files." }
+              ],
+              objections: [
+                { objection: "We already have fraud detection models in place.", answer: "Detection is only half the workflow — the gains here come from pairing it with case operations designed around the same queues, which most organizations never connect." },
+                { objection: "Cutting false positives sounds risky for compliance.", answer: "We tune triage against both false-positive rate and case handling time together, with the reduction measured against your loss data, not a blanket threshold change." },
+                { objection: "Revenue leakage is hard to quantify before we start.", answer: "The diagnostic quantifies leakage on the highest-volume queue first, so the size of the opportunity is evidenced before committing to a full rollout." },
+                { objection: "Our regulatory reporting requirements are unusually complex.", answer: "Case operations are built to document decisions and evidence as they happen, which is what most regulatory reporting requirements actually need — we adapt the specific report format to your regulator." }
+              ]
+            } },
           { name: "Customer Operations & Outsourcing", blurb: "Take on customer operations at scale with a workforce model built around quality and outcomes.",
             outcomes: ["Committed service levels held at volume", "Cost per contact reduced year on year", "Quality and CSAT improved against baseline"],
-            scope: ["Transition and knowledge transfer", "Workforce management and scheduling", "Quality, coaching and CSAT programs", "Continuous productivity improvement"] }
+            scope: ["Transition and knowledge transfer", "Workforce management and scheduling", "Quality, coaching and CSAT programs", "Continuous productivity improvement"],
+            battlecard: {
+              valueProp: "Customer operations at scale, built for quality.",
+              description: "For COOs and customer operations leaders needing to scale service delivery without sacrificing quality, take on customer operations with a workforce model built around committed service levels and continuous improvement.",
+              buyers: [
+                { title: "Chief Operating Officer", challenge: "Needs to scale customer operations without service levels or quality slipping as volume grows." },
+                { title: "Head of Customer Operations", challenge: "Cost per contact needs to come down year over year, and the current operating model has no structured way to deliver that." },
+                { title: "CFO", challenge: "Wants customer operations cost to be predictable and improving, not a variable line item that only gets attention when it spikes." },
+                { title: "Head of Quality / CX", challenge: "Quality and CSAT need to improve against a real baseline, not just get reported on without a plan to move them." },
+                { title: "Head of Workforce Management", challenge: "Scheduling and capacity planning are reactive, so service levels slip whenever volume shifts unexpectedly." }
+              ],
+              keyMessages: [
+                "We take on customer operations at scale with a workforce model built around quality and outcomes — committed service levels held at volume, not just met when things are calm.",
+                "Cost per contact comes down year on year and quality and CSAT improve against baseline, because workforce management, coaching and continuous productivity improvement are built into the operating model from day one, not added after volume grows."
+              ],
+              quickPitch: {
+                pitch: "We take on customer operations with a transition plan, workforce management and quality programs built in — so committed service levels hold at volume and cost per contact keeps improving, not just holds steady.",
+                points: [
+                  "Transition and knowledge transfer designed to protect service levels from day one of cutover, not just after ramp-up",
+                  "Workforce management and scheduling that flexes capacity with actual volume, not a fixed headcount plan",
+                  "Quality, coaching and CSAT programs tied to continuous productivity improvement, not a one-time transition win"
+                ],
+                cta: "Offer a customer operations baseline and transition plan against their current cost-per-contact and CSAT numbers"
+              },
+              platforms: ["Contact center & CRM platforms (Genesys, NICE, Salesforce Service Cloud)", "Workforce management and scheduling tooling", "Quality monitoring and coaching platforms"],
+              capabilities: {
+                subhead: "Transition, Workforce & Quality Operations",
+                items: [
+                  "Transition and knowledge transfer",
+                  "Workforce management and scheduling",
+                  "Quality, coaching and CSAT programs",
+                  "Continuous productivity improvement",
+                  "Service level governance and reporting"
+                ]
+              },
+              whyHGS: [
+                { reason: "Service levels protected through transition", proof: "Transition and knowledge transfer are planned specifically to protect service levels from day one of cutover, not treated as an acceptable dip while the new team ramps up." },
+                { reason: "Cost per contact improves year over year", proof: "Continuous productivity improvement is a standing part of the operating model, so cost per contact is tracked and improved every year, not renegotiated only at contract renewal." },
+                { reason: "Quality tied to coaching, not just scoring", proof: "Quality and coaching programs are connected directly, so CSAT improvement comes from acting on quality data, not just measuring it." },
+                { reason: "Proven at scale across industries", proof: "20,000+ experts delivering customer operations across geographies and industries, with workforce models built to hold service levels through volume swings." }
+              ],
+              objections: [
+                { objection: "We already outsource some customer operations.", answer: "The differentiator is the workforce model built around committed service levels and year-on-year productivity, not just headcount delivered at a lower cost." },
+                { objection: "We're worried about losing control of quality when we outsource.", answer: "Quality, coaching and CSAT programs run as a joint operation with governance and reporting built in, so quality stays visible and accountable, not opaque." },
+                { objection: "Transitions like this always cause a service dip.", answer: "Transition and knowledge transfer are planned specifically to protect service levels during cutover, with the plan built around holding them, not accepting a dip as normal." },
+                { objection: "How do we know cost per contact will actually keep improving?", answer: "Continuous productivity improvement is a contractual part of the operating model, with year-on-year commitments tracked against a real baseline, not an aspirational target." }
+              ]
+            } }
         ]
       },
       {
@@ -2198,22 +2480,304 @@ const DATA = [
         projects: [
           { name: "Banking Operations (KYC, AML, Collections)", blurb: "Run onboarding, financial crime and collections operations to bank-grade standards.",
             outcomes: ["Onboarding turnaround reduced", "Alert backlogs cleared and kept clear", "Collections yield improved"],
-            scope: ["KYC and periodic review operations", "AML alert triage and investigation", "Collections and recoveries", "Audit-ready quality and controls"] },
+            scope: ["KYC and periodic review operations", "AML alert triage and investigation", "Collections and recoveries", "Audit-ready quality and controls"],
+            battlecard: {
+              valueProp: "Bank-grade operations. Onboarding, AML, and collections.",
+              description: "For banking operations and compliance leaders running onboarding, financial crime, and collections manually, run these operations to bank-grade standards to cut turnaround time and clear alert backlogs.",
+              buyers: [
+                { title: "COO (Banking Operations)", challenge: "Onboarding turnaround is too slow, and alert backlogs in AML keep growing faster than the team can clear them." },
+                { title: "Chief Compliance Officer / BSA Officer", challenge: "KYC and periodic review operations need to be audit-ready continuously, not scrambled together before an exam." },
+                { title: "Head of Collections", challenge: "Collections yield has plateaued, and the current operating model doesn't have a clear lever to improve it." },
+                { title: "Head of Financial Crime / AML", challenge: "Alert backlogs create regulatory exposure, and the team can't hire fast enough to keep pace with alert volume." },
+                { title: "CFO", challenge: "Wants onboarding and collections operations cost to be predictable and improving, not scaling linearly with volume." }
+              ],
+              keyMessages: [
+                "We run onboarding, financial crime and collections operations to bank-grade standards — onboarding turnaround comes down and alert backlogs get cleared and kept clear, not just worked down once before building back up.",
+                "Collections yield improves because recoveries operations are run with the same audit-ready quality and controls discipline as KYC and AML, not treated as a lower-scrutiny function."
+              ],
+              quickPitch: {
+                pitch: "We run KYC, periodic review, AML alert triage and collections operations to bank-grade standards — so onboarding is faster, backlogs stay cleared, and collections yield improves under the same quality and controls discipline.",
+                points: [
+                  "KYC and periodic review operations built to stay audit-ready continuously, not reconstructed before each exam",
+                  "AML alert triage and investigation designed to clear backlogs and keep them cleared, not just work down a one-time queue",
+                  "Collections and recoveries operations run with the same quality and controls rigor as compliance functions"
+                ],
+                cta: "Offer a KYC and AML backlog diagnostic to quantify current turnaround and clearance rates"
+              },
+              platforms: ["KYC & onboarding platforms (Fenergo, Encompass)", "AML case management (NICE Actimize, Oracle FCCM, Verafin)", "Collections and recoveries platforms"],
+              capabilities: {
+                subhead: "Onboarding, Financial Crime & Collections Operations",
+                items: [
+                  "KYC and periodic review operations",
+                  "AML alert triage and investigation",
+                  "Collections and recoveries",
+                  "Audit-ready quality and controls",
+                  "Regulatory reporting support"
+                ]
+              },
+              whyHGS: [
+                { reason: "Audit-ready continuously", proof: "Quality and controls are built into daily operations, so onboarding, AML and collections stand up to an exam at any point, not just after a pre-audit scramble." },
+                { reason: "Backlogs cleared and kept clear", proof: "AML alert triage and investigation operations are staffed and measured against sustained clearance rate, not a one-time backlog burn-down." },
+                { reason: "Deep regulated-industry operations experience", proof: "Operations run to the standards regulators actually check, drawing on the same discipline applied across HGS's regulated-industry managed services." },
+                { reason: "Collections held to the same rigor as compliance", proof: "Recoveries operations run under the same audit-ready quality and controls as KYC and AML, so yield improvement doesn't come at the cost of compliance exposure." }
+              ],
+              objections: [
+                { objection: "We already have an AML detection system.", answer: "Detection flags the alert; alert triage and investigation operations are what actually clear the backlog and keep it clear — that's a separate discipline from the detection technology." },
+                { objection: "Onboarding delays are a technology problem, not an operations one.", answer: "Technology helps, but turnaround usually comes down further and faster from a KYC operations team built to bank-grade throughput, independent of any platform change." },
+                { objection: "Collections is too commission-driven to standardize.", answer: "Standardized quality and controls don't remove commercial incentive — they make yield improvement defensible and repeatable instead of dependent on individual collector performance." },
+                { objection: "We're worried about handing off something this regulated.", answer: "Operations run to audit-ready quality and controls from day one, with the same accountability a regulator would expect from an in-house team." }
+              ]
+            } },
           { name: "Insurance Claims Operations", blurb: "Handle first notice of loss through settlement with straight-through processing where the risk allows.",
             outcomes: ["Claims cycle time reduced", "Leakage and rework reduced", "Policyholder satisfaction improved"],
-            scope: ["FNOL and intake operations", "Document ingestion and adjudication support", "Fraud and leakage checks", "Settlement and customer communications"] },
+            scope: ["FNOL and intake operations", "Document ingestion and adjudication support", "Fraud and leakage checks", "Settlement and customer communications"],
+            battlecard: {
+              valueProp: "Claims resolved faster, with less leakage.",
+              description: "For claims operations leaders running FNOL through settlement manually, deploy straight-through processing where the risk allows to cut cycle time and reduce leakage and rework.",
+              buyers: [
+                { title: "Chief Claims Officer", challenge: "Claims cycle time hasn't improved despite investment, and leakage keeps eating into the loss ratio." },
+                { title: "Head of Claims Operations", challenge: "FNOL and intake still require manual triage on claims that could safely move straight through." },
+                { title: "Head of Fraud / SIU", challenge: "Fraud and leakage checks happen too late in the process to prevent payment on cases that should have been flagged earlier." },
+                { title: "CFO", challenge: "Claims leakage and rework are a direct hit to the loss ratio, and there's no clear plan to reduce either." },
+                { title: "Head of Customer Experience (Insurance)", challenge: "Policyholder satisfaction suffers because claims settlement takes longer than customers expect, especially on simple claims." }
+              ],
+              keyMessages: [
+                "We handle first notice of loss through settlement with straight-through processing where the risk allows — claims cycle time comes down because low-risk claims don't wait behind the same manual review as complex ones.",
+                "Leakage and rework get reduced and policyholder satisfaction improves together, because fraud and leakage checks run earlier in the process, not as a final gate before payment."
+              ],
+              quickPitch: {
+                pitch: "We run FNOL through settlement with straight-through processing on the claims that qualify — so cycle time drops on the majority of claims and fraud and leakage checks catch risk earlier on the rest.",
+                points: [
+                  "FNOL and intake operations that triage claims for straight-through eligibility at first notice, not after manual review",
+                  "Document ingestion and adjudication support that speeds the claims still requiring human judgment",
+                  "Fraud and leakage checks moved earlier in the process, catching risk before settlement instead of after"
+                ],
+                cta: "Offer a claims cycle-time and leakage diagnostic across their highest-volume claim types"
+              },
+              platforms: ["Claims management platforms (Guidewire, Duck Creek)", "Document ingestion and adjudication support tooling", "Fraud and leakage detection tooling"],
+              capabilities: {
+                subhead: "Intake, Adjudication & Fraud Operations",
+                items: [
+                  "FNOL and intake operations",
+                  "Document ingestion and adjudication support",
+                  "Fraud and leakage checks",
+                  "Settlement and customer communications",
+                  "Claims cycle time measurement"
+                ]
+              },
+              whyHGS: [
+                { reason: "Straight-through where the risk allows", proof: "Claims are triaged for straight-through eligibility at FNOL, so low-risk claims move fast and complex ones get the manual attention they actually need." },
+                { reason: "Leakage caught earlier, not just audited after", proof: "Fraud and leakage checks are built into the process ahead of settlement, catching risk before payment rather than in a post-payment audit." },
+                { reason: "Policyholder experience tied to cycle time", proof: "Settlement and customer communications are designed around the same cycle-time goals as claims processing, so faster claims also mean a better-informed policyholder." },
+                { reason: "Proven regulated claims operations experience", proof: "Delivered claims operations for insurance clients balancing cycle-time, leakage and compliance requirements at volume." }
+              ],
+              objections: [
+                { objection: "Straight-through processing sounds risky for claims accuracy.", answer: "Triage is designed to route only claims that qualify for straight-through eligibility — complex or high-risk claims still get full manual adjudication." },
+                { objection: "We already have a claims management system.", answer: "The system supports the process; straight-through eligibility, earlier fraud checks and adjudication support are the operational layer that makes the system actually deliver faster, cleaner claims." },
+                { objection: "Fraud checks earlier in the process will slow down simple claims.", answer: "Earlier checks are scoped and automated to add minimal friction to low-risk claims, while catching the leakage that would otherwise only surface after payment." },
+                { objection: "How do we know cycle time and leakage will actually improve?", answer: "The diagnostic baselines current cycle time and leakage by claim type, so improvement gets measured against your own numbers." }
+              ]
+            } },
           { name: "Healthcare Member/Provider Services Operations", blurb: "Operate member and provider services with the accuracy and compliance healthcare demands.",
             outcomes: ["First-contact resolution improved", "Claims and enrollment accuracy raised", "Compliance obligations consistently met"],
-            scope: ["Member and provider contact operations", "Enrollment, eligibility and claims support", "Prior authorization workflows", "HIPAA-aligned quality and audit"] },
+            scope: ["Member and provider contact operations", "Enrollment, eligibility and claims support", "Prior authorization workflows", "HIPAA-aligned quality and audit"],
+            battlecard: {
+              valueProp: "Member and provider service, accurate and compliant.",
+              description: "For healthcare operations leaders running member and provider services manually, operate contact, enrollment, and prior authorization with the accuracy and compliance the industry demands to raise first-contact resolution.",
+              buyers: [
+                { title: "Chief Operating Officer (Payer / Health Plan)", challenge: "First-contact resolution on member and provider calls is inconsistent, and every miss risks a compliance issue as much as a service one." },
+                { title: "Head of Member Services", challenge: "Enrollment and eligibility errors create downstream claims problems that could have been caught at intake." },
+                { title: "Head of Provider Services", challenge: "Provider inquiries take too long to resolve because the team juggles multiple systems without a unified view." },
+                { title: "Head of Compliance (Healthcare)", challenge: "HIPAA-aligned quality and audit requirements add overhead to every process, and today that overhead depends on manual checks." },
+                { title: "Head of Claims Operations", challenge: "Claims accuracy issues often trace back to enrollment and eligibility errors that member services should have caught first." }
+              ],
+              keyMessages: [
+                "We operate member and provider services with the accuracy and compliance healthcare demands — first-contact resolution improves because enrollment, eligibility and claims support are handled correctly the first time, not corrected downstream.",
+                "Compliance obligations get met consistently because HIPAA-aligned quality and audit discipline runs on every contact, not as a periodic check layered on top of the operation."
+              ],
+              quickPitch: {
+                pitch: "We run member and provider contact operations with enrollment, eligibility and prior authorization support built to healthcare's accuracy and compliance standard — so first-contact resolution goes up and downstream claims errors go down.",
+                points: [
+                  "Member and provider contact operations designed around HIPAA-aligned quality from the first interaction, not bolted on after",
+                  "Enrollment, eligibility and claims support that catches errors at intake instead of downstream in claims",
+                  "Prior authorization workflows built to move faster without compromising accuracy or compliance"
+                ],
+                cta: "Offer a member services diagnostic on first-contact resolution and downstream claims-error rates"
+              },
+              platforms: ["Health plan / payer core systems (Facets, QNXT, Epic)", "Member and provider contact center platforms", "Prior authorization and eligibility tooling"],
+              capabilities: {
+                subhead: "Contact, Enrollment & Compliance Operations",
+                items: [
+                  "Member and provider contact operations",
+                  "Enrollment, eligibility and claims support",
+                  "Prior authorization workflows",
+                  "HIPAA-aligned quality and audit",
+                  "First-contact resolution measurement"
+                ]
+              },
+              whyHGS: [
+                { reason: "Accuracy and compliance from the first contact", proof: "Quality and audit standards are built into every member and provider interaction, not applied as a periodic compliance check layered on top." },
+                { reason: "Downstream claims errors caught upstream", proof: "Enrollment and eligibility support is designed to catch errors at intake, reducing the claims-accuracy problems that trace back to member services." },
+                { reason: "First-contact resolution measured by design", proof: "Resolution is tracked at first contact specifically, so improvement targets the metric that actually drives both member satisfaction and cost per contact." },
+                { reason: "Proven regulated healthcare operations experience", proof: "Delivered member and provider services operations for payer and health plan clients under HIPAA and regulatory quality requirements." }
+              ],
+              objections: [
+                { objection: "Healthcare operations feel too specialized to outsource.", answer: "Operations are built and staffed specifically to HIPAA-aligned quality and audit standards, with the specialization built into the operating model, not treated as a generic contact center overlay." },
+                { objection: "We're worried about compliance risk in a third-party operation.", answer: "HIPAA-aligned quality and audit discipline runs on every contact, with the same evidentiary standard a health plan's own compliance team would expect." },
+                { objection: "Prior authorization is too complex and payer-specific to standardize.", answer: "Workflows are configured to your specific authorization rules and payer requirements, not a generic template forced onto your process." },
+                { objection: "How do we know first-contact resolution will actually improve?", answer: "The diagnostic baselines current first-contact resolution and downstream claims-error rates, so improvement is measured against your real numbers." }
+              ]
+            } },
           { name: "CPG/Retail Operations", blurb: "Support trade, order and store operations so commercial teams can focus on growth.",
             outcomes: ["Order and deduction cycle times reduced", "Trade claims settled faster", "Retail data kept accurate and current"],
-            scope: ["Order management and deductions", "Trade promotion administration", "Master data and catalog operations", "Store and field support"] },
+            scope: ["Order management and deductions", "Trade promotion administration", "Master data and catalog operations", "Store and field support"],
+            battlecard: {
+              valueProp: "Trade, order, and store ops. Commercial teams freed to grow.",
+              description: "For CPG and retail operations leaders whose commercial teams get pulled into order, deduction, and trade administration, run those operations so commercial teams can focus on growth.",
+              buyers: [
+                { title: "VP Sales Operations (CPG/Retail)", challenge: "Order and deduction processing consumes commercial team time that should go to selling and account growth." },
+                { title: "Head of Trade Marketing", challenge: "Trade claims take too long to settle, straining retailer relationships and tying up working capital." },
+                { title: "Head of Master Data", challenge: "Retail data — pricing, product, store — goes stale between updates, causing downstream errors in orders and claims." },
+                { title: "CFO", challenge: "Deduction and trade claims backlogs represent real cash sitting unresolved, with no clear plan to work them down." },
+                { title: "Head of Field Operations", challenge: "Store and field support is reactive, so issues get escalated instead of resolved at the point they occur." }
+              ],
+              keyMessages: [
+                "We support trade, order and store operations so commercial teams can focus on growth — order and deduction cycle times come down and trade claims settle faster, instead of consuming the time of the people who should be selling.",
+                "Retail data stays accurate and current because master data and catalog operations run continuously, not as a periodic cleanup that goes stale again within a quarter."
+              ],
+              quickPitch: {
+                pitch: "We run order management, deductions, trade promotion administration and master data operations — so commercial teams stop doing administrative work and retail data stays accurate enough to trust.",
+                points: [
+                  "Order management and deductions operations that clear backlogs and keep cycle times down, not just work through a one-time queue",
+                  "Trade promotion administration that settles claims faster, protecting retailer relationships and working capital",
+                  "Master data and catalog operations that keep pricing, product and store data current continuously"
+                ],
+                cta: "Offer a trade claims and deductions backlog diagnostic to quantify current cycle time and unresolved cash"
+              },
+              platforms: ["Trade promotion management (TPM/RGM platforms)", "Order management and EDI systems", "Master data management and catalog tooling"],
+              capabilities: {
+                subhead: "Order, Trade & Master Data Operations",
+                items: [
+                  "Order management and deductions",
+                  "Trade promotion administration",
+                  "Master data and catalog operations",
+                  "Store and field support",
+                  "Cycle time and backlog measurement"
+                ]
+              },
+              whyHGS: [
+                { reason: "Commercial time freed for growth", proof: "Order, deduction and trade administration are taken off commercial teams entirely, so their time goes to accounts and growth, not paperwork." },
+                { reason: "Claims settled faster, cash unlocked", proof: "Trade promotion administration is measured against settlement cycle time, directly unlocking the working capital tied up in unresolved claims." },
+                { reason: "Data kept current, not just cleaned once", proof: "Master data and catalog operations run continuously, so pricing, product and store data stays accurate instead of degrading again after an initial cleanup." },
+                { reason: "Proven CPG and retail operations experience", proof: "Delivered order, trade and master data operations for CPG and retail clients managing complex, multi-retailer commercial operations." }
+              ],
+              objections: [
+                { objection: "Our commercial teams already handle this fine.", answer: "That's exactly the cost — every hour a commercial team spends on order or deduction administration is an hour not spent on the account relationship or the growth plan." },
+                { objection: "Trade claims are too retailer-specific to standardize.", answer: "Trade promotion administration is configured to each retailer's specific claim and deduction rules, not forced into one generic process." },
+                { objection: "Master data cleanup projects never stick.", answer: "This runs as an ongoing operation, not a one-time cleanup, which is exactly why the data stays current instead of drifting back to stale within a quarter." },
+                { objection: "How do we know this will actually free up commercial time?", answer: "The diagnostic quantifies current cycle time and the volume of commercial hours going into order and deduction work today, so the opportunity is sized before committing." }
+              ]
+            } },
           { name: "Telecom & Network Operations", blurb: "Run subscriber, provisioning and network support operations at carrier volumes.",
             outcomes: ["Provisioning and activation errors reduced", "Truck rolls avoided through better triage", "Churn-driving issues resolved earlier"],
-            scope: ["Subscriber and billing operations", "Provisioning and order fulfillment", "Network support and field coordination", "Churn and retention operations"] },
+            scope: ["Subscriber and billing operations", "Provisioning and order fulfillment", "Network support and field coordination", "Churn and retention operations"],
+            battlecard: {
+              valueProp: "Carrier-scale operations. Fewer truck rolls, less churn.",
+              description: "For telecom operations leaders running subscriber, provisioning, and network support manually, run these operations at carrier volumes to cut provisioning errors and resolve churn-driving issues earlier.",
+              buyers: [
+                { title: "COO (Telecom)", challenge: "Provisioning and activation errors create a bad first experience that directly drives early-tenure churn." },
+                { title: "Head of Network Operations", challenge: "Truck rolls get dispatched for issues that better triage could have resolved remotely." },
+                { title: "Head of Customer Retention", challenge: "Churn-driving issues surface too late, after the customer has already decided to leave." },
+                { title: "CFO", challenge: "Truck roll and provisioning error costs are a significant, avoidable operating expense." },
+                { title: "Head of Subscriber Operations", challenge: "Subscriber and billing operations run on legacy processes that can't keep pace with carrier-scale volume." }
+              ],
+              keyMessages: [
+                "We run subscriber, provisioning and network support operations at carrier volumes — provisioning and activation errors come down, which matters because those errors are often the first bad experience that starts a customer toward churn.",
+                "Truck rolls get avoided through better triage, and churn-driving issues get resolved earlier, because network support and retention operations share the same view of what's actually going wrong for a subscriber."
+              ],
+              quickPitch: {
+                pitch: "We run subscriber, provisioning, billing and network support operations at carrier scale — with triage designed to avoid unnecessary truck rolls and catch churn-driving issues before the customer decides to leave.",
+                points: [
+                  "Subscriber and billing operations built for carrier volume, not a generic contact center overlay",
+                  "Provisioning and order fulfillment designed to cut activation errors at the source",
+                  "Network support and field coordination that triages before dispatching, avoiding truck rolls that better diagnosis could resolve remotely"
+                ],
+                cta: "Offer a provisioning-error and truck-roll diagnostic to quantify avoidable cost and churn exposure"
+              },
+              platforms: ["Telecom OSS/BSS platforms", "Field service management and dispatch tooling", "Churn and retention analytics"],
+              capabilities: {
+                subhead: "Subscriber, Provisioning & Network Operations",
+                items: [
+                  "Subscriber and billing operations",
+                  "Provisioning and order fulfillment",
+                  "Network support and field coordination",
+                  "Churn and retention operations",
+                  "Truck roll and error rate measurement"
+                ]
+              },
+              whyHGS: [
+                { reason: "Truck rolls avoided, not just dispatched faster", proof: "Field coordination triages before dispatch, so truck rolls happen only when a technician is actually the right resolution, not the default response." },
+                { reason: "Provisioning errors tracked to the source", proof: "Activation and provisioning error rates are measured and traced to root cause, so fixes target where errors actually originate, not just the symptom." },
+                { reason: "Churn-driving issues resolved earlier", proof: "Retention operations share visibility with network support, catching the service issues that precede a churn decision instead of finding out after the customer has left." },
+                { reason: "Proven carrier-scale operations experience", proof: "Delivered subscriber, provisioning and network support operations for telecom clients operating at carrier volumes across multiple markets." }
+              ],
+              objections: [
+                { objection: "We already have field service management software.", answer: "Software supports dispatch; the triage discipline that decides whether a truck roll is even needed is the operational layer that actually reduces cost." },
+                { objection: "Our provisioning issues are specific to our network configuration.", answer: "We trace error rates to root cause within your specific provisioning and network setup, not a generic industry error taxonomy." },
+                { objection: "Churn prediction sounds separate from network operations.", answer: "The point is connecting them — churn-driving service issues are visible in network and provisioning data long before a churn model would flag the subscriber." },
+                { objection: "How do we know truck rolls will actually go down?", answer: "The diagnostic baselines current truck roll volume and avoidable cost, so the reduction is measured against your own numbers." }
+              ]
+            } },
           { name: "Industry-Specific AI & Digital Workers", blurb: "Deploy pre-built digital workers trained on the processes and regulations of each industry.",
             outcomes: ["Faster time to value than generic automation", "Regulatory nuance handled correctly", "Capacity added without linear headcount"],
-            scope: ["Industry use-case library", "Digital worker configuration and training", "Human oversight and exception routing", "Performance and compliance monitoring"] }
+            scope: ["Industry use-case library", "Digital worker configuration and training", "Human oversight and exception routing", "Performance and compliance monitoring"],
+            battlecard: {
+              valueProp: "Digital workers, trained on your industry's rules.",
+              description: "For operations leaders whose generic automation misses industry-specific regulatory nuance, deploy pre-built digital workers trained on the processes and regulations of each industry to add capacity faster than headcount.",
+              buyers: [
+                { title: "Chief Operating Officer", challenge: "Needs added operational capacity without linear headcount growth, and generic automation tools don't handle industry-specific regulatory nuance." },
+                { title: "Head of Automation / RPA", challenge: "Existing automation programs take too long to configure for industry- and process-specific rules, slowing time to value." },
+                { title: "Chief Compliance Officer", challenge: "Any automated worker touching a regulated process has to handle nuance correctly, and generic bots aren't built for that." },
+                { title: "CFO", challenge: "Wants capacity to scale with demand without a proportional increase in headcount cost." },
+                { title: "Head of Operations (regulated industry)", challenge: "Needs automation that understands the specific regulations and exceptions of the industry, not a horizontal tool retrofitted to fit." }
+              ],
+              keyMessages: [
+                "We deploy pre-built digital workers trained on the processes and regulations of each industry — faster time to value than generic automation, because the regulatory nuance is already built in, not something the client has to configure from scratch.",
+                "Capacity gets added without linear headcount, and human oversight and exception routing keep the risk profile appropriate for a regulated process, not just anywhere a bot could technically run."
+              ],
+              quickPitch: {
+                pitch: "We deploy digital workers from an industry use-case library, pre-trained on the regulations and exceptions of your specific industry — so time to value beats generic automation and regulatory nuance gets handled correctly from day one.",
+                points: [
+                  "Industry use-case library that starts from proven, pre-built digital workers instead of a blank automation project",
+                  "Digital worker configuration and training tuned to your specific process variants and regulatory requirements",
+                  "Human oversight and exception routing that keeps a person in the loop wherever the risk profile requires it"
+                ],
+                cta: "Offer a digital worker fit assessment against their top industry-specific processes to size the time-to-value gap versus generic automation"
+              },
+              platforms: ["Industry-specific digital worker / agentic automation platforms", "RPA and orchestration tooling (UiPath, Automation Anywhere)", "Compliance and exception monitoring tooling"],
+              capabilities: {
+                subhead: "Digital Worker Library, Configuration & Oversight",
+                items: [
+                  "Industry use-case library",
+                  "Digital worker configuration and training",
+                  "Human oversight and exception routing",
+                  "Performance and compliance monitoring",
+                  "Time-to-value benchmarking against generic automation"
+                ]
+              },
+              whyHGS: [
+                { reason: "Pre-built, not built from scratch", proof: "Digital workers start from an industry use-case library already trained on relevant processes and regulations, cutting configuration time compared to a generic automation build." },
+                { reason: "Regulatory nuance handled correctly", proof: "Digital worker training is scoped to the specific regulatory and process nuance of each industry, which generic, horizontal automation tools aren't built to capture." },
+                { reason: "Oversight matched to risk", proof: "Human oversight and exception routing are calibrated to the risk profile of each process, so automation scales without exceeding the appropriate level of control." },
+                { reason: "Capacity added, not headcount replaced one for one", proof: "Digital workers are deployed to add capacity as demand grows, avoiding the linear headcount cost most operations otherwise carry." }
+              ],
+              objections: [
+                { objection: "We already have an RPA program.", answer: "RPA typically automates a rules-based task; digital workers here come pre-trained on the regulatory and process nuance of an industry, which shortens configuration versus building that nuance into a bot from scratch." },
+                { objection: "Regulated processes feel too risky to automate.", answer: "Human oversight and exception routing are calibrated to the process's risk profile, so higher-risk steps stay reviewed while lower-risk volume moves through automatically." },
+                { objection: "How is this faster than what we're already doing?", answer: "The fit assessment benchmarks time-to-value against your current generic automation approach on the same processes, so the comparison is evidence-based." },
+                { objection: "Every industry claims specialization — what's actually different here?", answer: "The use-case library and digital worker training are built around the specific regulations and process variants of the industry, not a horizontal automation platform with an industry label attached." }
+              ]
+            } }
         ]
       },
       {
@@ -2225,8 +2789,8 @@ const DATA = [
             outcomes: ["Baseline the business agrees with", "Opportunities sized and prioritized", "Quick wins identified in weeks"],
             scope: ["Process and cost baselining", "Technology and data assessment", "Benchmarking against peers", "Opportunity backlog and business case"],
             battlecard: {
-              valueProp: "The honest baseline — cost, quality, cycle time, technology and people — before committing to any transformation investment.",
-              description: "For COOs, CIOs and operations leaders about to fund an automation or AI program on gut feel — runs a discovery framework across front, back and hybrid office processes so opportunities are sized and prioritized before a dollar of investment is committed.",
+              valueProp: "The honest baseline before you invest a dollar.",
+              description: "For COOs, CIOs, and operations leaders about to fund an automation or AI program on gut feel, run a discovery framework across every process to size and prioritize opportunities before committing investment.",
               buyers: [
                 { title: "Chief Operating Officer (COO)", challenge: "Needs to identify which business processes are actually good candidates for AI or automation, not just the loudest complaints in the room." },
                 { title: "Chief Information Officer (CIO)", challenge: "Needs the technical and financial fitment of processes assessed before committing budget to a platform or tool." },
@@ -2273,19 +2837,254 @@ const DATA = [
             } },
           { name: "Strategy & Transformation Roadmapping", blurb: "Turn the baseline into a sequenced roadmap with funding, ownership and measurable milestones.",
             outcomes: ["Roadmap with named owners and dates", "Investment tied to expected returns", "Executive alignment on sequence"],
-            scope: ["Target-state definition", "Initiative sequencing and dependencies", "Business case and funding model", "Governance and reporting structure"] },
+            scope: ["Target-state definition", "Initiative sequencing and dependencies", "Business case and funding model", "Governance and reporting structure"],
+            battlecard: {
+              valueProp: "One roadmap. Funded, owned, and sequenced.",
+              description: "For COOs and transformation leaders holding a baseline but no funded plan, turn assessment findings into a sequenced roadmap with named owners and dates to align investment with expected returns.",
+              buyers: [
+                { title: "Chief Operating Officer", challenge: "Has a baseline of opportunities from the assessment but no sequenced, funded roadmap to actually act on it." },
+                { title: "CFO", challenge: "Needs investment tied explicitly to expected returns before committing budget to a multi-year transformation." },
+                { title: "Head of Transformation / PMO", challenge: "Initiatives get proposed without clear sequencing or dependencies, so the program stalls on prioritization arguments." },
+                { title: "Business Unit Leader", challenge: "Wants executive alignment on the sequence before their function's initiative gets deprioritized behind someone else's." },
+                { title: "Head of Strategy", challenge: "Needs a roadmap with named owners and dates, not a slide of initiatives with no accountability attached." }
+              ],
+              keyMessages: [
+                "We turn the baseline into a sequenced roadmap with funding, ownership and measurable milestones — a roadmap with named owners and dates, not another slide of opportunities nobody is accountable for.",
+                "This is the second step in Outcome-Based Operations Transformation: the assessment's opportunity backlog becomes a funded, sequenced plan here, which is what the operating model, functional transformation and talent work that follow actually execute against."
+              ],
+              quickPitch: {
+                pitch: "We turn assessment findings into a sequenced roadmap — target state, initiative dependencies, a funding model and named ownership — so the business case survives past the planning meeting.",
+                points: [
+                  "Target-state definition that gives every initiative a clear destination, not just a list of improvements",
+                  "Initiative sequencing and dependencies that prevent the program from starting five things at once and finishing none",
+                  "Business case and funding model that ties investment to expected returns initiative by initiative"
+                ],
+                cta: "Offer to build the roadmap and funding model directly on top of an existing assessment or discovery output"
+              },
+              platforms: ["Portfolio and roadmap planning tooling (Planview, Aha!, Jira Align)", "Business case and ROI modeling templates", "Governance and reporting dashboards"],
+              capabilities: {
+                subhead: "Roadmapping, Business Case & Governance",
+                items: [
+                  "Target-state definition",
+                  "Initiative sequencing and dependencies",
+                  "Business case and funding model",
+                  "Governance and reporting structure design",
+                  "Executive alignment facilitation"
+                ]
+              },
+              whyHGS: [
+                { reason: "Roadmaps with named owners, not just initiatives", proof: "Every initiative in the roadmap carries a named owner and date, so accountability is built in from the plan itself, not assigned after the fact." },
+                { reason: "Built directly on the assessment", proof: "Roadmapping picks up directly from the Current State Assessment & Discovery opportunity backlog, so nothing gets re-scoped or re-argued before sequencing begins." },
+                { reason: "Funding tied to returns, initiative by initiative", proof: "The business case and funding model connects investment to expected returns per initiative, not a single lump-sum ask for the whole program." },
+                { reason: "Executive alignment built into the process", proof: "Sequencing and dependency mapping are used to facilitate real executive alignment on trade-offs, not just present a plan for sign-off after the fact." }
+              ],
+              objections: [
+                { objection: "We already have a roadmap from a previous consulting engagement.", answer: "We can validate and re-sequence an existing roadmap against a real business case and named ownership rather than starting from a blank page, if the underlying opportunities still hold." },
+                { objection: "Roadmapping sounds like more planning without execution.", answer: "The roadmap is the direct handoff into Operating Model, Functional Transformation and Talent — it's built to be executed against, not filed away as a planning artifact." },
+                { objection: "Getting executive alignment on sequencing always stalls.", answer: "Sequencing and dependency mapping are used specifically to surface trade-offs early and facilitate the alignment conversation, rather than present a finished plan and hope for consensus." },
+                { objection: "How do we know the funding model is realistic?", answer: "The business case ties funding to expected returns per initiative, benchmarked against the assessment's own baseline, so the numbers are grounded in your data, not a generic template." }
+              ]
+            } },
           { name: "Operating Model & Organizational Design", blurb: "Design the operating model — structure, roles, locations, governance — that the target state actually needs.",
             outcomes: ["Clear accountability for every process", "Location and sourcing mix optimized", "Governance that catches issues early"],
-            scope: ["Operating model and process ownership", "Organization and role design", "Location and sourcing strategy", "Governance and decision rights"] },
+            scope: ["Operating model and process ownership", "Organization and role design", "Location and sourcing strategy", "Governance and decision rights"],
+            battlecard: {
+              valueProp: "The operating model the target state actually needs.",
+              description: "For COOs and HR leaders inheriting a roadmap without the structure to run it, design the operating model — structure, roles, locations, governance — that the target state requires.",
+              buyers: [
+                { title: "Chief Operating Officer", challenge: "Has a transformation roadmap but no operating model — structure, roles, governance — actually designed to run the target state." },
+                { title: "Chief Human Resources Officer", challenge: "Organization and role design hasn't kept pace with the transformation plan, so accountability for new processes is unclear." },
+                { title: "Head of Global Business Services / Shared Services", challenge: "Location and sourcing mix decisions are made ad hoc, without a structured strategy tied to the target operating model." },
+                { title: "CFO", challenge: "Needs governance and decision rights clarified so issues get caught early, not discovered after a costly delay." },
+                { title: "Business Unit Leader", challenge: "Doesn't have clear accountability for the processes the transformation is changing, so ownership gets contested mid-program." }
+              ],
+              keyMessages: [
+                "We design the operating model — structure, roles, locations, governance — that the target state actually needs, so clear accountability exists for every process instead of ownership getting contested mid-program.",
+                "This is the third step in Outcome-Based Operations Transformation: the roadmap only executes cleanly once the operating model, organization design and governance are in place to run it, which is what this step delivers."
+              ],
+              quickPitch: {
+                pitch: "We design the operating model, organization structure, location and sourcing strategy, and governance and decision rights the target state requires — so the roadmap has a structure built to run it, not just a plan to follow.",
+                points: [
+                  "Operating model and process ownership design that gives every process a clear, single accountable owner",
+                  "Organization and role design built around the target state, not a reorganization of the current one",
+                  "Location and sourcing strategy that optimizes the mix against the operating model's actual requirements"
+                ],
+                cta: "Offer an operating model design workshop scoped to the highest-ambiguity functions in the roadmap"
+              },
+              platforms: ["Organization design and workforce planning tooling", "RACI / decision rights frameworks", "Location and sourcing strategy modeling tools"],
+              capabilities: {
+                subhead: "Operating Model, Organization & Governance Design",
+                items: [
+                  "Operating model and process ownership design",
+                  "Organization and role design",
+                  "Location and sourcing strategy",
+                  "Governance and decision rights design",
+                  "Change readiness assessment"
+                ]
+              },
+              whyHGS: [
+                { reason: "Built to run the roadmap, not a generic reorg", proof: "Operating model and organization design are scoped directly to the initiatives and target state defined in the roadmap, not a standalone restructuring exercise." },
+                { reason: "Accountability designed in", proof: "Every process gets a clear, named owner as part of the operating model design, removing the ambiguity that usually surfaces mid-transformation." },
+                { reason: "Location and sourcing grounded in the target state", proof: "Location and sourcing strategy is modeled against what the operating model actually requires, not a cost-arbitrage exercise disconnected from the transformation plan." },
+                { reason: "Governance that catches issues early", proof: "Decision rights and governance structures are designed specifically to surface issues at the point they occur, not after a program milestone slips." }
+              ],
+              objections: [
+                { objection: "We already did an org design exercise separately.", answer: "We can validate an existing org design against the operating model and roadmap dependencies, rather than assume it was scoped to the same target state." },
+                { objection: "Reorganizations always create disruption and morale issues.", answer: "Organization and role design here is scoped to the target state's actual requirements, with a change readiness assessment built in to manage disruption deliberately, not ignore it." },
+                { objection: "Location and sourcing decisions are politically sensitive.", answer: "The strategy is modeled against operating model requirements, giving a fact base for a sourcing conversation that's usually argued on opinion alone." },
+                { objection: "How long does an operating model redesign take?", answer: "We scope the design to the highest-ambiguity functions in the roadmap first, so a working model exists in weeks, not a multi-quarter, all-at-once organizational overhaul." }
+              ]
+            } },
           { name: "Functional Transformation Programs", blurb: "Deliver the change function by function, with benefits tracked as they land.",
             outcomes: ["Benefits realized and evidenced per function", "Change adopted, not just deployed", "Program risks managed transparently"],
-            scope: ["Program setup and delivery", "Process redesign and automation", "Change management and training", "Benefits tracking and realization"] },
+            scope: ["Program setup and delivery", "Process redesign and automation", "Change management and training", "Benefits tracking and realization"],
+            battlecard: {
+              valueProp: "Change delivered function by function. Benefits tracked.",
+              description: "For transformation leaders running programs where benefits are assumed rather than proven, deliver change function by function with benefits tracked as they land to keep programs accountable to real numbers.",
+              buyers: [
+                { title: "Head of Transformation / PMO", challenge: "Programs run for months before anyone can prove the benefits assumed in the original business case actually materialized." },
+                { title: "Chief Operating Officer", challenge: "Needs change delivered function by function, with visible progress, rather than one large program that reports status but not benefit realization." },
+                { title: "CFO", challenge: "Wants benefits tracked and evidenced as they land, not projected once at the start and never revisited." },
+                { title: "Business Unit Leader", challenge: "Change gets deployed into their function but adoption never gets measured, so nobody knows if it actually stuck." },
+                { title: "Head of Change Management", challenge: "Programs treat change management as a communications afterthought instead of a tracked part of delivery." }
+              ],
+              keyMessages: [
+                "We deliver the change function by function, with benefits tracked as they land — benefits realized and evidenced per function, not assumed once in a business case and never revisited.",
+                "Change gets adopted, not just deployed, and program risks get managed transparently, because change management and benefits tracking are part of delivery itself, not a separate reporting exercise running behind it."
+              ],
+              quickPitch: {
+                pitch: "We deliver functional transformation programs with process redesign, automation and change management built in — and benefits tracked and realized function by function, not assumed at the start of the program.",
+                points: [
+                  "Program setup and delivery sequenced function by function, so wins compound instead of waiting on one big-bang release",
+                  "Change management and training built into delivery, so adoption is measured, not assumed",
+                  "Benefits tracking and realization that reports evidenced, landed value, not a projected number from the original business case"
+                ],
+                cta: "Offer to run the first function in the roadmap as a proof-of-value delivery with benefits tracked from day one"
+              },
+              platforms: ["Program and change management tooling (Jira, Prosci-aligned change frameworks)", "Process redesign and automation tooling", "Benefits realization tracking dashboards"],
+              capabilities: {
+                subhead: "Program Delivery, Change & Benefits Tracking",
+                items: [
+                  "Program setup and delivery",
+                  "Process redesign and automation",
+                  "Change management and training",
+                  "Benefits tracking and realization",
+                  "Program risk management and reporting"
+                ]
+              },
+              whyHGS: [
+                { reason: "Benefits tracked, not assumed", proof: "Benefits realization is tracked function by function against the original business case, so the program reports evidenced value, not a projected number nobody revisits." },
+                { reason: "Adoption measured as part of delivery", proof: "Change management and training are built into program delivery with adoption tracked directly, rather than treated as a communications workstream running alongside it." },
+                { reason: "Function-by-function sequencing", proof: "Delivery is sequenced one function at a time, so early wins are proven and funded before the next function starts, rather than betting the whole program on one release." },
+                { reason: "Transparent risk reporting", proof: "Program risks are reported openly against the roadmap's dependencies, so issues surface to sponsors early instead of at a milestone review." }
+              ],
+              objections: [
+                { objection: "We've run transformation programs before that didn't deliver.", answer: "Most stalled programs never tracked benefit realization function by function — that tracking is built into delivery here specifically to catch under-delivery early, not after the program closes." },
+                { objection: "Change management always gets cut when the program is under time pressure.", answer: "Change management and adoption tracking are part of the delivery scope itself, not a separate line item that's easiest to cut when the schedule tightens." },
+                { objection: "This sounds like it will take longer than a big-bang rollout.", answer: "Function-by-function delivery gets the first function live and generating evidenced benefit sooner than a big-bang program reaches its first milestone." },
+                { objection: "How transparent will risk reporting actually be?", answer: "Risks are reported against the roadmap's own dependencies and milestones, so sponsors see the same picture the delivery team is working from, not a filtered status update." }
+              ]
+            } },
           { name: "Flexible Talent & Expert Services", blurb: "Add scarce expertise on demand — from GCC build-out to specialist pods — without permanent headcount.",
             outcomes: ["Critical roles filled in weeks", "Capacity flexed with demand", "Knowledge retained in the client organization"],
-            scope: ["Skills demand planning", "Expert pods and staff augmentation", "GCC and captive build support", "Knowledge transfer and retention"] },
+            scope: ["Skills demand planning", "Expert pods and staff augmentation", "GCC and captive build support", "Knowledge transfer and retention"],
+            battlecard: {
+              valueProp: "Scarce expertise, on demand. No permanent headcount.",
+              description: "For COOs and HR leaders needing specialist skills faster than they can hire, add expert talent — from GCC build-out to specialist pods — flexed with demand and with knowledge retained in-house.",
+              buyers: [
+                { title: "Chief Operating Officer", challenge: "Needs critical, scarce skills filled in weeks, not the months a traditional hiring process takes." },
+                { title: "CHRO", challenge: "Struggles to hire and retain specialist talent for transformation initiatives that only need that skill set temporarily." },
+                { title: "CFO", challenge: "Wants capacity that flexes with demand instead of permanent headcount added for a workload that may not last." },
+                { title: "Head of Global Business Services", challenge: "Considering a GCC or captive build-out but needs support to stand it up without doing it entirely from scratch." },
+                { title: "Head of Transformation / PMO", challenge: "Worried that once external experts leave, the knowledge they built leaves with them." }
+              ],
+              keyMessages: [
+                "We add scarce expertise on demand — from GCC build-out to specialist pods — without permanent headcount, so critical roles get filled in weeks and capacity flexes with demand instead of sitting fixed.",
+                "Knowledge stays in the client organization because knowledge transfer and retention are built into how the pods and GCC support are staffed and run, not treated as a risk to manage after the engagement ends."
+              ],
+              quickPitch: {
+                pitch: "We provide expert pods, staff augmentation and GCC build support against a skills demand plan — so critical roles get filled fast, capacity flexes with demand, and knowledge stays with your organization after the engagement.",
+                points: [
+                  "Skills demand planning that identifies exactly which scarce roles are needed and for how long, before sourcing begins",
+                  "Expert pods and staff augmentation that flex up or down with actual program demand",
+                  "Knowledge transfer and retention built into the engagement model, not left to chance at the end"
+                ],
+                cta: "Offer to fill the highest-priority skills gap in the transformation roadmap as a fast, low-commitment starting engagement"
+              },
+              platforms: ["Talent and staff augmentation delivery models", "GCC / captive center build frameworks", "Knowledge management and transfer tooling"],
+              capabilities: {
+                subhead: "Talent Sourcing, Pods & GCC Support",
+                items: [
+                  "Skills demand planning",
+                  "Expert pods and staff augmentation",
+                  "GCC and captive build support",
+                  "Knowledge transfer and retention",
+                  "Capacity flex and demand tracking"
+                ]
+              },
+              whyHGS: [
+                { reason: "Roles filled in weeks", proof: "Expert pods and staff augmentation draw on existing specialist bench strength, filling critical roles far faster than a from-scratch hiring process." },
+                { reason: "Capacity that flexes both ways", proof: "Pods and augmentation are structured to scale up or down with actual program demand, avoiding the fixed-cost commitment of permanent headcount for temporary need." },
+                { reason: "Knowledge retained, not lost at rollout", proof: "Knowledge transfer and retention are built into the engagement model from the start, so capability stays in the client organization after the experts roll off." },
+                { reason: "Proven GCC and captive build experience", proof: "Experience supporting GCC and captive center build-outs, so clients building internal capability get support standing it up rather than a permanent outsourcing dependency." }
+              ],
+              objections: [
+                { objection: "We'd rather hire permanently for these skills.", answer: "For scarce, temporary-demand skills, permanent hiring often means paying for capacity you don't need once the initiative ends — flexible talent lets you match cost to actual demand." },
+                { objection: "We're worried about knowledge walking out the door with contractors.", answer: "Knowledge transfer and retention are a built-in part of the engagement model, not an afterthought negotiated as the engagement winds down." },
+                { objection: "Building a GCC ourselves feels more sustainable long-term.", answer: "We support exactly that path — GCC and captive build support is designed to help you stand up the internal capability, not to keep you dependent on external pods indefinitely." },
+                { objection: "How fast can roles actually be filled?", answer: "Skills demand planning identifies the specific gap first, then expert pods and staff augmentation draw on existing bench strength — most critical roles fill in weeks, not the months a traditional search takes." }
+              ]
+            } },
           { name: "Run, Operate & Deliver Outcomes", blurb: "Take accountability for the running operation against contracted business outcomes, not activity.",
             outcomes: ["Commercials tied to outcomes achieved", "Year-on-year productivity commitments", "Single accountable partner for the function"],
-            scope: ["Outcome definition and measurement", "Transition and steady-state operations", "Gain-share and commercial model", "Continuous improvement and innovation"] }
+            scope: ["Outcome definition and measurement", "Transition and steady-state operations", "Gain-share and commercial model", "Continuous improvement and innovation"],
+            battlecard: {
+              valueProp: "Paid for outcomes, not activity.",
+              description: "For COOs and CFOs tired of paying for activity regardless of results, take on accountability for the running operation against contracted business outcomes, with commercials tied to results.",
+              buyers: [
+                { title: "Chief Operating Officer", challenge: "Wants one accountable partner for the function's outcomes, not a vendor paid regardless of whether results actually improve." },
+                { title: "CFO", challenge: "Needs commercials tied to outcomes achieved, with year-on-year productivity commitments built into the contract, not renegotiated after the fact." },
+                { title: "Head of Vendor Management", challenge: "Manages multiple vendors across a function with no single party accountable for the end-to-end outcome." },
+                { title: "Head of the Function Being Run (Finance, HR, Customer Ops)", challenge: "Wants continuous improvement and innovation built into the operating contract, not just steady-state delivery." },
+                { title: "Chief Transformation Officer", challenge: "Needs a way to lock in and sustain the gains from the transformation program once the program itself winds down." }
+              ],
+              keyMessages: [
+                "We take accountability for the running operation against contracted business outcomes, not activity — commercials tied to outcomes achieved and year-on-year productivity commitments, not a fee paid regardless of whether results move.",
+                "This is the last step in Outcome-Based Operations Transformation: the roadmap, operating model, functional transformation and talent work all lead here, to a single accountable partner running the function for outcomes, not handing it back to steady-state as usual."
+              ],
+              quickPitch: {
+                pitch: "We run the operation under a commercial model tied to contracted outcomes — gain-share, productivity commitments and continuous improvement built in, so results keep improving after transition, not just holding steady.",
+                points: [
+                  "Outcome definition and measurement agreed up front, so accountability is unambiguous from day one of the contract",
+                  "Transition and steady-state operations designed to protect performance through the handover, not just after it stabilizes",
+                  "Gain-share and commercial models that align our incentives directly with your results"
+                ],
+                cta: "Offer to structure a pilot outcome-based contract on the function or process with the clearest, most measurable baseline"
+              },
+              platforms: ["Outcome and SLA management tooling", "Gain-share / commercial modeling frameworks", "Continuous improvement and innovation tracking tools"],
+              capabilities: {
+                subhead: "Outcome Contracting, Transition & Continuous Improvement",
+                items: [
+                  "Outcome definition and measurement",
+                  "Transition and steady-state operations",
+                  "Gain-share and commercial model design",
+                  "Continuous improvement and innovation",
+                  "Single accountable partner governance"
+                ]
+              },
+              whyHGS: [
+                { reason: "Commercials aligned to outcomes", proof: "Gain-share and outcome-based commercial models tie our fee directly to the results achieved, not to hours worked or headcount deployed." },
+                { reason: "One accountable partner, not a vendor list", proof: "A single partner takes accountability for the end-to-end outcome, removing the ambiguity of managing multiple vendors across the same function." },
+                { reason: "Improvement built into the contract, not just delivery", proof: "Continuous improvement and innovation are standing contractual commitments, so the operation keeps getting better after go-live, not just maintained at handover quality." },
+                { reason: "Built on everything upstream in Outcome-Based Operations Transformation", proof: "The outcome contract runs on the operating model, transformation and talent work already delivered, so accountability starts from a proven foundation, not a cold handover." }
+              ],
+              objections: [
+                { objection: "Outcome-based contracts sound risky to structure and govern.", answer: "We start by piloting the model on the function or process with the clearest, most measurable baseline, so both sides prove the governance works before scaling the commercial model further." },
+                { objection: "We're worried about losing visibility once one partner owns the outcome.", answer: "Outcome definition, measurement and governance are agreed and reported transparently from day one — single accountability doesn't mean reduced visibility." },
+                { objection: "How is this different from a standard managed-services contract?", answer: "Standard managed services typically bill for activity or headcount; here, commercials are tied directly to the contracted outcome, with gain-share aligning incentives on both sides." },
+                { objection: "What happens if outcomes aren't hit?", answer: "The commercial model is structured so underperformance against the agreed outcome has real consequences for us, not just a service-credit formality — that's what makes the accountability real." }
+              ]
+            } }
         ]
       }
     ]

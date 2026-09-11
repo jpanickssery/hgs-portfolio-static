@@ -747,8 +747,8 @@ const DEMOS = [
       { client: "Bancorp", result: "AI-driven fraud/AML case scoring engagement aimed at cutting false positives and speeding up investigation response." },
     ],
     battlecard: {
-      valueProp: "An AI-powered investigation layer that overlays your existing AML detection stack and cuts case disposition time by 75%.",
-      description: "For AML/BSA compliance and financial-crime operations leaders drowning in false-positive alerts and rising SAR volume — overlays the detection system a bank already owns via API, so analysts spend their time deciding cases instead of assembling them.",
+      valueProp: "One investigation layer. 75% faster case disposition.",
+      description: "For AML/BSA compliance and financial-crime operations leaders drowning in false positives, overlay the detection system you already own via API so analysts spend time deciding cases, not assembling them.",
       buyers: [
         { title: "Chief Compliance Officer / BSA Officer", challenge: "Proving programme effectiveness to examiners while alert volumes and SAR filings keep climbing." },
         { title: "Head of Financial Crime / AML Ops", challenge: "Clearing an L1 queue where 85–95% of alerts are false positives and only 1–5% ever become a SAR." },
