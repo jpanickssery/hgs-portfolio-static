@@ -313,313 +313,6 @@ const DATA = [
         ]
       },
       {
-        id: "service", name: "Service Experience Transformation",
-        promise: "Modernize the service platform, then progressively shift resolution to self-service, assisted intelligence and automation.",
-        flow: ["Modernize Platform", "Enable Self-Service", "Empower Agents", "Optimize Routing", "Generate Insights", "Automate Resolution"],
-        projects: [
-          { name: "CX Platform & Contact Center Modernization", blurb: "Replace fragmented telephony and ticketing with a unified cloud contact center.",
-            outcomes: ["Single platform across voice and digital", "Lower cost per contact", "Change delivered in weeks, not releases"],
-            scope: ["Current-state platform and integration audit", "Target CCaaS architecture and migration plan", "Channel and CRM integration", "Cutover, hypercare and adoption"],
-            battlecard: {
-              valueProp: "One contact center platform. Faster change, faster outcomes.",
-              description: "For CX and IT leaders modernizing service operations, unify voice, digital, and CRM on a single CCaaS platform to reduce cost and accelerate change.",
-              buyers: [
-                { title: "VP Customer Service / CX", challenge: "Runs voice, chat and ticketing on separate platforms that don't share a customer record, so every handoff loses context." },
-                { title: "CIO", challenge: "The current contact center platform is on-premise, end-of-life or both, and every change request waits months for a vendor release." },
-                { title: "Head of Contact Center Operations", challenge: "Cost per contact keeps climbing because the platform can't flex capacity or channels without a hardware or licensing project." },
-                { title: "CFO", challenge: "Contact center infrastructure is a large, fixed cost that doesn't scale down when volume drops, unlike a cloud-native alternative." },
-                { title: "Head of CRM / Digital Channels", challenge: "New digital channels (chat, social, messaging) each get bolted on separately instead of integrating into one contact center platform." }
-              ],
-              keyMessages: [
-                "We replace fragmented telephony and ticketing with a cloud contact center that other plays can build on — one platform across voice and digital, so cost per contact comes down and every subsequent service play has a foundation to sit on.",
-                "Change gets delivered in weeks, not releases: a cloud-native CCaaS platform means new channels, IVR flows and integrations ship on your timeline, not a vendor's quarterly release calendar."
-              ],
-              quickPitch: {
-                pitch: "We replace fragmented, on-premise telephony and ticketing with a modern CCaaS platform, integrated to CRM and every digital channel — the foundation every other service transformation play builds on.",
-                points: [
-                  "Current-state platform and integration audit that maps every dependency before a single migration wave starts",
-                  "Target CCaaS architecture designed to carry self-service, agent assist and automation, not just replace a phone system",
-                  "Cutover and hypercare planned to protect service levels during migration, not just after it"
-                ],
-                cta: "Offer a current-state platform and integration audit to size the migration and quantify the cost-per-contact opportunity"
-              },
-              platforms: ["Genesys Cloud, NICE CXone, Amazon Connect, Twilio Flex", "CRM integration (Salesforce Service Cloud, Microsoft Dynamics)", "Digital channel integration (chat, social, messaging)"],
-              capabilities: {
-                subhead: "Assessment, Architecture & Migration",
-                items: [
-                  "Current-state platform and integration audit",
-                  "Target CCaaS architecture and migration planning",
-                  "Channel and CRM integration",
-                  "Cutover, hypercare and adoption support",
-                  "Contact center cost and capacity modeling"
-                ]
-              },
-              whyHGS: [
-                { reason: "Foundation for every downstream service play", proof: "The CCaaS architecture is designed from day one to carry self-service, agent assist, routing intelligence and automation — not just replace the phone system in isolation." },
-                { reason: "Migration discipline", proof: "Structured cutover and hypercare planning designed to protect service levels during migration, based on running contact center operations at scale." },
-                { reason: "Vendor-agnostic architecture", proof: "Experience across the major CCaaS platforms means the target architecture is chosen to fit the business, not to fit a single vendor relationship." },
-                { reason: "Change delivered on your timeline", proof: "Cloud-native platforms replace release-cycle-gated change with self-service configuration, so new flows and integrations ship in days, not quarters." }
-              ],
-              objections: [
-                { objection: "Our current platform still works — why migrate now?", answer: "Working today doesn't mean scaling tomorrow — the audit quantifies the real cost-per-contact and change-velocity gap so the business case is evidence-based, not assumed." },
-                { objection: "Migration will disrupt service levels during cutover.", answer: "Cutover and hypercare are planned specifically to protect service levels during the transition, with rollback paths built into the plan, not just the go-live." },
-                { objection: "We're locked into our current vendor's contract.", answer: "The architecture and migration plan can be sequenced around contract timing — assessment work can start well before a cutover date is set." },
-                { objection: "This feels like just a phone system upgrade.", answer: "It's the foundation for every other service transformation play — self-service, agent assist, routing and automation all depend on this platform being modern and integrated first." }
-              ]
-            } },
-          { name: "Customer Self-Service & Automation", blurb: "Guide customers to fast, successful resolutions through intuitive conversational and digital self-service.",
-            outcomes: ["Deflect top intents to self-service", "24/7 resolution without added headcount", "Fewer repeat contacts per issue"],
-            scope: ["Intent and contact-driver analysis", "Conversational and IVR journey design", "Knowledge and backend integration", "Containment tuning and guardrails"],
-            battlecard: {
-              valueProp: "Self-service customers actually finish. Not another chatbot.",
-              description: "For customer service leaders stuck at single-digit containment, design conversational and IVR journeys around real contact drivers to deflect volume without adding repeat contacts.",
-              buyers: [
-                { title: "Head of Customer Service", challenge: "Self-service containment has stalled in the single digits because the chatbot answers questions nobody's actually asking." },
-                { title: "VP Digital CX", challenge: "Customers abandon the self-service flow and call anyway, so it adds a frustrating step instead of removing one." },
-                { title: "CIO", challenge: "Self-service tools aren't integrated with backend systems, so they can answer questions but can't actually complete a transaction." },
-                { title: "Head of Contact Center Operations", challenge: "Needs meaningful containment on top intents to manage volume without adding headcount, not a marginal deflection rate." },
-                { title: "Head of Customer Experience / Journey", challenge: "Worried that pushing self-service too hard just increases repeat contacts when the bot fails to resolve the issue." }
-              ],
-              keyMessages: [
-                "We deflect predictable demand into conversational and web self-service that customers actually complete — built on real intent and contact-driver analysis, not a guess at what people might ask.",
-                "Containment is tuned against guardrails, so it drives meaningful deflection on top intents without increasing repeat contacts — 24/7 resolution without added headcount only works if the self-service actually resolves the issue, not just deflects the first touch."
-              ],
-              quickPitch: {
-                pitch: "We start with intent and contact-driver analysis to find out what customers are actually calling about, then design conversational and IVR journeys — integrated to your backend systems — that resolve those issues, not just answer questions about them.",
-                points: [
-                  "Intent and contact-driver analysis that targets the highest-volume, most-deflectable issues first, not a generic FAQ bot",
-                  "Conversational and IVR journeys integrated with backend systems, so self-service can actually complete a transaction, not just describe how to",
-                  "Containment tuning and guardrails that catch and route failures gracefully, so deflection doesn't quietly increase repeat contacts"
-                ],
-                cta: "Offer a contact-driver analysis to identify the top 5 intents worth automating first"
-              },
-              platforms: ["Conversational AI platforms (NICE, Genesys, Google Dialogflow, Amazon Lex)", "IVR & voice AI tooling", "Backend integration (CRM, order management, billing systems)"],
-              capabilities: {
-                subhead: "Journey Design, Integration & Containment",
-                items: [
-                  "Intent and contact-driver analysis",
-                  "Conversational and IVR journey design",
-                  "Knowledge and backend system integration",
-                  "Containment tuning and guardrails",
-                  "Repeat-contact and failure-path monitoring"
-                ]
-              },
-              whyHGS: [
-                { reason: "Deflection grounded in real contact drivers", proof: "Intent and contact-driver analysis targets the highest-volume, most-deflectable issues first, instead of automating whatever's easiest to build." },
-                { reason: "Integrated, not just conversational", proof: "Self-service journeys connect to backend systems so they can complete transactions, not just answer questions about them." },
-                { reason: "Guardrails against silent failure", proof: "Containment tuning includes monitoring for repeat contacts and failure paths, so deflection gains don't quietly show up as a worse experience later." },
-                { reason: "Built to hand off cleanly", proof: "Journeys are designed to escalate gracefully to a live agent when containment guardrails trigger, keeping the handoff clean instead of dropping the customer." }
-              ],
-              objections: [
-                { objection: "We already have a chatbot and containment hasn't moved.", answer: "That's usually a symptom of automating the wrong intents — contact-driver analysis re-targets the highest-volume, most-deflectable issues instead of the ones that were easiest to build first." },
-                { objection: "Customers hate bots and just want a human.", answer: "Customers abandon bots that can't resolve anything — journeys integrated with backend systems that actually complete a transaction see meaningfully different behavior." },
-                { objection: "We're worried self-service will just create more repeat contacts.", answer: "Containment tuning and guardrails specifically monitor for that failure mode and route to a live agent before it becomes a repeat contact." },
-                { objection: "This will take a long integration project before we see any value.", answer: "We start with the highest-volume intents identified in the contact-driver analysis, so value shows up on a focused first wave, not after a full backend integration project." }
-              ]
-            } },
-          { name: "Agent Empowerment & Productivity Solutions", blurb: "Give advisors a single desktop with real-time assist, summarization and next-best-action.",
-            outcomes: ["Shorter handle time and after-call work", "Faster onboarding for new advisors", "More consistent quality scores"],
-            scope: ["Unified agent desktop design", "Real-time assist and knowledge surfacing", "Auto-summarization and disposition", "Coaching and QA integration"],
-            battlecard: {
-              valueProp: "One agent desktop. Answers found, not hunted.",
-              description: "For contact center leaders whose advisors juggle six systems, unify the desktop with real-time assist and next-best-action to cut handle time and lift quality consistency.",
-              buyers: [
-                { title: "VP Contact Center Operations", challenge: "Advisors toggle between five or six systems on every call, and handle time and after-call work both suffer for it." },
-                { title: "Head of Workforce / Training", challenge: "New advisor ramp time is long because there's no real-time assist to compensate for incomplete knowledge in the first few months." },
-                { title: "Head of Quality / QA", challenge: "Quality scores vary widely by advisor because there's no consistent next-best-action guidance during the call." },
-                { title: "CIO", challenge: "Needs one unified desktop instead of advisors having to manually stitch together CRM, knowledge base and disposition tools." },
-                { title: "CFO", challenge: "Handle time and after-call work drive contact center cost directly, and neither has moved despite previous training investments." }
-              ],
-              keyMessages: [
-                "We give advisors a single desktop with real-time assist, summarization and next-best-action — shorter handle time and after-call work follow directly from advisors not having to hunt across five systems for the same answer.",
-                "New advisors ramp faster because real-time assist compensates for incomplete knowledge, and quality scores get more consistent because next-best-action guidance doesn't depend on which advisor happens to remember the right process."
-              ],
-              quickPitch: {
-                pitch: "We unify the agent desktop and add real-time assist, auto-summarization and next-best-action — so advisors spend less time toggling systems and more time actually helping the customer.",
-                points: [
-                  "Unified agent desktop design that consolidates CRM, knowledge and disposition into one screen, not six",
-                  "Real-time assist and knowledge surfacing that answers the advisor's question before they have to search for it",
-                  "Auto-summarization and disposition that cuts after-call work instead of just shifting it to a different screen"
-                ],
-                cta: "Offer a desktop and workflow assessment to baseline current handle time, after-call work and toggle count per interaction"
-              },
-              platforms: ["Agent desktop & workspace platforms (Salesforce Service Cloud, Genesys, NICE CXone)", "Real-time assist & knowledge AI (Verint, NICE, custom LLM copilots)", "QA and coaching integration tooling"],
-              capabilities: {
-                subhead: "Desktop, Assist & Quality Integration",
-                items: [
-                  "Unified agent desktop design",
-                  "Real-time assist and knowledge surfacing",
-                  "Auto-summarization and disposition",
-                  "Coaching and QA integration",
-                  "Handle time and after-call work baselining"
-                ]
-              },
-              whyHGS: [
-                { reason: "Baselined, measurable impact", proof: "Handle time, after-call work and toggle count are baselined before the desktop is built, so improvement is evidenced, not assumed." },
-                { reason: "Real-time assist that actually gets used", proof: "Knowledge surfacing is designed to answer the advisor's question inline, in the flow of the call, not as a separate search tool competing for attention." },
-                { reason: "Faster ramp, not just better tools", proof: "Real-time assist is specifically designed to compensate for new-advisor knowledge gaps, which is what drives faster ramp time, not just senior-advisor convenience." },
-                { reason: "Consistency tied to QA", proof: "Coaching and QA integration means next-best-action guidance ties directly into how quality gets scored and coached, not a disconnected tool." }
-              ],
-              objections: [
-                { objection: "Our advisors already have a CRM and knowledge base.", answer: "Having both doesn't mean they're unified — the desktop design consolidates them into one screen with assist surfaced inline, not two tools an advisor has to toggle between." },
-                { objection: "AI assist tools sound like they'll slow advisors down while they learn a new system.", answer: "Real-time assist is designed to reduce searching, not add a new tool to search within — ramp time is one of the outcomes we baseline and track." },
-                { objection: "We've invested in training already — why do we need this too?", answer: "Training addresses what advisors know; real-time assist addresses what they can't recall fast enough under pressure — the two are complementary, not competing investments." },
-                { objection: "How do we know handle time will actually improve?", answer: "We baseline handle time, after-call work and toggle count before building anything, so the improvement is measured against your own real numbers, not a vendor benchmark." }
-              ]
-            } },
-          { name: "Intelligent Routing & Decisioning", blurb: "Match every contact to the right skill, channel or automation using intent, value and predicted effort.",
-            outcomes: ["Higher first-contact resolution", "Better use of specialist skills", "Priority customers reliably prioritized"],
-            scope: ["Routing strategy and skills model", "Predictive intent and value scoring", "Decisioning rules and orchestration", "Continuous routing optimization"],
-            battlecard: {
-              valueProp: "Every contact, right destination, first time.",
-              description: "For contact center leaders stuck on static skill-based queues, route every contact by intent, value, and predicted effort to lift first-contact resolution and protect specialist time.",
-              buyers: [
-                { title: "VP Contact Center Operations", challenge: "Routing logic is a static skill-based queue that doesn't account for predicted effort or customer value, so first-contact resolution suffers." },
-                { title: "Head of Customer Experience", challenge: "High-value or at-risk customers get routed the same way as everyone else, undermining retention efforts that depend on prioritized treatment." },
-                { title: "CFO", challenge: "Specialist skills are expensive and get wasted on contacts that could have been resolved by a generalist or self-service." },
-                { title: "Head of Customer Retention / VIP Programs", challenge: "Needs priority customers reliably routed to the right treatment, and today it depends on the queue, not the customer's actual value or risk." },
-                { title: "CIO", challenge: "Routing rules are hard-coded and manually maintained, so nobody can adjust them quickly as intents or volumes shift." }
-              ],
-              keyMessages: [
-                "We match every contact to the right skill, channel or automation using intent, value and predicted effort — not a static skill-based queue that treats every contact in a category the same way.",
-                "This drives first-contact resolution up and puts specialist skills where they actually matter, while priority customers get reliably prioritized instead of depending on which queue they happened to land in."
-              ],
-              quickPitch: {
-                pitch: "We replace static skill-based routing with predictive intent and value scoring — so every contact routes to the right skill, channel or automation the first time, and specialist time gets used where it counts.",
-                points: [
-                  "Predictive intent and value scoring that routes based on what the contact actually needs and who the customer actually is, not just a category",
-                  "Decisioning rules and orchestration that adapt as intents and volumes shift, instead of requiring a manual rules rewrite",
-                  "Continuous routing optimization that keeps improving first-contact resolution instead of freezing the logic after go-live"
-                ],
-                cta: "Offer a routing effectiveness audit comparing current first-contact resolution against a predictive-routing baseline"
-              },
-              platforms: ["Routing & orchestration engines (Genesys, NICE, Amazon Connect routing)", "Predictive scoring & ML models", "Decisioning and business rules engines"],
-              capabilities: {
-                subhead: "Routing Strategy, Scoring & Optimization",
-                items: [
-                  "Routing strategy and skills model design",
-                  "Predictive intent and value scoring",
-                  "Decisioning rules and orchestration build",
-                  "Continuous routing optimization",
-                  "First-contact resolution measurement"
-                ]
-              },
-              whyHGS: [
-                { reason: "Predictive, not just rules-based", proof: "Routing decisions are informed by predictive intent and value scoring, not just static rules that require manual maintenance every time volumes or intents shift." },
-                { reason: "Priority customers actually prioritized", proof: "Value scoring is built into the routing logic itself, so high-value or at-risk customers get consistently prioritized treatment, not queue-dependent luck." },
-                { reason: "Continuously optimized", proof: "Routing optimization runs continuously after go-live, so first-contact resolution keeps improving instead of degrading as intents and volumes drift." },
-                { reason: "Specialist time protected", proof: "Routing logic is designed to reserve specialist skills for contacts that actually need them, reducing wasted expensive capacity on issues a generalist or self-service could resolve." }
-              ],
-              objections: [
-                { objection: "Our skill-based routing already works reasonably well.", answer: "The routing effectiveness audit compares current first-contact resolution against a predictive-routing baseline, so 'reasonably well' gets tested against an actual number." },
-                { objection: "Predictive scoring sounds like a big data science project.", answer: "We start with the scoring models that most directly improve routing accuracy — intent and value — not a research project across every possible signal." },
-                { objection: "We're worried this will require constant manual tuning.", answer: "Decisioning rules and orchestration are designed to adapt as intents and volumes shift, which is what continuous routing optimization is specifically for." },
-                { objection: "How do we know specialist skills will actually get used better?", answer: "Routing logic explicitly reserves specialist capacity for the contacts that need it, and the impact is measured against first-contact resolution and specialist utilization, not assumed." }
-              ]
-            } },
-          { name: "Experience & Interaction Intelligence", blurb: "Analyze every interaction across channels to see why customers contact you and what it costs.",
-            outcomes: ["Root causes visible to the business, not just within the contact center", "Compliance and quality reviewed at 100% coverage", "Journey friction quantified in cost terms"],
-            scope: ["Interaction analytics deployment", "Driver and root-cause taxonomy", "Automated quality monitoring", "Journey and VoC reporting"],
-            battlecard: {
-              valueProp: "Every interaction analyzed. Root causes made visible.",
-              description: "For CX and operations leaders sampling a fraction of contacts, analyze 100% of interactions across channels to surface root causes and quantify friction in terms the whole business can act on.",
-              buyers: [
-                { title: "VP Customer Experience", challenge: "Only a small sample of interactions ever gets reviewed, so most of what's actually happening with customers is invisible." },
-                { title: "Head of Quality / Compliance", challenge: "Compliance and quality reviews cover a fraction of contacts, leaving real exposure in the 95%+ that never gets checked." },
-                { title: "Chief Operating Officer", challenge: "Root causes driving contact volume are visible to the service team but never make it to the business functions that could actually fix them." },
-                { title: "CFO", challenge: "Journey friction and contact drivers exist as anecdotes, not a quantified cost the business can prioritize against." },
-                { title: "Head of Product / Journey", challenge: "Has no systematic way to see which product or process issues are actually generating the most customer contacts." }
-              ],
-              keyMessages: [
-                "We analyze every interaction across channels to see why customers contact you and what it costs — root causes become visible to the business, not just to service, because the analysis covers 100% of contacts, not a quality-sampling fraction.",
-                "Compliance and quality get reviewed at full coverage, and journey friction gets quantified in cost terms — so the functions that can actually fix a root cause see the same evidence the contact center already has, instead of hearing about it secondhand."
-              ],
-              quickPitch: {
-                pitch: "We deploy interaction analytics across every channel and every contact, so quality and compliance reviews reach full coverage and the root causes driving volume get quantified in terms the rest of the business will act on.",
-                points: [
-                  "Driver and root-cause taxonomy that groups contacts by why they're actually happening, not just which queue they landed in",
-                  "Automated quality monitoring at 100% coverage, replacing the small manual sample most compliance and QA programs run today",
-                  "Journey and VoC reporting that quantifies friction in cost terms finance and product teams can prioritize against"
-                ],
-                cta: "Offer to deploy interaction analytics on one channel and quantify the top 5 root causes driving contact volume"
-              },
-              platforms: ["Interaction & speech analytics (NICE, Verint, CallMiner)", "VoC and sentiment analysis tooling", "BI integration (Power BI, Tableau) for journey and cost reporting"],
-              capabilities: {
-                subhead: "Analytics, Root Cause & Quality Coverage",
-                items: [
-                  "Interaction analytics deployment across channels",
-                  "Driver and root-cause taxonomy design",
-                  "Automated quality monitoring at full coverage",
-                  "Journey and voice-of-customer reporting",
-                  "Contact-cost quantification and prioritization"
-                ]
-              },
-              whyHGS: [
-                { reason: "Full coverage, not a sample", proof: "Automated quality monitoring reviews 100% of contacts, replacing the small manual sample most compliance and QA programs are limited to today." },
-                { reason: "Root causes translated for the business", proof: "Driver and root-cause taxonomy is designed to surface findings in terms product, operations and finance teams can act on, not just a service-team readout." },
-                { reason: "Friction quantified in cost terms", proof: "Journey friction gets a dollar figure attached, which is what actually gets root-cause fixes prioritized against other business investments." },
-                { reason: "Built on proven interaction analytics platforms", proof: "Deployed on established interaction and speech analytics platforms already trusted by compliance and quality teams at enterprise scale." }
-              ],
-              objections: [
-                { objection: "We already do quality sampling — isn't that enough?", answer: "A sample only tells you about the fraction reviewed — automated monitoring at 100% coverage surfaces issues and root causes the sample was always going to miss." },
-                { objection: "This sounds like a lot of new tooling and cost.", answer: "We start with one channel and quantify the top root causes driving volume there, so the value case is proven before expanding coverage." },
-                { objection: "The service team already knows why customers call.", answer: "They know the symptoms; the taxonomy and cost quantification are what gets that knowledge in front of product and operations teams with the evidence to act on it." },
-                { objection: "How is this different from a standard VoC survey program?", answer: "VoC surveys capture what customers say afterward; interaction analytics captures what actually happened in every contact, at full coverage, which is a different and more complete signal." }
-              ]
-            } },
-          { name: "Autonomous Service Operations", blurb: "Move beyond deflection to agentic resolution — systems that complete the task end to end, with human oversight.",
-            outcomes: ["Whole journeys resolved without an advisor", "Cost to serve structurally lower", "Human effort concentrated on exceptions"],
-            scope: ["Agentic use-case selection and risk assessment", "Orchestration across systems of record", "Human-in-the-loop and escalation design", "Performance, safety and drift monitoring"],
-            battlecard: {
-              valueProp: "Whole journeys resolved. Structurally lower cost to serve.",
-              description: "For COOs and service leaders whose automation has plateaued at deflection, orchestrate agentic resolution across systems of record with human oversight to resolve whole journeys end to end.",
-              buyers: [
-                { title: "Chief Operating Officer", challenge: "Automation has plateaued at deflecting simple FAQs, and cost to serve hasn't structurally moved because the complex journeys still require a human end to end." },
-                { title: "Head of Customer Service / Operations", challenge: "Wants whole journeys — not just individual questions — resolved without an advisor touching them, but doesn't know which ones are safe to automate." },
-                { title: "CIO / Head of AI", challenge: "Needs to orchestrate agents across multiple systems of record reliably, not just hand a chatbot a single API call." },
-                { title: "CFO", challenge: "Cost to serve needs to drop structurally, not just marginally, and current automation hasn't moved the number enough to matter." },
-                { title: "Risk / Compliance Leader", challenge: "Worried that agentic automation acting across systems without oversight creates a new category of operational risk." }
-              ],
-              keyMessages: [
-                "We move beyond deflection to agentic resolution — systems that complete the task end to end, with human oversight. Whole journeys get resolved without an advisor, not just the first question in a longer process.",
-                "Cost to serve becomes structurally lower because human effort concentrates on real exceptions, not because deflection nudges the average down at the margins — that only works with disciplined use-case selection, orchestration across systems of record, and human-in-the-loop escalation designed in from day one."
-              ],
-              quickPitch: {
-                pitch: "We select and orchestrate agentic use cases that complete whole journeys end to end across your systems of record — with human-in-the-loop escalation and continuous safety monitoring, not an unsupervised agent let loose on production systems.",
-                points: [
-                  "Agentic use-case selection and risk assessment that starts with journeys safe to automate end to end, not the riskiest ones first",
-                  "Orchestration across systems of record so agents can actually complete a task, not just describe the steps to a human who still has to do them",
-                  "Performance, safety and drift monitoring that catches agent behavior degrading before it becomes an incident"
-                ],
-                cta: "Offer an agentic use-case risk assessment across their top 5–10 highest-volume service journeys"
-              },
-              platforms: ["Agent orchestration frameworks (LangGraph, Microsoft Copilot Studio, custom agentic platforms)", "Systems-of-record integration (CRM, order management, billing, core banking)", "AI safety, monitoring & drift detection tooling"],
-              capabilities: {
-                subhead: "Agentic Design, Orchestration & Oversight",
-                items: [
-                  "Agentic use-case selection and risk assessment",
-                  "Orchestration across systems of record",
-                  "Human-in-the-loop and escalation design",
-                  "Performance, safety and drift monitoring",
-                  "Cost-to-serve measurement and reduction tracking"
-                ]
-              },
-              whyHGS: [
-                { reason: "Risk-tiered use-case selection", proof: "Agentic use cases are selected and risk-assessed before automation, so the safest, highest-value journeys move first, not the ones that happen to have the flashiest demo." },
-                { reason: "Oversight designed in, not bolted on", proof: "Human-in-the-loop and escalation paths are part of the architecture from day one, pairing with the same responsible-AI discipline used in our AI Platform & Operations and AI Readiness & Governance work." },
-                { reason: "Orchestration across real systems of record", proof: "Agents are built to actually complete tasks across CRM, order management and billing systems, not just describe next steps to a human who still does the work." },
-                { reason: "Cost to serve tracked, not assumed", proof: "Cost-to-serve reduction is measured against a baseline, so the business case is evidenced by real numbers, not a projected efficiency story." }
-              ],
-              objections: [
-                { objection: "Letting agents act autonomously across our systems feels too risky.", answer: "Use-case selection and risk assessment specifically start with the journeys safest to automate end to end, with human-in-the-loop escalation built in for anything outside defined confidence thresholds." },
-                { objection: "We already tried chatbots and they only deflect simple questions.", answer: "That's exactly the plateau this play is built to break through — orchestration across systems of record lets agents complete the task, not just answer a question about it." },
-                { objection: "How do we know agent behavior won't degrade over time?", answer: "Performance, safety and drift monitoring run continuously after go-live specifically to catch degradation before it becomes a customer-facing incident." },
-                { objection: "This sounds like it could eliminate jobs, which will meet internal resistance.", answer: "The design goal is concentrating human effort on real exceptions, not eliminating the team — most organizations redeploy freed capacity toward the complex, high-value work agents aren't suited for." }
-              ]
-            } }
-        ]
-      },
-      {
         id: "sales", name: "Sales Transformation",
         promise: "Modernize commerce, sharpen product and customer intelligence, then convert it into personalized journeys and faster revenue realization.",
         flow: ["Modernize Commerce", "Build Intelligence", "Optimize Content", "Personalize", "Drive Growth", "Accelerate Revenue"],
@@ -925,6 +618,313 @@ const DATA = [
               ]
             } }
         ]
+      },
+      {
+        id: "service", name: "Service Experience Transformation",
+        promise: "Modernize the service platform, then progressively shift resolution to self-service, assisted intelligence and automation.",
+        flow: ["Modernize Platform", "Enable Self-Service", "Empower Agents", "Optimize Routing", "Generate Insights", "Automate Resolution"],
+        projects: [
+          { name: "CX Platform & Contact Center Modernization", blurb: "Replace fragmented telephony and ticketing with a unified cloud contact center.",
+            outcomes: ["Single platform across voice and digital", "Lower cost per contact", "Change delivered in weeks, not releases"],
+            scope: ["Current-state platform and integration audit", "Target CCaaS architecture and migration plan", "Channel and CRM integration", "Cutover, hypercare and adoption"],
+            battlecard: {
+              valueProp: "One contact center platform. Faster change, faster outcomes.",
+              description: "For CX and IT leaders modernizing service operations, unify voice, digital, and CRM on a single CCaaS platform to reduce cost and accelerate change.",
+              buyers: [
+                { title: "VP Customer Service / CX", challenge: "Runs voice, chat and ticketing on separate platforms that don't share a customer record, so every handoff loses context." },
+                { title: "CIO", challenge: "The current contact center platform is on-premise, end-of-life or both, and every change request waits months for a vendor release." },
+                { title: "Head of Contact Center Operations", challenge: "Cost per contact keeps climbing because the platform can't flex capacity or channels without a hardware or licensing project." },
+                { title: "CFO", challenge: "Contact center infrastructure is a large, fixed cost that doesn't scale down when volume drops, unlike a cloud-native alternative." },
+                { title: "Head of CRM / Digital Channels", challenge: "New digital channels (chat, social, messaging) each get bolted on separately instead of integrating into one contact center platform." }
+              ],
+              keyMessages: [
+                "We replace fragmented telephony and ticketing with a cloud contact center that other plays can build on — one platform across voice and digital, so cost per contact comes down and every subsequent service play has a foundation to sit on.",
+                "Change gets delivered in weeks, not releases: a cloud-native CCaaS platform means new channels, IVR flows and integrations ship on your timeline, not a vendor's quarterly release calendar."
+              ],
+              quickPitch: {
+                pitch: "We replace fragmented, on-premise telephony and ticketing with a modern CCaaS platform, integrated to CRM and every digital channel — the foundation every other service transformation play builds on.",
+                points: [
+                  "Current-state platform and integration audit that maps every dependency before a single migration wave starts",
+                  "Target CCaaS architecture designed to carry self-service, agent assist and automation, not just replace a phone system",
+                  "Cutover and hypercare planned to protect service levels during migration, not just after it"
+                ],
+                cta: "Offer a current-state platform and integration audit to size the migration and quantify the cost-per-contact opportunity"
+              },
+              platforms: ["Genesys Cloud, NICE CXone, Amazon Connect, Twilio Flex", "CRM integration (Salesforce Service Cloud, Microsoft Dynamics)", "Digital channel integration (chat, social, messaging)"],
+              capabilities: {
+                subhead: "Assessment, Architecture & Migration",
+                items: [
+                  "Current-state platform and integration audit",
+                  "Target CCaaS architecture and migration planning",
+                  "Channel and CRM integration",
+                  "Cutover, hypercare and adoption support",
+                  "Contact center cost and capacity modeling"
+                ]
+              },
+              whyHGS: [
+                { reason: "Foundation for every downstream service play", proof: "The CCaaS architecture is designed from day one to carry self-service, agent assist, routing intelligence and automation — not just replace the phone system in isolation." },
+                { reason: "Migration discipline", proof: "Structured cutover and hypercare planning designed to protect service levels during migration, based on running contact center operations at scale." },
+                { reason: "Vendor-agnostic architecture", proof: "Experience across the major CCaaS platforms means the target architecture is chosen to fit the business, not to fit a single vendor relationship." },
+                { reason: "Change delivered on your timeline", proof: "Cloud-native platforms replace release-cycle-gated change with self-service configuration, so new flows and integrations ship in days, not quarters." }
+              ],
+              objections: [
+                { objection: "Our current platform still works — why migrate now?", answer: "Working today doesn't mean scaling tomorrow — the audit quantifies the real cost-per-contact and change-velocity gap so the business case is evidence-based, not assumed." },
+                { objection: "Migration will disrupt service levels during cutover.", answer: "Cutover and hypercare are planned specifically to protect service levels during the transition, with rollback paths built into the plan, not just the go-live." },
+                { objection: "We're locked into our current vendor's contract.", answer: "The architecture and migration plan can be sequenced around contract timing — assessment work can start well before a cutover date is set." },
+                { objection: "This feels like just a phone system upgrade.", answer: "It's the foundation for every other service transformation play — self-service, agent assist, routing and automation all depend on this platform being modern and integrated first." }
+              ]
+            } },
+          { name: "Customer Self-Service & Automation", blurb: "Guide customers to fast, successful resolutions through intuitive conversational and digital self-service.",
+            outcomes: ["Deflect top intents to self-service", "24/7 resolution without added headcount", "Fewer repeat contacts per issue"],
+            scope: ["Intent and contact-driver analysis", "Conversational and IVR journey design", "Knowledge and backend integration", "Containment tuning and guardrails"],
+            battlecard: {
+              valueProp: "Self-service customers actually finish. Not another chatbot.",
+              description: "For customer service leaders stuck at single-digit containment, design conversational and IVR journeys around real contact drivers to deflect volume without adding repeat contacts.",
+              buyers: [
+                { title: "Head of Customer Service", challenge: "Self-service containment has stalled in the single digits because the chatbot answers questions nobody's actually asking." },
+                { title: "VP Digital CX", challenge: "Customers abandon the self-service flow and call anyway, so it adds a frustrating step instead of removing one." },
+                { title: "CIO", challenge: "Self-service tools aren't integrated with backend systems, so they can answer questions but can't actually complete a transaction." },
+                { title: "Head of Contact Center Operations", challenge: "Needs meaningful containment on top intents to manage volume without adding headcount, not a marginal deflection rate." },
+                { title: "Head of Customer Experience / Journey", challenge: "Worried that pushing self-service too hard just increases repeat contacts when the bot fails to resolve the issue." }
+              ],
+              keyMessages: [
+                "We deflect predictable demand into conversational and web self-service that customers actually complete — built on real intent and contact-driver analysis, not a guess at what people might ask.",
+                "Containment is tuned against guardrails, so it drives meaningful deflection on top intents without increasing repeat contacts — 24/7 resolution without added headcount only works if the self-service actually resolves the issue, not just deflects the first touch."
+              ],
+              quickPitch: {
+                pitch: "We start with intent and contact-driver analysis to find out what customers are actually calling about, then design conversational and IVR journeys — integrated to your backend systems — that resolve those issues, not just answer questions about them.",
+                points: [
+                  "Intent and contact-driver analysis that targets the highest-volume, most-deflectable issues first, not a generic FAQ bot",
+                  "Conversational and IVR journeys integrated with backend systems, so self-service can actually complete a transaction, not just describe how to",
+                  "Containment tuning and guardrails that catch and route failures gracefully, so deflection doesn't quietly increase repeat contacts"
+                ],
+                cta: "Offer a contact-driver analysis to identify the top 5 intents worth automating first"
+              },
+              platforms: ["Conversational AI platforms (NICE, Genesys, Google Dialogflow, Amazon Lex)", "IVR & voice AI tooling", "Backend integration (CRM, order management, billing systems)"],
+              capabilities: {
+                subhead: "Journey Design, Integration & Containment",
+                items: [
+                  "Intent and contact-driver analysis",
+                  "Conversational and IVR journey design",
+                  "Knowledge and backend system integration",
+                  "Containment tuning and guardrails",
+                  "Repeat-contact and failure-path monitoring"
+                ]
+              },
+              whyHGS: [
+                { reason: "Deflection grounded in real contact drivers", proof: "Intent and contact-driver analysis targets the highest-volume, most-deflectable issues first, instead of automating whatever's easiest to build." },
+                { reason: "Integrated, not just conversational", proof: "Self-service journeys connect to backend systems so they can complete transactions, not just answer questions about them." },
+                { reason: "Guardrails against silent failure", proof: "Containment tuning includes monitoring for repeat contacts and failure paths, so deflection gains don't quietly show up as a worse experience later." },
+                { reason: "Built to hand off cleanly", proof: "Journeys are designed to escalate gracefully to a live agent when containment guardrails trigger, keeping the handoff clean instead of dropping the customer." }
+              ],
+              objections: [
+                { objection: "We already have a chatbot and containment hasn't moved.", answer: "That's usually a symptom of automating the wrong intents — contact-driver analysis re-targets the highest-volume, most-deflectable issues instead of the ones that were easiest to build first." },
+                { objection: "Customers hate bots and just want a human.", answer: "Customers abandon bots that can't resolve anything — journeys integrated with backend systems that actually complete a transaction see meaningfully different behavior." },
+                { objection: "We're worried self-service will just create more repeat contacts.", answer: "Containment tuning and guardrails specifically monitor for that failure mode and route to a live agent before it becomes a repeat contact." },
+                { objection: "This will take a long integration project before we see any value.", answer: "We start with the highest-volume intents identified in the contact-driver analysis, so value shows up on a focused first wave, not after a full backend integration project." }
+              ]
+            } },
+          { name: "Agent Empowerment & Productivity Solutions", blurb: "Give advisors a single desktop with real-time assist, summarization and next-best-action.",
+            outcomes: ["Shorter handle time and after-call work", "Faster onboarding for new advisors", "More consistent quality scores"],
+            scope: ["Unified agent desktop design", "Real-time assist and knowledge surfacing", "Auto-summarization and disposition", "Coaching and QA integration"],
+            battlecard: {
+              valueProp: "One agent desktop. Answers found, not hunted.",
+              description: "For contact center leaders whose advisors juggle six systems, unify the desktop with real-time assist and next-best-action to cut handle time and lift quality consistency.",
+              buyers: [
+                { title: "VP Contact Center Operations", challenge: "Advisors toggle between five or six systems on every call, and handle time and after-call work both suffer for it." },
+                { title: "Head of Workforce / Training", challenge: "New advisor ramp time is long because there's no real-time assist to compensate for incomplete knowledge in the first few months." },
+                { title: "Head of Quality / QA", challenge: "Quality scores vary widely by advisor because there's no consistent next-best-action guidance during the call." },
+                { title: "CIO", challenge: "Needs one unified desktop instead of advisors having to manually stitch together CRM, knowledge base and disposition tools." },
+                { title: "CFO", challenge: "Handle time and after-call work drive contact center cost directly, and neither has moved despite previous training investments." }
+              ],
+              keyMessages: [
+                "We give advisors a single desktop with real-time assist, summarization and next-best-action — shorter handle time and after-call work follow directly from advisors not having to hunt across five systems for the same answer.",
+                "New advisors ramp faster because real-time assist compensates for incomplete knowledge, and quality scores get more consistent because next-best-action guidance doesn't depend on which advisor happens to remember the right process."
+              ],
+              quickPitch: {
+                pitch: "We unify the agent desktop and add real-time assist, auto-summarization and next-best-action — so advisors spend less time toggling systems and more time actually helping the customer.",
+                points: [
+                  "Unified agent desktop design that consolidates CRM, knowledge and disposition into one screen, not six",
+                  "Real-time assist and knowledge surfacing that answers the advisor's question before they have to search for it",
+                  "Auto-summarization and disposition that cuts after-call work instead of just shifting it to a different screen"
+                ],
+                cta: "Offer a desktop and workflow assessment to baseline current handle time, after-call work and toggle count per interaction"
+              },
+              platforms: ["Agent desktop & workspace platforms (Salesforce Service Cloud, Genesys, NICE CXone)", "Real-time assist & knowledge AI (Verint, NICE, custom LLM copilots)", "QA and coaching integration tooling"],
+              capabilities: {
+                subhead: "Desktop, Assist & Quality Integration",
+                items: [
+                  "Unified agent desktop design",
+                  "Real-time assist and knowledge surfacing",
+                  "Auto-summarization and disposition",
+                  "Coaching and QA integration",
+                  "Handle time and after-call work baselining"
+                ]
+              },
+              whyHGS: [
+                { reason: "Baselined, measurable impact", proof: "Handle time, after-call work and toggle count are baselined before the desktop is built, so improvement is evidenced, not assumed." },
+                { reason: "Real-time assist that actually gets used", proof: "Knowledge surfacing is designed to answer the advisor's question inline, in the flow of the call, not as a separate search tool competing for attention." },
+                { reason: "Faster ramp, not just better tools", proof: "Real-time assist is specifically designed to compensate for new-advisor knowledge gaps, which is what drives faster ramp time, not just senior-advisor convenience." },
+                { reason: "Consistency tied to QA", proof: "Coaching and QA integration means next-best-action guidance ties directly into how quality gets scored and coached, not a disconnected tool." }
+              ],
+              objections: [
+                { objection: "Our advisors already have a CRM and knowledge base.", answer: "Having both doesn't mean they're unified — the desktop design consolidates them into one screen with assist surfaced inline, not two tools an advisor has to toggle between." },
+                { objection: "AI assist tools sound like they'll slow advisors down while they learn a new system.", answer: "Real-time assist is designed to reduce searching, not add a new tool to search within — ramp time is one of the outcomes we baseline and track." },
+                { objection: "We've invested in training already — why do we need this too?", answer: "Training addresses what advisors know; real-time assist addresses what they can't recall fast enough under pressure — the two are complementary, not competing investments." },
+                { objection: "How do we know handle time will actually improve?", answer: "We baseline handle time, after-call work and toggle count before building anything, so the improvement is measured against your own real numbers, not a vendor benchmark." }
+              ]
+            } },
+          { name: "Intelligent Routing & Decisioning", blurb: "Match every contact to the right skill, channel or automation using intent, value and predicted effort.",
+            outcomes: ["Higher first-contact resolution", "Better use of specialist skills", "Priority customers reliably prioritized"],
+            scope: ["Routing strategy and skills model", "Predictive intent and value scoring", "Decisioning rules and orchestration", "Continuous routing optimization"],
+            battlecard: {
+              valueProp: "Every contact, right destination, first time.",
+              description: "For contact center leaders stuck on static skill-based queues, route every contact by intent, value, and predicted effort to lift first-contact resolution and protect specialist time.",
+              buyers: [
+                { title: "VP Contact Center Operations", challenge: "Routing logic is a static skill-based queue that doesn't account for predicted effort or customer value, so first-contact resolution suffers." },
+                { title: "Head of Customer Experience", challenge: "High-value or at-risk customers get routed the same way as everyone else, undermining retention efforts that depend on prioritized treatment." },
+                { title: "CFO", challenge: "Specialist skills are expensive and get wasted on contacts that could have been resolved by a generalist or self-service." },
+                { title: "Head of Customer Retention / VIP Programs", challenge: "Needs priority customers reliably routed to the right treatment, and today it depends on the queue, not the customer's actual value or risk." },
+                { title: "CIO", challenge: "Routing rules are hard-coded and manually maintained, so nobody can adjust them quickly as intents or volumes shift." }
+              ],
+              keyMessages: [
+                "We match every contact to the right skill, channel or automation using intent, value and predicted effort — not a static skill-based queue that treats every contact in a category the same way.",
+                "This drives first-contact resolution up and puts specialist skills where they actually matter, while priority customers get reliably prioritized instead of depending on which queue they happened to land in."
+              ],
+              quickPitch: {
+                pitch: "We replace static skill-based routing with predictive intent and value scoring — so every contact routes to the right skill, channel or automation the first time, and specialist time gets used where it counts.",
+                points: [
+                  "Predictive intent and value scoring that routes based on what the contact actually needs and who the customer actually is, not just a category",
+                  "Decisioning rules and orchestration that adapt as intents and volumes shift, instead of requiring a manual rules rewrite",
+                  "Continuous routing optimization that keeps improving first-contact resolution instead of freezing the logic after go-live"
+                ],
+                cta: "Offer a routing effectiveness audit comparing current first-contact resolution against a predictive-routing baseline"
+              },
+              platforms: ["Routing & orchestration engines (Genesys, NICE, Amazon Connect routing)", "Predictive scoring & ML models", "Decisioning and business rules engines"],
+              capabilities: {
+                subhead: "Routing Strategy, Scoring & Optimization",
+                items: [
+                  "Routing strategy and skills model design",
+                  "Predictive intent and value scoring",
+                  "Decisioning rules and orchestration build",
+                  "Continuous routing optimization",
+                  "First-contact resolution measurement"
+                ]
+              },
+              whyHGS: [
+                { reason: "Predictive, not just rules-based", proof: "Routing decisions are informed by predictive intent and value scoring, not just static rules that require manual maintenance every time volumes or intents shift." },
+                { reason: "Priority customers actually prioritized", proof: "Value scoring is built into the routing logic itself, so high-value or at-risk customers get consistently prioritized treatment, not queue-dependent luck." },
+                { reason: "Continuously optimized", proof: "Routing optimization runs continuously after go-live, so first-contact resolution keeps improving instead of degrading as intents and volumes drift." },
+                { reason: "Specialist time protected", proof: "Routing logic is designed to reserve specialist skills for contacts that actually need them, reducing wasted expensive capacity on issues a generalist or self-service could resolve." }
+              ],
+              objections: [
+                { objection: "Our skill-based routing already works reasonably well.", answer: "The routing effectiveness audit compares current first-contact resolution against a predictive-routing baseline, so 'reasonably well' gets tested against an actual number." },
+                { objection: "Predictive scoring sounds like a big data science project.", answer: "We start with the scoring models that most directly improve routing accuracy — intent and value — not a research project across every possible signal." },
+                { objection: "We're worried this will require constant manual tuning.", answer: "Decisioning rules and orchestration are designed to adapt as intents and volumes shift, which is what continuous routing optimization is specifically for." },
+                { objection: "How do we know specialist skills will actually get used better?", answer: "Routing logic explicitly reserves specialist capacity for the contacts that need it, and the impact is measured against first-contact resolution and specialist utilization, not assumed." }
+              ]
+            } },
+          { name: "Experience & Interaction Intelligence", blurb: "Analyze every interaction across channels to see why customers contact you and what it costs.",
+            outcomes: ["Root causes visible to the business, not just within the contact center", "Compliance and quality reviewed at 100% coverage", "Journey friction quantified in cost terms"],
+            scope: ["Interaction analytics deployment", "Driver and root-cause taxonomy", "Automated quality monitoring", "Journey and VoC reporting"],
+            battlecard: {
+              valueProp: "Every interaction analyzed. Root causes made visible.",
+              description: "For CX and operations leaders sampling a fraction of contacts, analyze 100% of interactions across channels to surface root causes and quantify friction in terms the whole business can act on.",
+              buyers: [
+                { title: "VP Customer Experience", challenge: "Only a small sample of interactions ever gets reviewed, so most of what's actually happening with customers is invisible." },
+                { title: "Head of Quality / Compliance", challenge: "Compliance and quality reviews cover a fraction of contacts, leaving real exposure in the 95%+ that never gets checked." },
+                { title: "Chief Operating Officer", challenge: "Root causes driving contact volume are visible to the service team but never make it to the business functions that could actually fix them." },
+                { title: "CFO", challenge: "Journey friction and contact drivers exist as anecdotes, not a quantified cost the business can prioritize against." },
+                { title: "Head of Product / Journey", challenge: "Has no systematic way to see which product or process issues are actually generating the most customer contacts." }
+              ],
+              keyMessages: [
+                "We analyze every interaction across channels to see why customers contact you and what it costs — root causes become visible to the business, not just to service, because the analysis covers 100% of contacts, not a quality-sampling fraction.",
+                "Compliance and quality get reviewed at full coverage, and journey friction gets quantified in cost terms — so the functions that can actually fix a root cause see the same evidence the contact center already has, instead of hearing about it secondhand."
+              ],
+              quickPitch: {
+                pitch: "We deploy interaction analytics across every channel and every contact, so quality and compliance reviews reach full coverage and the root causes driving volume get quantified in terms the rest of the business will act on.",
+                points: [
+                  "Driver and root-cause taxonomy that groups contacts by why they're actually happening, not just which queue they landed in",
+                  "Automated quality monitoring at 100% coverage, replacing the small manual sample most compliance and QA programs run today",
+                  "Journey and VoC reporting that quantifies friction in cost terms finance and product teams can prioritize against"
+                ],
+                cta: "Offer to deploy interaction analytics on one channel and quantify the top 5 root causes driving contact volume"
+              },
+              platforms: ["Interaction & speech analytics (NICE, Verint, CallMiner)", "VoC and sentiment analysis tooling", "BI integration (Power BI, Tableau) for journey and cost reporting"],
+              capabilities: {
+                subhead: "Analytics, Root Cause & Quality Coverage",
+                items: [
+                  "Interaction analytics deployment across channels",
+                  "Driver and root-cause taxonomy design",
+                  "Automated quality monitoring at full coverage",
+                  "Journey and voice-of-customer reporting",
+                  "Contact-cost quantification and prioritization"
+                ]
+              },
+              whyHGS: [
+                { reason: "Full coverage, not a sample", proof: "Automated quality monitoring reviews 100% of contacts, replacing the small manual sample most compliance and QA programs are limited to today." },
+                { reason: "Root causes translated for the business", proof: "Driver and root-cause taxonomy is designed to surface findings in terms product, operations and finance teams can act on, not just a service-team readout." },
+                { reason: "Friction quantified in cost terms", proof: "Journey friction gets a dollar figure attached, which is what actually gets root-cause fixes prioritized against other business investments." },
+                { reason: "Built on proven interaction analytics platforms", proof: "Deployed on established interaction and speech analytics platforms already trusted by compliance and quality teams at enterprise scale." }
+              ],
+              objections: [
+                { objection: "We already do quality sampling — isn't that enough?", answer: "A sample only tells you about the fraction reviewed — automated monitoring at 100% coverage surfaces issues and root causes the sample was always going to miss." },
+                { objection: "This sounds like a lot of new tooling and cost.", answer: "We start with one channel and quantify the top root causes driving volume there, so the value case is proven before expanding coverage." },
+                { objection: "The service team already knows why customers call.", answer: "They know the symptoms; the taxonomy and cost quantification are what gets that knowledge in front of product and operations teams with the evidence to act on it." },
+                { objection: "How is this different from a standard VoC survey program?", answer: "VoC surveys capture what customers say afterward; interaction analytics captures what actually happened in every contact, at full coverage, which is a different and more complete signal." }
+              ]
+            } },
+          { name: "Autonomous Service Operations", blurb: "Move beyond deflection to agentic resolution — systems that complete the task end to end, with human oversight.",
+            outcomes: ["Whole journeys resolved without an advisor", "Cost to serve structurally lower", "Human effort concentrated on exceptions"],
+            scope: ["Agentic use-case selection and risk assessment", "Orchestration across systems of record", "Human-in-the-loop and escalation design", "Performance, safety and drift monitoring"],
+            battlecard: {
+              valueProp: "Whole journeys resolved. Structurally lower cost to serve.",
+              description: "For COOs and service leaders whose automation has plateaued at deflection, orchestrate agentic resolution across systems of record with human oversight to resolve whole journeys end to end.",
+              buyers: [
+                { title: "Chief Operating Officer", challenge: "Automation has plateaued at deflecting simple FAQs, and cost to serve hasn't structurally moved because the complex journeys still require a human end to end." },
+                { title: "Head of Customer Service / Operations", challenge: "Wants whole journeys — not just individual questions — resolved without an advisor touching them, but doesn't know which ones are safe to automate." },
+                { title: "CIO / Head of AI", challenge: "Needs to orchestrate agents across multiple systems of record reliably, not just hand a chatbot a single API call." },
+                { title: "CFO", challenge: "Cost to serve needs to drop structurally, not just marginally, and current automation hasn't moved the number enough to matter." },
+                { title: "Risk / Compliance Leader", challenge: "Worried that agentic automation acting across systems without oversight creates a new category of operational risk." }
+              ],
+              keyMessages: [
+                "We move beyond deflection to agentic resolution — systems that complete the task end to end, with human oversight. Whole journeys get resolved without an advisor, not just the first question in a longer process.",
+                "Cost to serve becomes structurally lower because human effort concentrates on real exceptions, not because deflection nudges the average down at the margins — that only works with disciplined use-case selection, orchestration across systems of record, and human-in-the-loop escalation designed in from day one."
+              ],
+              quickPitch: {
+                pitch: "We select and orchestrate agentic use cases that complete whole journeys end to end across your systems of record — with human-in-the-loop escalation and continuous safety monitoring, not an unsupervised agent let loose on production systems.",
+                points: [
+                  "Agentic use-case selection and risk assessment that starts with journeys safe to automate end to end, not the riskiest ones first",
+                  "Orchestration across systems of record so agents can actually complete a task, not just describe the steps to a human who still has to do them",
+                  "Performance, safety and drift monitoring that catches agent behavior degrading before it becomes an incident"
+                ],
+                cta: "Offer an agentic use-case risk assessment across their top 5–10 highest-volume service journeys"
+              },
+              platforms: ["Agent orchestration frameworks (LangGraph, Microsoft Copilot Studio, custom agentic platforms)", "Systems-of-record integration (CRM, order management, billing, core banking)", "AI safety, monitoring & drift detection tooling"],
+              capabilities: {
+                subhead: "Agentic Design, Orchestration & Oversight",
+                items: [
+                  "Agentic use-case selection and risk assessment",
+                  "Orchestration across systems of record",
+                  "Human-in-the-loop and escalation design",
+                  "Performance, safety and drift monitoring",
+                  "Cost-to-serve measurement and reduction tracking"
+                ]
+              },
+              whyHGS: [
+                { reason: "Risk-tiered use-case selection", proof: "Agentic use cases are selected and risk-assessed before automation, so the safest, highest-value journeys move first, not the ones that happen to have the flashiest demo." },
+                { reason: "Oversight designed in, not bolted on", proof: "Human-in-the-loop and escalation paths are part of the architecture from day one, pairing with the same responsible-AI discipline used in our AI Platform & Operations and AI Readiness & Governance work." },
+                { reason: "Orchestration across real systems of record", proof: "Agents are built to actually complete tasks across CRM, order management and billing systems, not just describe next steps to a human who still does the work." },
+                { reason: "Cost to serve tracked, not assumed", proof: "Cost-to-serve reduction is measured against a baseline, so the business case is evidenced by real numbers, not a projected efficiency story." }
+              ],
+              objections: [
+                { objection: "Letting agents act autonomously across our systems feels too risky.", answer: "Use-case selection and risk assessment specifically start with the journeys safest to automate end to end, with human-in-the-loop escalation built in for anything outside defined confidence thresholds." },
+                { objection: "We already tried chatbots and they only deflect simple questions.", answer: "That's exactly the plateau this play is built to break through — orchestration across systems of record lets agents complete the task, not just answer a question about it." },
+                { objection: "How do we know agent behavior won't degrade over time?", answer: "Performance, safety and drift monitoring run continuously after go-live specifically to catch degradation before it becomes a customer-facing incident." },
+                { objection: "This sounds like it could eliminate jobs, which will meet internal resistance.", answer: "The design goal is concentrating human effort on real exceptions, not eliminating the team — most organizations redeploy freed capacity toward the complex, high-value work agents aren't suited for." }
+              ]
+            } }
+        ]
       }
     ]
   },
@@ -932,313 +932,6 @@ const DATA = [
     id: "platforms", name: "Intelligent Platforms", tag: "Build Digital Foundations",
     blurb: "Applications, integration, data and planning — the foundations that make everything above them faster to build and cheaper to run.",
     strategics: [
-      {
-        id: "planning", name: "Enterprise Planning",
-        promise: "Modernize the planning stack, extend it across functions, and turn it into forecasting and decision intelligence leadership can act on.",
-        flow: ["Foundation", "Functional Planning", "Revenue Planning", "Forecasting", "Decision Intelligence", "Performance Mgmt"],
-        projects: [
-          { name: "xP&A and FP&A Modernization", blurb: "Move financial planning off spreadsheets onto a connected platform with a single version of the plan.",
-            outcomes: ["Close and re-forecast cycles shortened", "One connected plan across finance", "Audit trail on every assumption"],
-            scope: ["Planning platform selection and design", "Chart of accounts and driver model", "Budget, forecast and close workflows", "Spreadsheet retirement and enablement"],
-            battlecard: {
-              valueProp: "One planning platform. One version of the plan.",
-              description: "For CFOs and finance leaders running budgeting and forecasting on spreadsheets and legacy tools, replace disconnected planning with a governed, driver-based platform to close and re-forecast in days.",
-              buyers: [
-                { title: "CFO / VP Finance", challenge: "Budgeting and forecasting live in disconnected spreadsheets with no audit trail, and re-forecast cycles take weeks instead of days." },
-                { title: "Head of FP&A / Director of Finance", challenge: "Manual, error-prone consolidation across business units leaves no time for analysis before the numbers are due." },
-                { title: "Controller", challenge: "Can't produce a defensible, connected plan of record that reconciles cleanly with the close." },
-                { title: "CIO / VP IT", challenge: "Legacy planning tools (BPC, Hyperion) are nearing end-of-life or won't scale with the new ERP, but nobody owns replacing them." },
-                { title: "Data & Analytics Leader", challenge: "Planning data sits outside the rest of the data estate, disconnected from everything else being modernized." }
-              ],
-              keyMessages: [
-                "We move FP&A off spreadsheets onto a connected, driver-based planning platform — one plan of record for budgeting, forecasting and management reporting instead of five conflicting versions in Excel.",
-                "This is the foundation step in Enterprise Planning: get it right here and the workforce, supply chain, marketing, sales and revenue-growth plans downstream all reconcile to the same numbers instead of arguing over whose version is correct."
-              ],
-              quickPitch: {
-                pitch: "We replace spreadsheet-driven budgeting and forecasting with a single connected planning platform, built around your chart of accounts and driver model — not a generic template.",
-                points: [
-                  "Deep experience across SAC, Anaplan, Pigment, Board and BPC — we pick the platform that fits, not the one we're selling",
-                  "Spreadsheet retirement handled alongside the platform rollout, not left as homework for your team",
-                  "Audit trail on every assumption, so the numbers survive a finance review, not just a demo"
-                ],
-                cta: "Offer a Planning Maturity & Health Check assessment to benchmark the current close and forecast cycle"
-              },
-              platforms: ["SAP Analytics Cloud", "Anaplan", "Pigment", "Board"],
-              capabilities: {
-                subhead: "Advisory, Architecture & Delivery",
-                items: [
-                  "Planning platform selection and design",
-                  "Chart of accounts and driver model design",
-                  "Budget, forecast and close workflow build",
-                  "Spreadsheet retirement and user enablement",
-                  "Application maintenance and support"
-                ]
-              },
-              whyHGS: [
-                { reason: "Deep experience across every major platform", proof: "Advisory, strategy, architecture and delivery experience across SAC, Anaplan, Pigment, Group Reporting and BPC — not locked to one vendor's roadmap." },
-                { reason: "Proven on Fortune 500 global rollouts", proof: "Led global finance transformations such as Kellogg's 52-week, 4-region FP&A rollout and Valero's replacement of a decade-old SAP SEM platform." },
-                { reason: "Business-owned, not IT-heavy", proof: "Implementations are finance-led by design, reducing dependency on IT and speeding adoption." },
-                { reason: "Proven, high-quality hybrid delivery", proof: "A combination of on-site and offshore, directly-employed planning specialists — not subcontractors — for cost-effective delivery." }
-              ],
-              objections: [
-                { objection: "We already have Excel — it works.", answer: "Excel doesn't scale, lacks governance, and can't support real-time scenarios or collaboration across finance, sales and operations." },
-                { objection: "We'll just extend maintenance on our legacy platform (BPC/Hyperion).", answer: "These platforms are decades old and don't resolve modern planning challenges — extending maintenance only delays the same rebuild at higher cost." },
-                { objection: "Implementation will take too long or cost too much.", answer: "We start with a focused POC or priority use case that delivers value in weeks, not a multi-year program." },
-                { objection: "We're waiting for our ERP transformation to finish first.", answer: "Planning shouldn't wait — we can modernize it in parallel so finance is ready on day one of the ERP go-live." }
-              ]
-            } },
-          { name: "Functional Planning (Workforce/SCM/Marketing/Sales)", blurb: "Extend the same planning model into workforce, supply chain, marketing and sales so plans reconcile.",
-            outcomes: ["Functional plans that tie back to finance", "Fewer reconciliation arguments", "Faster cross-functional replanning"],
-            scope: ["Functional driver models", "Workforce and capacity planning", "Demand and supply planning integration", "Cross-functional plan reconciliation"],
-            battlecard: {
-              valueProp: "One driver model. Every functional plan reconciles.",
-              description: "For finance and functional planning leaders whose workforce, supply chain, marketing, and sales plans never tie back to the corporate plan, extend one driver-based model across every function to end the reconciliation arguments.",
-              buyers: [
-                { title: "CFO / Head of FP&A", challenge: "Functional plans (workforce, supply chain, marketing, sales) never reconcile to the corporate plan, so every quarter starts with a reconciliation argument instead of a decision." },
-                { title: "VP Workforce Planning / HR", challenge: "Headcount and capacity plans are built in isolation from the revenue and cost plans they're supposed to support." },
-                { title: "VP Supply Chain / S&OP Lead", challenge: "Demand and supply plans live in a different system than finance, so commitments made in S&OP don't show up in the P&L until it's too late." },
-                { title: "VP Sales / Sales Ops", challenge: "Sales plans and quota-setting aren't connected to the same growth assumptions finance is planning against." },
-                { title: "CMO / Marketing Ops", challenge: "Marketing budget plans get built independently of the enterprise plan, so every reallocation conversation starts from scratch." }
-              ],
-              keyMessages: [
-                "We extend the same driver-based planning model that runs your FP&A into workforce, supply chain, marketing and sales — so every functional plan is built on the same assumptions and reconciles automatically, instead of requiring a war-room every quarter to explain the gaps.",
-                "This is the second step in Enterprise Planning: once the connected plan of record exists, we cascade it into the functions that actually drive the numbers, so replanning after a shock takes days, not a full re-cycle."
-              ],
-              quickPitch: {
-                pitch: "We connect workforce, supply chain, marketing and sales planning to the same driver model finance already runs on, so 'the plan' means one thing across the business, not five.",
-                points: [
-                  "Functional driver models built to reconcile automatically with the corporate plan, not bridge through a manual mapping spreadsheet",
-                  "Workforce and capacity planning tied directly to the cost and revenue drivers that justify headcount",
-                  "Demand and supply plans integrated into the same platform finance already trusts"
-                ],
-                cta: "Offer a cross-functional plan reconciliation audit — show where today's functional plans actually diverge from the corporate number"
-              },
-              platforms: ["SAP Analytics Cloud", "Anaplan", "Pigment", "Board"],
-              capabilities: {
-                subhead: "Strategy, Architecture & Delivery",
-                items: [
-                  "Functional driver model design (workforce, SCM, marketing, sales)",
-                  "Workforce and capacity planning build",
-                  "Demand and supply planning integration",
-                  "Cross-functional plan reconciliation workflow",
-                  "Planning maturity and health-check assessments"
-                ]
-              },
-              whyHGS: [
-                { reason: "Same platform depth as the FP&A foundation", proof: "Functional models sit on the same SAC/Anaplan/Pigment/Board foundation as the core FP&A platform — no bolt-on tool, no separate reconciliation layer." },
-                { reason: "Cross-functional delivery experience", proof: "Global rollouts spanning sales incentive planning (Kennametal) and sales/POS forecasting (Newell Brands) show we connect planning across functions, not just within finance." },
-                { reason: "Business-owned, not IT-led", proof: "Functional planning models are designed for the workforce, supply chain and sales leaders who own the numbers to run themselves." },
-                { reason: "Proven, high-quality hybrid delivery", proof: "On-site and offshore delivery by directly-employed specialists keeps cost predictable at scale." }
-              ],
-              objections: [
-                { objection: "Each function already has its own planning tool — why change?", answer: "We don't rip out what works; we connect it to one driver model so the numbers reconcile, instead of asking teams to abandon systems they rely on." },
-                { objection: "Reconciling five functions sounds like a huge program.", answer: "We sequence by function, starting with the one causing the most reconciliation pain, and prove the model before extending it." },
-                { objection: "Our data isn't clean enough to connect across functions.", answer: "Functional driver models are built to tolerate real-world data quality — mapping and cleanup are part of the rollout, not a prerequisite for starting." },
-                { objection: "This feels like an IT integration project.", answer: "It's a finance-and-functional-leader-led planning exercise; IT enables the connections, but the model and ownership stay with the business." }
-              ]
-            } },
-          { name: "Revenue & Growth Planning (RGM/TPM)", blurb: "Plan price, promotion and trade investment with visibility of what each dollar returns.",
-            outcomes: ["Trade spend effectiveness quantified", "Price and promo decisions modeled first", "Growth plans agreed with commercial teams"],
-            scope: ["Revenue growth management framework", "Trade promotion planning and settlement", "Price pack architecture analysis", "Promotion post-event evaluation"],
-            battlecard: {
-              valueProp: "Trade spend planned, not guessed. ROI before the spend.",
-              description: "For commercial and finance leaders running pricing and trade decisions on gut feel, model price-pack architecture and promotion ROI up front to plan trade investment with visibility into what it returns.",
-              buyers: [
-                { title: "CFO / VP Finance (Revenue)", challenge: "Trade spend is one of the largest line items on the P&L with the least visibility into what it actually returns." },
-                { title: "VP Revenue Growth Management / Commercial Strategy", challenge: "Price-pack architecture and promotion decisions are made on history and gut feel, not modeled ROI." },
-                { title: "VP Sales / Trade Marketing", challenge: "Trade promotion planning and settlement is manual and disconnected from what finance is willing to fund." },
-                { title: "VP Category / Brand Management", challenge: "Can't prove which promotions actually lifted volume versus just pulling sales forward or cannibalizing full-price sales." },
-                { title: "Head of Commercial Finance", challenge: "Post-event evaluation of promotions happens too late, if at all, to change the next cycle's plan." }
-              ],
-              keyMessages: [
-                "We bring a revenue growth management framework to price, promotion and trade investment decisions — modeling price-pack architecture and promotion ROI before commitments are made, not reconciling them after the spend is gone.",
-                "This closes the loop trade teams and finance usually run separately: promotion post-event evaluation feeds directly back into the next cycle's price-pack and trade plan, so the same mistakes don't repeat quarter after quarter."
-              ],
-              quickPitch: {
-                pitch: "We model price-pack architecture and trade promotion ROI before the spend happens, turning your biggest, least-visible P&L line into a planned, measured investment.",
-                points: [
-                  "Revenue growth management framework grounded in your actual price-pack and channel data, not a generic industry template",
-                  "Trade promotion planning and settlement connected to the same planning platform finance already trusts",
-                  "Promotion post-event evaluation that feeds the next cycle's plan instead of sitting in a report nobody reads"
-                ],
-                cta: "Offer a trade spend effectiveness diagnostic on 2–3 of their highest-spend promotions from the last cycle"
-              },
-              platforms: ["SAP Analytics Cloud / Anaplan (RGM & TPM modules)", "Statistical & mixed-effects modeling tools", "Power BI / Tableau for commercial reporting"],
-              capabilities: {
-                subhead: "Strategy, Modeling & Delivery",
-                items: [
-                  "Revenue growth management framework design",
-                  "Trade promotion planning and settlement build",
-                  "Price-pack architecture analysis",
-                  "Promotion post-event evaluation and ROI modeling",
-                  "Commercial and executive reporting"
-                ]
-              },
-              whyHGS: [
-                { reason: "Proven promotion and pricing modeling", proof: "Built a product event and pricing demand simulator for Kellogg's using mixed-effects modeling and trade-promotion elasticity — $500K in annual savings and an 83% cut in data preprocessing time." },
-                { reason: "Revenue and growth planning inside the same platform stack", proof: "RGM and TPM planning delivered on the same Anaplan/SAC foundation as the rest of Enterprise Planning, not a bolt-on point solution." },
-                { reason: "Commercial-finance fluency", proof: "We speak both trade marketing and finance, so promotion ROI numbers survive scrutiny from both sides of the table." },
-                { reason: "Faster feedback loop", proof: "Promotion post-event evaluation built to feed the next planning cycle automatically, not sit in a slide deck." }
-              ],
-              objections: [
-                { objection: "Trade spend is too political to model — every brand thinks their promotion is the exception.", answer: "We model at the price-pack and promotion level with transparent assumptions, so the debate moves from opinions to evidence everyone can see." },
-                { objection: "We tried a TPM tool before and it didn't get adopted.", answer: "TPM tools fail when they're implemented as software, not process. We lead with the revenue growth management framework first, then fit the tool to it." },
-                { objection: "Our data isn't clean enough for elasticity modeling.", answer: "We've built these models on messy real-world POS, trade and customer-hierarchy data before — data quality work is part of the engagement, not a blocker to starting." },
-                { objection: "This will slow down our promotion calendar.", answer: "Price-pack and promotion modeling runs ahead of the calendar, not inside it — decisions get made faster because the ROI case is already built." }
-              ]
-            } },
-          { name: "Advanced Forecasting & Modeling (Predictive & Scenario Planning)", blurb: "Add statistical and machine-learning forecasts plus scenario modeling for the decisions that matter.",
-            outcomes: ["Forecast accuracy improved against baseline", "Scenarios produced in hours, not weeks", "Risk ranges instead of single-point plans"],
-            scope: ["Forecast baselining and accuracy diagnostics", "Predictive model development", "Scenario and simulation library", "Forecast governance and overrides"],
-            battlecard: {
-              valueProp: "Forecasts with risk ranges, not single-point guesses.",
-              description: "For FP&A, planning, and supply chain leaders stuck with flat spreadsheet forecasts, add statistical and ML models plus a scenario library to plan against a range of outcomes.",
-              buyers: [
-                { title: "Head of FP&A / Planning", challenge: "Forecasts are single-point guesses with no sense of the range of outcomes, so every plan is wrong the moment reality shifts." },
-                { title: "Supply Chain / Demand Planning Leader", challenge: "Manual, spreadsheet-based forecasting can't keep up with demand volatility or run scenarios fast enough to matter." },
-                { title: "Head of Analytics / CDSO", challenge: "Needs to move from ad-hoc analysis to production-grade forecasting models with consistent, governed standards." },
-                { title: "CFO", challenge: "Needs confidence ranges and scenario impacts before committing budget, not a single number presented as certain." },
-                { title: "Data Platform / Engineering Lead", challenge: "Needs to support forecasting workloads on existing cloud and data platforms without building a parallel, fragile pipeline." }
-              ],
-              keyMessages: [
-                "Applied analytics is the bridge between BI and AI: we add statistical and machine-learning forecasts on top of your existing plan, plus a reusable scenario and simulation library, so planners see a range of outcomes instead of one brittle number.",
-                "Every model we ship is explainable and governed — forecast baselining, accuracy diagnostics and override governance are part of the build, not an afterthought, so planners trust the number enough to act on it."
-              ],
-              quickPitch: {
-                pitch: "We add statistical and ML-based forecasting plus scenario modeling on top of your existing planning process, grounded in your actual data, not a generic template.",
-                points: [
-                  "Forecast baselining and accuracy diagnostics before any model is built, so improvement is measured against a real starting point",
-                  "Reusable scenario and simulation library — new what-ifs in hours, not weeks of spreadsheet rework",
-                  "Explainable models with governed override rules, so planners understand and trust every number"
-                ],
-                cta: "Offer a forecast accuracy diagnostic against 2–3 of their highest-stakes planning lines"
-              },
-              platforms: ["Cloud data platforms (Azure, AWS, GCP)", "Databricks, Snowflake, Fabric", "Time series, regression, classification & MLOps tooling"],
-              capabilities: {
-                subhead: "Strategy, Technology & Tools",
-                items: [
-                  "Forecast baselining and accuracy diagnostics",
-                  "Predictive (statistical and ML) model development",
-                  "Scenario and simulation library design",
-                  "Forecast governance and override rules",
-                  "MLOps, monitoring and lifecycle management"
-                ]
-              },
-              whyHGS: [
-                { reason: "Applied analytics focus", proof: "We specialize in analytics that drive operational decisions, not experimental data science that never leaves a notebook." },
-                { reason: "Explainable by design", proof: "A preference for transparent, interpretable models that planners actually trust and adopt, with QA/QC model vetting built in." },
-                { reason: "Execution credibility", proof: "A track record of taking forecasting models from notebooks into production planning workflows, not just pilots." },
-                { reason: "Scalable architecture", proof: "Reusable pipelines, semantic layers and feature definitions cut rework and speed up rollout to new scenarios." }
-              ],
-              objections: [
-                { objection: "Our forecasts don't need machine learning — spreadsheets have always worked.", answer: "We apply a simplicity-first approach — ML only where it materially improves accuracy over your current baseline, measured against it directly." },
-                { objection: "These models won't scale beyond one team.", answer: "We build on shared platforms with reusable base models and pipelines designed for enterprise rollout, not one-off notebooks." },
-                { objection: "The business won't trust a forecast it doesn't understand.", answer: "We baseline, explain and embed every model into existing decision workflows — trust comes before scale, not after." },
-                { objection: "This will take too long to show value.", answer: "We focus on analytics that impact decisions within your existing planning and operating cycles, not multi-quarter research projects." }
-              ]
-            } },
-          { name: "Planning Analytics & Decision Intelligence", blurb: "Wrap the planning data in analytics that recommend, not just report.",
-            outcomes: ["Decisions supported by consistent numbers", "Analyst time shifted from prep to insight", "Recommendations tracked to outcomes"],
-            scope: ["Planning data model and semantic layer", "Self-service analytics for planners", "Recommendation and alerting logic", "Decision logging and follow-through"],
-            battlecard: {
-              valueProp: "Planning data that recommends the next move.",
-              description: "For planning leaders whose platform reports numbers but suggests no next step, add a semantic layer and recommendation logic so planners spend time deciding, not preparing reports.",
-              buyers: [
-                { title: "Head of FP&A / Planning Analytics", challenge: "Planners spend most of their time preparing numbers for review, not analyzing what the numbers mean." },
-                { title: "VP Business Intelligence / Enterprise Analytics", challenge: "Planning data sits in its own silo, disconnected from the semantic layer the rest of the business already trusts." },
-                { title: "CFO", challenge: "Wants recommendations attached to variances, not just a bigger dashboard to interpret." },
-                { title: "Planning Platform Owner (Anaplan/SAC/Pigment admin)", challenge: "The planning platform is fully built but nobody outside the core team can self-serve an answer from it." },
-                { title: "Head of Commercial / Operations Analytics", challenge: "Decisions get made in meetings and never get logged, so nobody can tell if the recommendation actually worked." }
-              ],
-              keyMessages: [
-                "We wrap the planning platform's data in a proper semantic layer and self-service analytics, so planners and business partners can ask their own questions instead of filing a request and waiting for a report.",
-                "The differentiator is recommendation and decision logging: alerts and suggested actions are attached directly to variances, and every decision made against them is tracked back to the outcome — so the planning function gets measurably smarter every cycle, not just busier."
-              ],
-              quickPitch: {
-                pitch: "We turn the planning platform from a reporting tool into a decision tool — a semantic layer, self-service analytics for planners, and recommendation logic tied to every variance.",
-                points: [
-                  "Planning data model and semantic layer that matches definitions the rest of the business already uses — no separate 'planning truth'",
-                  "Self-service analytics that let planners and business partners answer their own questions instead of waiting on the FP&A team",
-                  "Recommendation and alerting logic attached directly to variances, with decisions logged back to outcomes"
-                ],
-                cta: "Offer a planning analytics maturity assessment — how much analyst time goes to prep versus insight today"
-              },
-              platforms: ["Planning platform native analytics (SAC, Anaplan, Pigment)", "Power BI / Tableau semantic layer integration", "Alerting and workflow tooling"],
-              capabilities: {
-                subhead: "Data, Analytics & Decision Design",
-                items: [
-                  "Planning data model and semantic layer design",
-                  "Self-service analytics enablement for planners",
-                  "Recommendation and alerting logic build",
-                  "Decision logging and outcome tracking",
-                  "Planner training and adoption support"
-                ]
-              },
-              whyHGS: [
-                { reason: "Same team, planning through decision intelligence", proof: "Built by the same specialists delivering the underlying planning platform, so the semantic layer matches the driver model exactly instead of drifting from it." },
-                { reason: "Explainable, adopted analytics", proof: "A preference for transparent, interpretable recommendations that planners actually act on, not black-box scores they ignore." },
-                { reason: "Decision accountability built in", proof: "Decision logging ties every recommendation back to what actually happened — a discipline most planning analytics builds skip entirely." },
-                { reason: "Faster time to insight", proof: "Self-service semantic layers cut analyst prep time, redeploying hours from formatting reports to interpreting them." }
-              ],
-              objections: [
-                { objection: "We already have dashboards for planning — isn't that enough?", answer: "Dashboards show what happened; we add the semantic layer and recommendation logic that tell planners what to do about it." },
-                { objection: "Self-service will mean everyone gets a different number.", answer: "The semantic layer enforces one set of governed definitions — self-service means faster answers, not conflicting ones." },
-                { objection: "Recommendation engines feel like a black box finance won't trust.", answer: "We build explainable recommendations tied to visible drivers and thresholds, with QA before anything ships to planners." },
-                { objection: "We don't have time to log every decision.", answer: "Decision logging is lightweight and built into the existing review cadence — designed to add minutes, not a new process." }
-              ]
-            } },
-          { name: "Performance Management & Executive Insights", blurb: "Give the executive team one performance view with variance explained before they ask.",
-            outcomes: ["Board and executive packs produced automatically", "Variance narratives generated, then reviewed", "Single set of numbers across the leadership team"],
-            scope: ["Executive KPI framework", "Automated reporting and packs", "Variance and driver analysis", "Performance review cadence design"],
-            battlecard: {
-              valueProp: "One executive view. Variance explained before you ask.",
-              description: "For CFOs and executive teams drowning in board-deck prep, automate the executive KPI framework to narrate variance and drivers before the meeting starts.",
-              buyers: [
-                { title: "CFO", challenge: "Spends days before every board meeting building and re-checking the executive pack instead of deciding what to do about the numbers in it." },
-                { title: "CEO / COO", challenge: "Gets a different version of 'the numbers' depending on who prepared the deck this month." },
-                { title: "Head of FP&A / Corporate Finance", challenge: "The team burns the last week of every cycle assembling packs and chasing variance explanations instead of closing the plan." },
-                { title: "VP Investor Relations", challenge: "Needs board and investor materials that are consistent with internal management reporting, not reconciled after the fact." },
-                { title: "Business Unit Finance Leads", challenge: "Report the same numbers differently to corporate every cycle, causing rework and mistrust in the consolidated view." }
-              ],
-              keyMessages: [
-                "We give the executive team one performance view — an executive KPI framework, automated reporting packs, and variance and driver analysis generated automatically — so the story behind the numbers is ready before anyone has to ask for it.",
-                "This is the last mile of Enterprise Planning: the same connected plan, functional models, forecasts and analytics feed straight into board and leadership packs, so what the executive team sees is provably the same plan finance, sales and operations are actually running against."
-              ],
-              quickPitch: {
-                pitch: "We replace manual board-pack building with an automated executive KPI framework — variance and driver narratives generated straight from the plan of record, reviewed by finance instead of assembled from scratch.",
-                points: [
-                  "Executive KPI framework built once and reused every cycle, instead of rebuilt in slides each time",
-                  "Automated reporting and packs pulled directly from the same connected plan the rest of Enterprise Planning runs on",
-                  "Variance narratives generated automatically, then reviewed — not written from scratch under deadline"
-                ],
-                cta: "Offer to rebuild one recent board pack on the automated framework as a side-by-side proof point"
-              },
-              platforms: ["SAC / Anaplan / Pigment reporting layers", "Power BI / Tableau executive dashboards", "Narrative-generation and reporting automation tooling"],
-              capabilities: {
-                subhead: "Reporting, Analytics & Governance",
-                items: [
-                  "Executive KPI framework design",
-                  "Automated reporting and board-pack generation",
-                  "Variance and driver analysis automation",
-                  "Performance review cadence design",
-                  "Single-source consolidation across business units"
-                ]
-              },
-              whyHGS: [
-                { reason: "One number, every level", proof: "KPI frameworks designed to roll up cleanly from business-unit finance leads to the CFO to the board, without a reconciliation step at each layer." },
-                { reason: "Automation without losing the narrative", proof: "Variance narratives are generated automatically but reviewed by finance before they reach the executive team — speed without losing judgment." },
-                { reason: "Built on the same plan of record", proof: "Executive packs pull from the same connected planning platform as the rest of Enterprise Planning, so numbers can't drift between what's reported and what's actually being run." },
-                { reason: "Proven on complex, multi-region rollouts", proof: "Delivered global management reporting for organizations like Kellogg across four regions, including complex allocation logic for monthly reporting." }
-              ],
-              objections: [
-                { objection: "Our board deck is a design and communications problem, not a data problem.", answer: "The design only works once the underlying KPI framework and variance logic are consistent — we fix the plumbing so the story doesn't have to be rebuilt from scratch every cycle." },
-                { objection: "We don't trust an automated narrative for the board.", answer: "Narratives are generated as a draft and reviewed by finance before every use — automation removes the grunt work, not the judgment." },
-                { objection: "Every business unit reports differently and always will.", answer: "We standardize the KPI framework centrally while still allowing unit-specific detail underneath it — one roll-up, many drill-downs." },
-                { objection: "This sounds like a lot of change right before reporting season.", answer: "We build and test the framework alongside the existing process first, and only cut over once it's proven side-by-side." }
-              ]
-            } }
-        ]
-      },
       {
         id: "data", name: "Data & AI Foundation",
         promise: "Modernize data platforms, establish trust, publish data products, then operationalize and govern AI on top of them.",
@@ -1542,6 +1235,313 @@ const DATA = [
                 { objection: "We already have an AI ethics policy.", answer: "A policy states intent; an inventory, risk-tiering model and approval gate produce evidence that the policy was actually followed for every use case in production." },
                 { objection: "Regulation is still uncertain — why build controls now?", answer: "The inventory and risk-tiering discipline is valuable regardless of which regulation lands first, and retrofitting evidence after a regulator asks for it is far more expensive than building it in now." },
                 { objection: "We don't have the resources to review every use case.", answer: "Risk tiering exists precisely so full evaluation and oversight effort concentrates on the highest-risk use cases, not spread evenly across all of them." }
+              ]
+            } }
+        ]
+      },
+      {
+        id: "planning", name: "Enterprise Planning",
+        promise: "Modernize the planning stack, extend it across functions, and turn it into forecasting and decision intelligence leadership can act on.",
+        flow: ["Foundation", "Functional Planning", "Revenue Planning", "Forecasting", "Decision Intelligence", "Performance Mgmt"],
+        projects: [
+          { name: "xP&A and FP&A Modernization", blurb: "Move financial planning off spreadsheets onto a connected platform with a single version of the plan.",
+            outcomes: ["Close and re-forecast cycles shortened", "One connected plan across finance", "Audit trail on every assumption"],
+            scope: ["Planning platform selection and design", "Chart of accounts and driver model", "Budget, forecast and close workflows", "Spreadsheet retirement and enablement"],
+            battlecard: {
+              valueProp: "One planning platform. One version of the plan.",
+              description: "For CFOs and finance leaders running budgeting and forecasting on spreadsheets and legacy tools, replace disconnected planning with a governed, driver-based platform to close and re-forecast in days.",
+              buyers: [
+                { title: "CFO / VP Finance", challenge: "Budgeting and forecasting live in disconnected spreadsheets with no audit trail, and re-forecast cycles take weeks instead of days." },
+                { title: "Head of FP&A / Director of Finance", challenge: "Manual, error-prone consolidation across business units leaves no time for analysis before the numbers are due." },
+                { title: "Controller", challenge: "Can't produce a defensible, connected plan of record that reconciles cleanly with the close." },
+                { title: "CIO / VP IT", challenge: "Legacy planning tools (BPC, Hyperion) are nearing end-of-life or won't scale with the new ERP, but nobody owns replacing them." },
+                { title: "Data & Analytics Leader", challenge: "Planning data sits outside the rest of the data estate, disconnected from everything else being modernized." }
+              ],
+              keyMessages: [
+                "We move FP&A off spreadsheets onto a connected, driver-based planning platform — one plan of record for budgeting, forecasting and management reporting instead of five conflicting versions in Excel.",
+                "This is the foundation step in Enterprise Planning: get it right here and the workforce, supply chain, marketing, sales and revenue-growth plans downstream all reconcile to the same numbers instead of arguing over whose version is correct."
+              ],
+              quickPitch: {
+                pitch: "We replace spreadsheet-driven budgeting and forecasting with a single connected planning platform, built around your chart of accounts and driver model — not a generic template.",
+                points: [
+                  "Deep experience across SAC, Anaplan, Pigment, Board and BPC — we pick the platform that fits, not the one we're selling",
+                  "Spreadsheet retirement handled alongside the platform rollout, not left as homework for your team",
+                  "Audit trail on every assumption, so the numbers survive a finance review, not just a demo"
+                ],
+                cta: "Offer a Planning Maturity & Health Check assessment to benchmark the current close and forecast cycle"
+              },
+              platforms: ["SAP Analytics Cloud", "Anaplan", "Pigment", "Board"],
+              capabilities: {
+                subhead: "Advisory, Architecture & Delivery",
+                items: [
+                  "Planning platform selection and design",
+                  "Chart of accounts and driver model design",
+                  "Budget, forecast and close workflow build",
+                  "Spreadsheet retirement and user enablement",
+                  "Application maintenance and support"
+                ]
+              },
+              whyHGS: [
+                { reason: "Deep experience across every major platform", proof: "Advisory, strategy, architecture and delivery experience across SAC, Anaplan, Pigment, Group Reporting and BPC — not locked to one vendor's roadmap." },
+                { reason: "Proven on Fortune 500 global rollouts", proof: "Led global finance transformations such as Kellogg's 52-week, 4-region FP&A rollout and Valero's replacement of a decade-old SAP SEM platform." },
+                { reason: "Business-owned, not IT-heavy", proof: "Implementations are finance-led by design, reducing dependency on IT and speeding adoption." },
+                { reason: "Proven, high-quality hybrid delivery", proof: "A combination of on-site and offshore, directly-employed planning specialists — not subcontractors — for cost-effective delivery." }
+              ],
+              objections: [
+                { objection: "We already have Excel — it works.", answer: "Excel doesn't scale, lacks governance, and can't support real-time scenarios or collaboration across finance, sales and operations." },
+                { objection: "We'll just extend maintenance on our legacy platform (BPC/Hyperion).", answer: "These platforms are decades old and don't resolve modern planning challenges — extending maintenance only delays the same rebuild at higher cost." },
+                { objection: "Implementation will take too long or cost too much.", answer: "We start with a focused POC or priority use case that delivers value in weeks, not a multi-year program." },
+                { objection: "We're waiting for our ERP transformation to finish first.", answer: "Planning shouldn't wait — we can modernize it in parallel so finance is ready on day one of the ERP go-live." }
+              ]
+            } },
+          { name: "Functional Planning (Workforce/SCM/Marketing/Sales)", blurb: "Extend the same planning model into workforce, supply chain, marketing and sales so plans reconcile.",
+            outcomes: ["Functional plans that tie back to finance", "Fewer reconciliation arguments", "Faster cross-functional replanning"],
+            scope: ["Functional driver models", "Workforce and capacity planning", "Demand and supply planning integration", "Cross-functional plan reconciliation"],
+            battlecard: {
+              valueProp: "One driver model. Every functional plan reconciles.",
+              description: "For finance and functional planning leaders whose workforce, supply chain, marketing, and sales plans never tie back to the corporate plan, extend one driver-based model across every function to end the reconciliation arguments.",
+              buyers: [
+                { title: "CFO / Head of FP&A", challenge: "Functional plans (workforce, supply chain, marketing, sales) never reconcile to the corporate plan, so every quarter starts with a reconciliation argument instead of a decision." },
+                { title: "VP Workforce Planning / HR", challenge: "Headcount and capacity plans are built in isolation from the revenue and cost plans they're supposed to support." },
+                { title: "VP Supply Chain / S&OP Lead", challenge: "Demand and supply plans live in a different system than finance, so commitments made in S&OP don't show up in the P&L until it's too late." },
+                { title: "VP Sales / Sales Ops", challenge: "Sales plans and quota-setting aren't connected to the same growth assumptions finance is planning against." },
+                { title: "CMO / Marketing Ops", challenge: "Marketing budget plans get built independently of the enterprise plan, so every reallocation conversation starts from scratch." }
+              ],
+              keyMessages: [
+                "We extend the same driver-based planning model that runs your FP&A into workforce, supply chain, marketing and sales — so every functional plan is built on the same assumptions and reconciles automatically, instead of requiring a war-room every quarter to explain the gaps.",
+                "This is the second step in Enterprise Planning: once the connected plan of record exists, we cascade it into the functions that actually drive the numbers, so replanning after a shock takes days, not a full re-cycle."
+              ],
+              quickPitch: {
+                pitch: "We connect workforce, supply chain, marketing and sales planning to the same driver model finance already runs on, so 'the plan' means one thing across the business, not five.",
+                points: [
+                  "Functional driver models built to reconcile automatically with the corporate plan, not bridge through a manual mapping spreadsheet",
+                  "Workforce and capacity planning tied directly to the cost and revenue drivers that justify headcount",
+                  "Demand and supply plans integrated into the same platform finance already trusts"
+                ],
+                cta: "Offer a cross-functional plan reconciliation audit — show where today's functional plans actually diverge from the corporate number"
+              },
+              platforms: ["SAP Analytics Cloud", "Anaplan", "Pigment", "Board"],
+              capabilities: {
+                subhead: "Strategy, Architecture & Delivery",
+                items: [
+                  "Functional driver model design (workforce, SCM, marketing, sales)",
+                  "Workforce and capacity planning build",
+                  "Demand and supply planning integration",
+                  "Cross-functional plan reconciliation workflow",
+                  "Planning maturity and health-check assessments"
+                ]
+              },
+              whyHGS: [
+                { reason: "Same platform depth as the FP&A foundation", proof: "Functional models sit on the same SAC/Anaplan/Pigment/Board foundation as the core FP&A platform — no bolt-on tool, no separate reconciliation layer." },
+                { reason: "Cross-functional delivery experience", proof: "Global rollouts spanning sales incentive planning (Kennametal) and sales/POS forecasting (Newell Brands) show we connect planning across functions, not just within finance." },
+                { reason: "Business-owned, not IT-led", proof: "Functional planning models are designed for the workforce, supply chain and sales leaders who own the numbers to run themselves." },
+                { reason: "Proven, high-quality hybrid delivery", proof: "On-site and offshore delivery by directly-employed specialists keeps cost predictable at scale." }
+              ],
+              objections: [
+                { objection: "Each function already has its own planning tool — why change?", answer: "We don't rip out what works; we connect it to one driver model so the numbers reconcile, instead of asking teams to abandon systems they rely on." },
+                { objection: "Reconciling five functions sounds like a huge program.", answer: "We sequence by function, starting with the one causing the most reconciliation pain, and prove the model before extending it." },
+                { objection: "Our data isn't clean enough to connect across functions.", answer: "Functional driver models are built to tolerate real-world data quality — mapping and cleanup are part of the rollout, not a prerequisite for starting." },
+                { objection: "This feels like an IT integration project.", answer: "It's a finance-and-functional-leader-led planning exercise; IT enables the connections, but the model and ownership stay with the business." }
+              ]
+            } },
+          { name: "Revenue & Growth Planning (RGM/TPM)", blurb: "Plan price, promotion and trade investment with visibility of what each dollar returns.",
+            outcomes: ["Trade spend effectiveness quantified", "Price and promo decisions modeled first", "Growth plans agreed with commercial teams"],
+            scope: ["Revenue growth management framework", "Trade promotion planning and settlement", "Price pack architecture analysis", "Promotion post-event evaluation"],
+            battlecard: {
+              valueProp: "Trade spend planned, not guessed. ROI before the spend.",
+              description: "For commercial and finance leaders running pricing and trade decisions on gut feel, model price-pack architecture and promotion ROI up front to plan trade investment with visibility into what it returns.",
+              buyers: [
+                { title: "CFO / VP Finance (Revenue)", challenge: "Trade spend is one of the largest line items on the P&L with the least visibility into what it actually returns." },
+                { title: "VP Revenue Growth Management / Commercial Strategy", challenge: "Price-pack architecture and promotion decisions are made on history and gut feel, not modeled ROI." },
+                { title: "VP Sales / Trade Marketing", challenge: "Trade promotion planning and settlement is manual and disconnected from what finance is willing to fund." },
+                { title: "VP Category / Brand Management", challenge: "Can't prove which promotions actually lifted volume versus just pulling sales forward or cannibalizing full-price sales." },
+                { title: "Head of Commercial Finance", challenge: "Post-event evaluation of promotions happens too late, if at all, to change the next cycle's plan." }
+              ],
+              keyMessages: [
+                "We bring a revenue growth management framework to price, promotion and trade investment decisions — modeling price-pack architecture and promotion ROI before commitments are made, not reconciling them after the spend is gone.",
+                "This closes the loop trade teams and finance usually run separately: promotion post-event evaluation feeds directly back into the next cycle's price-pack and trade plan, so the same mistakes don't repeat quarter after quarter."
+              ],
+              quickPitch: {
+                pitch: "We model price-pack architecture and trade promotion ROI before the spend happens, turning your biggest, least-visible P&L line into a planned, measured investment.",
+                points: [
+                  "Revenue growth management framework grounded in your actual price-pack and channel data, not a generic industry template",
+                  "Trade promotion planning and settlement connected to the same planning platform finance already trusts",
+                  "Promotion post-event evaluation that feeds the next cycle's plan instead of sitting in a report nobody reads"
+                ],
+                cta: "Offer a trade spend effectiveness diagnostic on 2–3 of their highest-spend promotions from the last cycle"
+              },
+              platforms: ["SAP Analytics Cloud / Anaplan (RGM & TPM modules)", "Statistical & mixed-effects modeling tools", "Power BI / Tableau for commercial reporting"],
+              capabilities: {
+                subhead: "Strategy, Modeling & Delivery",
+                items: [
+                  "Revenue growth management framework design",
+                  "Trade promotion planning and settlement build",
+                  "Price-pack architecture analysis",
+                  "Promotion post-event evaluation and ROI modeling",
+                  "Commercial and executive reporting"
+                ]
+              },
+              whyHGS: [
+                { reason: "Proven promotion and pricing modeling", proof: "Built a product event and pricing demand simulator for Kellogg's using mixed-effects modeling and trade-promotion elasticity — $500K in annual savings and an 83% cut in data preprocessing time." },
+                { reason: "Revenue and growth planning inside the same platform stack", proof: "RGM and TPM planning delivered on the same Anaplan/SAC foundation as the rest of Enterprise Planning, not a bolt-on point solution." },
+                { reason: "Commercial-finance fluency", proof: "We speak both trade marketing and finance, so promotion ROI numbers survive scrutiny from both sides of the table." },
+                { reason: "Faster feedback loop", proof: "Promotion post-event evaluation built to feed the next planning cycle automatically, not sit in a slide deck." }
+              ],
+              objections: [
+                { objection: "Trade spend is too political to model — every brand thinks their promotion is the exception.", answer: "We model at the price-pack and promotion level with transparent assumptions, so the debate moves from opinions to evidence everyone can see." },
+                { objection: "We tried a TPM tool before and it didn't get adopted.", answer: "TPM tools fail when they're implemented as software, not process. We lead with the revenue growth management framework first, then fit the tool to it." },
+                { objection: "Our data isn't clean enough for elasticity modeling.", answer: "We've built these models on messy real-world POS, trade and customer-hierarchy data before — data quality work is part of the engagement, not a blocker to starting." },
+                { objection: "This will slow down our promotion calendar.", answer: "Price-pack and promotion modeling runs ahead of the calendar, not inside it — decisions get made faster because the ROI case is already built." }
+              ]
+            } },
+          { name: "Advanced Forecasting & Modeling (Predictive & Scenario Planning)", blurb: "Add statistical and machine-learning forecasts plus scenario modeling for the decisions that matter.",
+            outcomes: ["Forecast accuracy improved against baseline", "Scenarios produced in hours, not weeks", "Risk ranges instead of single-point plans"],
+            scope: ["Forecast baselining and accuracy diagnostics", "Predictive model development", "Scenario and simulation library", "Forecast governance and overrides"],
+            battlecard: {
+              valueProp: "Forecasts with risk ranges, not single-point guesses.",
+              description: "For FP&A, planning, and supply chain leaders stuck with flat spreadsheet forecasts, add statistical and ML models plus a scenario library to plan against a range of outcomes.",
+              buyers: [
+                { title: "Head of FP&A / Planning", challenge: "Forecasts are single-point guesses with no sense of the range of outcomes, so every plan is wrong the moment reality shifts." },
+                { title: "Supply Chain / Demand Planning Leader", challenge: "Manual, spreadsheet-based forecasting can't keep up with demand volatility or run scenarios fast enough to matter." },
+                { title: "Head of Analytics / CDSO", challenge: "Needs to move from ad-hoc analysis to production-grade forecasting models with consistent, governed standards." },
+                { title: "CFO", challenge: "Needs confidence ranges and scenario impacts before committing budget, not a single number presented as certain." },
+                { title: "Data Platform / Engineering Lead", challenge: "Needs to support forecasting workloads on existing cloud and data platforms without building a parallel, fragile pipeline." }
+              ],
+              keyMessages: [
+                "Applied analytics is the bridge between BI and AI: we add statistical and machine-learning forecasts on top of your existing plan, plus a reusable scenario and simulation library, so planners see a range of outcomes instead of one brittle number.",
+                "Every model we ship is explainable and governed — forecast baselining, accuracy diagnostics and override governance are part of the build, not an afterthought, so planners trust the number enough to act on it."
+              ],
+              quickPitch: {
+                pitch: "We add statistical and ML-based forecasting plus scenario modeling on top of your existing planning process, grounded in your actual data, not a generic template.",
+                points: [
+                  "Forecast baselining and accuracy diagnostics before any model is built, so improvement is measured against a real starting point",
+                  "Reusable scenario and simulation library — new what-ifs in hours, not weeks of spreadsheet rework",
+                  "Explainable models with governed override rules, so planners understand and trust every number"
+                ],
+                cta: "Offer a forecast accuracy diagnostic against 2–3 of their highest-stakes planning lines"
+              },
+              platforms: ["Cloud data platforms (Azure, AWS, GCP)", "Databricks, Snowflake, Fabric", "Time series, regression, classification & MLOps tooling"],
+              capabilities: {
+                subhead: "Strategy, Technology & Tools",
+                items: [
+                  "Forecast baselining and accuracy diagnostics",
+                  "Predictive (statistical and ML) model development",
+                  "Scenario and simulation library design",
+                  "Forecast governance and override rules",
+                  "MLOps, monitoring and lifecycle management"
+                ]
+              },
+              whyHGS: [
+                { reason: "Applied analytics focus", proof: "We specialize in analytics that drive operational decisions, not experimental data science that never leaves a notebook." },
+                { reason: "Explainable by design", proof: "A preference for transparent, interpretable models that planners actually trust and adopt, with QA/QC model vetting built in." },
+                { reason: "Execution credibility", proof: "A track record of taking forecasting models from notebooks into production planning workflows, not just pilots." },
+                { reason: "Scalable architecture", proof: "Reusable pipelines, semantic layers and feature definitions cut rework and speed up rollout to new scenarios." }
+              ],
+              objections: [
+                { objection: "Our forecasts don't need machine learning — spreadsheets have always worked.", answer: "We apply a simplicity-first approach — ML only where it materially improves accuracy over your current baseline, measured against it directly." },
+                { objection: "These models won't scale beyond one team.", answer: "We build on shared platforms with reusable base models and pipelines designed for enterprise rollout, not one-off notebooks." },
+                { objection: "The business won't trust a forecast it doesn't understand.", answer: "We baseline, explain and embed every model into existing decision workflows — trust comes before scale, not after." },
+                { objection: "This will take too long to show value.", answer: "We focus on analytics that impact decisions within your existing planning and operating cycles, not multi-quarter research projects." }
+              ]
+            } },
+          { name: "Planning Analytics & Decision Intelligence", blurb: "Wrap the planning data in analytics that recommend, not just report.",
+            outcomes: ["Decisions supported by consistent numbers", "Analyst time shifted from prep to insight", "Recommendations tracked to outcomes"],
+            scope: ["Planning data model and semantic layer", "Self-service analytics for planners", "Recommendation and alerting logic", "Decision logging and follow-through"],
+            battlecard: {
+              valueProp: "Planning data that recommends the next move.",
+              description: "For planning leaders whose platform reports numbers but suggests no next step, add a semantic layer and recommendation logic so planners spend time deciding, not preparing reports.",
+              buyers: [
+                { title: "Head of FP&A / Planning Analytics", challenge: "Planners spend most of their time preparing numbers for review, not analyzing what the numbers mean." },
+                { title: "VP Business Intelligence / Enterprise Analytics", challenge: "Planning data sits in its own silo, disconnected from the semantic layer the rest of the business already trusts." },
+                { title: "CFO", challenge: "Wants recommendations attached to variances, not just a bigger dashboard to interpret." },
+                { title: "Planning Platform Owner (Anaplan/SAC/Pigment admin)", challenge: "The planning platform is fully built but nobody outside the core team can self-serve an answer from it." },
+                { title: "Head of Commercial / Operations Analytics", challenge: "Decisions get made in meetings and never get logged, so nobody can tell if the recommendation actually worked." }
+              ],
+              keyMessages: [
+                "We wrap the planning platform's data in a proper semantic layer and self-service analytics, so planners and business partners can ask their own questions instead of filing a request and waiting for a report.",
+                "The differentiator is recommendation and decision logging: alerts and suggested actions are attached directly to variances, and every decision made against them is tracked back to the outcome — so the planning function gets measurably smarter every cycle, not just busier."
+              ],
+              quickPitch: {
+                pitch: "We turn the planning platform from a reporting tool into a decision tool — a semantic layer, self-service analytics for planners, and recommendation logic tied to every variance.",
+                points: [
+                  "Planning data model and semantic layer that matches definitions the rest of the business already uses — no separate 'planning truth'",
+                  "Self-service analytics that let planners and business partners answer their own questions instead of waiting on the FP&A team",
+                  "Recommendation and alerting logic attached directly to variances, with decisions logged back to outcomes"
+                ],
+                cta: "Offer a planning analytics maturity assessment — how much analyst time goes to prep versus insight today"
+              },
+              platforms: ["Planning platform native analytics (SAC, Anaplan, Pigment)", "Power BI / Tableau semantic layer integration", "Alerting and workflow tooling"],
+              capabilities: {
+                subhead: "Data, Analytics & Decision Design",
+                items: [
+                  "Planning data model and semantic layer design",
+                  "Self-service analytics enablement for planners",
+                  "Recommendation and alerting logic build",
+                  "Decision logging and outcome tracking",
+                  "Planner training and adoption support"
+                ]
+              },
+              whyHGS: [
+                { reason: "Same team, planning through decision intelligence", proof: "Built by the same specialists delivering the underlying planning platform, so the semantic layer matches the driver model exactly instead of drifting from it." },
+                { reason: "Explainable, adopted analytics", proof: "A preference for transparent, interpretable recommendations that planners actually act on, not black-box scores they ignore." },
+                { reason: "Decision accountability built in", proof: "Decision logging ties every recommendation back to what actually happened — a discipline most planning analytics builds skip entirely." },
+                { reason: "Faster time to insight", proof: "Self-service semantic layers cut analyst prep time, redeploying hours from formatting reports to interpreting them." }
+              ],
+              objections: [
+                { objection: "We already have dashboards for planning — isn't that enough?", answer: "Dashboards show what happened; we add the semantic layer and recommendation logic that tell planners what to do about it." },
+                { objection: "Self-service will mean everyone gets a different number.", answer: "The semantic layer enforces one set of governed definitions — self-service means faster answers, not conflicting ones." },
+                { objection: "Recommendation engines feel like a black box finance won't trust.", answer: "We build explainable recommendations tied to visible drivers and thresholds, with QA before anything ships to planners." },
+                { objection: "We don't have time to log every decision.", answer: "Decision logging is lightweight and built into the existing review cadence — designed to add minutes, not a new process." }
+              ]
+            } },
+          { name: "Performance Management & Executive Insights", blurb: "Give the executive team one performance view with variance explained before they ask.",
+            outcomes: ["Board and executive packs produced automatically", "Variance narratives generated, then reviewed", "Single set of numbers across the leadership team"],
+            scope: ["Executive KPI framework", "Automated reporting and packs", "Variance and driver analysis", "Performance review cadence design"],
+            battlecard: {
+              valueProp: "One executive view. Variance explained before you ask.",
+              description: "For CFOs and executive teams drowning in board-deck prep, automate the executive KPI framework to narrate variance and drivers before the meeting starts.",
+              buyers: [
+                { title: "CFO", challenge: "Spends days before every board meeting building and re-checking the executive pack instead of deciding what to do about the numbers in it." },
+                { title: "CEO / COO", challenge: "Gets a different version of 'the numbers' depending on who prepared the deck this month." },
+                { title: "Head of FP&A / Corporate Finance", challenge: "The team burns the last week of every cycle assembling packs and chasing variance explanations instead of closing the plan." },
+                { title: "VP Investor Relations", challenge: "Needs board and investor materials that are consistent with internal management reporting, not reconciled after the fact." },
+                { title: "Business Unit Finance Leads", challenge: "Report the same numbers differently to corporate every cycle, causing rework and mistrust in the consolidated view." }
+              ],
+              keyMessages: [
+                "We give the executive team one performance view — an executive KPI framework, automated reporting packs, and variance and driver analysis generated automatically — so the story behind the numbers is ready before anyone has to ask for it.",
+                "This is the last mile of Enterprise Planning: the same connected plan, functional models, forecasts and analytics feed straight into board and leadership packs, so what the executive team sees is provably the same plan finance, sales and operations are actually running against."
+              ],
+              quickPitch: {
+                pitch: "We replace manual board-pack building with an automated executive KPI framework — variance and driver narratives generated straight from the plan of record, reviewed by finance instead of assembled from scratch.",
+                points: [
+                  "Executive KPI framework built once and reused every cycle, instead of rebuilt in slides each time",
+                  "Automated reporting and packs pulled directly from the same connected plan the rest of Enterprise Planning runs on",
+                  "Variance narratives generated automatically, then reviewed — not written from scratch under deadline"
+                ],
+                cta: "Offer to rebuild one recent board pack on the automated framework as a side-by-side proof point"
+              },
+              platforms: ["SAC / Anaplan / Pigment reporting layers", "Power BI / Tableau executive dashboards", "Narrative-generation and reporting automation tooling"],
+              capabilities: {
+                subhead: "Reporting, Analytics & Governance",
+                items: [
+                  "Executive KPI framework design",
+                  "Automated reporting and board-pack generation",
+                  "Variance and driver analysis automation",
+                  "Performance review cadence design",
+                  "Single-source consolidation across business units"
+                ]
+              },
+              whyHGS: [
+                { reason: "One number, every level", proof: "KPI frameworks designed to roll up cleanly from business-unit finance leads to the CFO to the board, without a reconciliation step at each layer." },
+                { reason: "Automation without losing the narrative", proof: "Variance narratives are generated automatically but reviewed by finance before they reach the executive team — speed without losing judgment." },
+                { reason: "Built on the same plan of record", proof: "Executive packs pull from the same connected planning platform as the rest of Enterprise Planning, so numbers can't drift between what's reported and what's actually being run." },
+                { reason: "Proven on complex, multi-region rollouts", proof: "Delivered global management reporting for organizations like Kellogg across four regions, including complex allocation logic for monthly reporting." }
+              ],
+              objections: [
+                { objection: "Our board deck is a design and communications problem, not a data problem.", answer: "The design only works once the underlying KPI framework and variance logic are consistent — we fix the plumbing so the story doesn't have to be rebuilt from scratch every cycle." },
+                { objection: "We don't trust an automated narrative for the board.", answer: "Narratives are generated as a draft and reviewed by finance before every use — automation removes the grunt work, not the judgment." },
+                { objection: "Every business unit reports differently and always will.", answer: "We standardize the KPI framework centrally while still allowing unit-specific detail underneath it — one roll-up, many drill-downs." },
+                { objection: "This sounds like a lot of change right before reporting season.", answer: "We build and test the framework alongside the existing process first, and only cut over once it's proven side-by-side." }
               ]
             } }
         ]
@@ -1959,8 +1959,8 @@ const DATA = [
               ]
             } },
           { name: "Integration & Cloud Transformation", blurb: "Unify applications and data with an integration layer designed for continuous change.",
-            outcomes: ["Workloads running on target cloud", "Point-to-point interfaces replaced by APIs", "Cloud spend under active management"],
-            scope: ["Migration waves and landing zones", "API and event architecture", "Integration platform build", "FinOps and cost governance"],
+            outcomes: ["Workloads running on target cloud", "Point-to-point interfaces replaced by APIs", "Cross-system processes automated end to end", "Cloud spend under active management"],
+            scope: ["Migration waves and landing zones", "API and event architecture", "Integration platform build", "Process automation and orchestration", "FinOps and cost governance"],
             battlecard: {
               valueProp: "Cloud migration with an integration layer built to last.",
               description: "For CTOs and infrastructure leaders migrating to cloud, replace point-to-point interfaces with an API and event architecture and put FinOps in place to keep spend under active management.",
