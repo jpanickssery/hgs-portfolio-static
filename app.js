@@ -15,11 +15,14 @@
   const root = document.getElementById("app-root");
 
   const state = {
-    section: "services", // "services" | "products" — which nav tab is active
+    section: "services", // "services" | "products" | "guide" — which nav tab is active
     // ---- services state ----
     svView: "home", pfId: null, spId: null, pjId: null,
     // ---- products state ----
     pdView: "home", categoryId: null, demoId: null, tag: null, variantIdx: 0,
+    // ---- guide state (persists across nav so a generated guide survives switching tabs) ----
+    guideSel: { industry: "", size: "", function: "", persona: "" },
+    guideResult: null, // {industry,size,function,persona} of the last generated combo, or null
   };
 
   function esc(str) {
@@ -251,6 +254,12 @@
     window.scrollTo(0, 0);
   }
 
+  function goGuide() {
+    state.section = "guide";
+    render();
+    window.scrollTo(0, 0);
+  }
+
   // ---- click delegation (data-goto based, no inline handlers) ----
   // Elements inside a section's own pages don't need data-section — the
   // section they belong to is already the active one when they're visible.
@@ -267,6 +276,8 @@
         demoId: el.getAttribute("data-demo") || null,
         tag: el.getAttribute("data-tag") || null,
       });
+    } else if (section === "guide") {
+      goGuide();
     } else {
       goServices(
         view,
@@ -1181,6 +1192,222 @@
   }
 
   /* =========================================================================
+     GUIDE — Sales Conversation Guide
+     Folded in from 01-Designs/Amol/SalesGuide-ViewOnly-2026-03-21 3.html:
+     pick industry/size/function/persona, generate a conversation guide from
+     GUIDE_DB (data-guide.js). View-only — no inline editing here, unlike the
+     source tool's password-gated edit mode.
+     ========================================================================= */
+
+  function guideOptionsHTML(key, selected) {
+    return GUIDE_FILTERS[key]
+      .map((o) => `<option value="${esc(o.value)}"${o.value === selected ? " selected" : ""}>${esc(o.label)}</option>`)
+      .join("");
+  }
+
+  function guideOptionLabel(key, value) {
+    const opt = GUIDE_FILTERS[key].find((o) => o.value === value);
+    return opt ? opt.label : value;
+  }
+
+  function renderGuideFilterRow() {
+    const sel = state.guideSel;
+    return `
+    <div class="guide-filter-row">
+      <div class="guide-field">
+        <label for="guide-sel-industry">Industry</label>
+        <select id="guide-sel-industry"><option value="">Select industry</option>${guideOptionsHTML("industry", sel.industry)}</select>
+      </div>
+      <div class="guide-field">
+        <label for="guide-sel-size">Company Size</label>
+        <select id="guide-sel-size"><option value="">Select size</option>${guideOptionsHTML("size", sel.size)}</select>
+      </div>
+      <div class="guide-field">
+        <label for="guide-sel-function">Function</label>
+        <select id="guide-sel-function"><option value="">Select function</option>${guideOptionsHTML("function", sel.function)}</select>
+      </div>
+      <div class="guide-field">
+        <label for="guide-sel-persona">Persona</label>
+        <select id="guide-sel-persona"><option value="">Select persona</option>${guideOptionsHTML("persona", sel.persona)}</select>
+      </div>
+      <button class="guide-generate-btn" type="button" data-guide-generate>Generate Guide →</button>
+    </div>`;
+  }
+
+  function renderGuideWelcome() {
+    return `
+    <div class="guide-welcome">
+      <h2>Select the prospect's industry, company size, function and persona above, then click <strong>Generate Guide</strong>.</h2>
+      <div class="guide-step-flow">
+        <div class="guide-step-pill">① Industry</div><span class="guide-step-arrow">→</span>
+        <div class="guide-step-pill">② Company Size</div><span class="guide-step-arrow">→</span>
+        <div class="guide-step-pill">③ Function</div><span class="guide-step-arrow">→</span>
+        <div class="guide-step-pill">④ Persona</div><span class="guide-step-arrow">→</span>
+        <div class="guide-step-pill guide-step-final">Generate Guide</div>
+      </div>
+    </div>`;
+  }
+
+  function renderGuideResult() {
+    const { industry, size, function: fn, persona } = state.guideResult;
+    const row =
+      (GUIDE_DB[industry] && GUIDE_DB[industry][size] && GUIDE_DB[industry][size][fn] && GUIDE_DB[industry][size][fn][persona]) || {};
+    const topics = GUIDE_HOT_TOPICS[industry] || [];
+    const off = row.best_entry_offer || {};
+    const qs = row.key_questions || [];
+    const objs = row.objections || [];
+    const caseStudies = row.case_studies || [];
+    const examples = row.industry_examples || [];
+
+    return `
+    <div class="guide-layout">
+      <div class="guide-main">
+        <div class="guide-ctx-banner">
+          <div class="guide-ctx-icon">
+            <svg viewBox="0 0 16 16" fill="none" stroke="white" stroke-width="1.5" width="16" height="16"><rect x="1" y="8" width="4" height="7"/><rect x="6" y="5" width="4" height="10"/><rect x="11" y="2" width="4" height="13"/></svg>
+          </div>
+          <div style="min-width:0;">
+            <div class="guide-ctx-label">Industry context</div>
+            <div class="guide-ctx-text"><strong>${esc(guideOptionLabel("industry", industry))} · ${esc(guideOptionLabel("size", size))} · ${esc(guideOptionLabel("function", fn))}</strong> · ${esc(topics.join(" · "))}</div>
+          </div>
+        </div>
+
+        <div class="guide-badges">
+          <span class="mini-tag">${esc(guideOptionLabel("industry", industry))}</span>
+          <span class="mini-tag">${esc(guideOptionLabel("size", size))}</span>
+          <span class="mini-tag">${esc(guideOptionLabel("function", fn))}</span>
+          <span class="mini-tag">${esc(guideOptionLabel("persona", persona))}</span>
+        </div>
+
+        <div class="card">
+          <div class="card-eyebrow">Opening Statement</div>
+          <div class="guide-opening-quote">${esc(row.opening_statement || "—")}</div>
+        </div>
+
+        <div class="guide-pain-grid">
+          <div class="guide-pain-box guide-pain-blue">
+            <div class="guide-pain-label">Opening Question</div>
+            <div class="guide-pain-text">${esc(row.opening_question || "—")}</div>
+          </div>
+          <div class="guide-pain-box guide-pain-red">
+            <div class="guide-pain-label">Typical Pain Points</div>
+            <div class="guide-pain-text">${esc(row.pain_points || "—")}</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-eyebrow">Key Questions to Ask</div>
+          <div class="guide-kq-list">
+            ${qs
+              .map(
+                (q, i) => `
+            <div class="guide-kq-item"><div class="guide-kq-num">${i + 1}</div><div class="guide-kq-text">${esc(q)}</div></div>`
+              )
+              .join("")}
+          </div>
+        </div>
+
+        <div class="card guide-obj-card">
+          <div class="card-eyebrow">Objection Handling</div>
+          <div class="guide-obj-list">
+            ${objs
+              .map(
+                (o) => `
+            <div class="guide-obj-item">
+              <div class="guide-obj-q"><span>${esc(o.q)}</span><span class="guide-obj-toggle">+</span></div>
+              <div class="guide-obj-a">${esc(o.a)}</div>
+            </div>`
+              )
+              .join("")}
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-side">
+        <div class="guide-offer-card">
+          <div class="guide-offer-label">🎯 Best Entry Offer</div>
+          ${off.offer_type ? `<div class="guide-offer-type">${esc(off.offer_type)}</div>` : ""}
+          <div class="guide-offer-title">${esc(off.offer_title || "")}</div>
+          ${off.duration ? `<span class="guide-offer-pill">${esc(off.duration)}</span>` : ""}
+          ${off.target ? `<div class="guide-offer-sublabel">Target outcome</div><div class="guide-offer-target">${esc(off.target)}</div>` : ""}
+          ${off.includes ? `<div class="guide-offer-sublabel">Key components</div><div class="guide-offer-includes">${esc(off.includes)}</div>` : ""}
+          <button class="guide-btn-print" type="button" onclick="window.print()">Print this guide</button>
+        </div>
+
+        ${
+          caseStudies.length
+            ? `<div class="card">
+                <div class="card-eyebrow">Case Studies</div>
+                ${caseStudies
+                  .map(
+                    (cs) => `
+                <div class="guide-cs-item">
+                  <div class="guide-cs-head">${esc(cs.company)}</div>
+                  <div class="guide-cs-body">${esc(cs.situation)}</div>
+                </div>`
+                  )
+                  .join("")}
+              </div>`
+            : ""
+        }
+
+        ${
+          examples.length
+            ? `<div class="card">
+                <div class="card-eyebrow">Industry Examples</div>
+                ${examples
+                  .map(
+                    (ex, i) => `<div class="guide-ex-item"><div class="guide-ex-label">Example ${i + 1}</div>${esc(ex)}</div>`
+                  )
+                  .join("")}
+              </div>`
+            : ""
+        }
+      </div>
+    </div>`;
+  }
+
+  function renderGuideBody() {
+    return `
+    <div class="page-pad">
+      <div class="hero-banner">
+        <img class="hero-art" src="assets/image3.svg" alt="">
+        <div class="hero-inner">
+          <div class="hero-eyebrow">Sales Enablement</div>
+          <h1 class="hero-title">Sales Conversation Guide (Analytics &amp; Insights)</h1>
+          <p class="hero-desc">Pick a prospect's industry, company size, function and persona to generate an opening statement, key questions, objection handling and a best-fit entry offer.</p>
+          ${renderGuideFilterRow()}
+        </div>
+      </div>
+      ${state.guideResult ? renderGuideResult() : renderGuideWelcome()}
+    </div>`;
+  }
+
+  root.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-guide-generate]");
+    if (!btn) return;
+    const ind = document.getElementById("guide-sel-industry").value;
+    const sz = document.getElementById("guide-sel-size").value;
+    const fn = document.getElementById("guide-sel-function").value;
+    const pe = document.getElementById("guide-sel-persona").value;
+    if (!ind || !sz || !fn || !pe) {
+      alert("Please select industry, company size, function and persona.");
+      return;
+    }
+    state.guideSel = { industry: ind, size: sz, function: fn, persona: pe };
+    state.guideResult = { industry: ind, size: sz, function: fn, persona: pe };
+    render();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  root.addEventListener("click", (e) => {
+    const q = e.target.closest(".guide-obj-q");
+    if (!q) return;
+    const item = q.closest(".guide-obj-item");
+    if (item) item.classList.toggle("open");
+  });
+
+  /* =========================================================================
      HEADER SEARCH — one box, searches Services and Products together
      ========================================================================= */
 
@@ -1306,6 +1533,7 @@
         <div class="nav-items">
           <button class="nav-item${state.section === "services" ? " active" : ""}" data-goto="home" data-section="services">Services</button>
           <button class="nav-item${state.section === "products" ? " active" : ""}" data-goto="home" data-section="products">Products</button>
+          <button class="nav-item${state.section === "guide" ? " active" : ""}" data-goto="home" data-section="guide">Guide</button>
         </div>
         <div class="spacer"></div>
         <div class="header-search" id="header-search">
@@ -1329,7 +1557,10 @@
   }
 
   function render() {
-    const body = state.section === "products" ? renderProductsBody() : renderServicesBody();
+    const body =
+      state.section === "products" ? renderProductsBody() :
+      state.section === "guide" ? renderGuideBody() :
+      renderServicesBody();
     root.innerHTML = `<div class="hgs-app">${renderHeader()}${body}${renderFooter()}</div>`;
   }
 
