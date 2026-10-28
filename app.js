@@ -822,7 +822,10 @@
     }).join("");
 
     const subCellsHTML = cols
-      .map((sub) => `<div class="matrix-sub-cell" data-goto="category" data-cat="${esc(sub.categoryId)}">${esc(sub.name)}</div>`)
+      .map((sub) => `<div class="matrix-sub-cell" data-goto="category" data-cat="${esc(sub.categoryId)}">
+        <div class="sub-cell-name">${esc(sub.name)}</div>
+        ${sub.tag ? `<div class="sub-cell-tag">${esc(sub.tag)}</div>` : ""}
+      </div>`)
       .join("");
 
     let demoCellsHTML = "";
@@ -881,7 +884,7 @@
             .map(
               (sub) => `
             <div class="mobile-sub-row" data-goto="category" data-cat="${esc(cat.id)}">
-              <span class="mobile-sub-name">${esc(sub.name)}</span>
+              <span class="mobile-sub-name">${esc(sub.name)}${sub.tag ? ` <span class="mobile-sub-tag">${esc(sub.tag)}</span>` : ""}</span>
               <span class="mobile-sub-count">${demosInSubcategory(sub.id).length}</span>
             </div>`
             )

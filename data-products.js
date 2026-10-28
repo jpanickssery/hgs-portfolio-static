@@ -8,7 +8,8 @@
 //     covering everything customer/agent-facing in the contact center) and
 //     "Agentic Enterprise" (everything else — back-office, planning/
 //     delivery, financial/risk, and data/marketing intelligence).
-//   - Agentic CX's three subcategories are AgentX's own three CX modules,
+//   - Agentic CX's three subcategories (Engage / Assist / Insights, each
+//     with a short "tag" line like the Services plays) are AgentX's own three CX modules,
 //     renamed for plain-language clarity and organized by the stakeholder
 //     who uses them: Employee & Agent Assist, Customer Engagement, and
 //     Supervisor & QA Insights (renamed from "Conversational Intelligence"
@@ -90,21 +91,24 @@ const CATEGORIES = [
 
 const SUBCATEGORIES = [
   {
-    id: "employee-assist",
-    categoryId: "agentic-cx",
-    name: "Employee & Agent Assist",
-    blurb: "Training, coaching, real-time assist, knowledge, and after-call automation that get agents ready and keep them supported on every interaction.",
-  },
-  {
     id: "customer-engagement",
     categoryId: "agentic-cx",
-    name: "Customer Engagement",
+    name: "Engage",
+    tag: "Serve Customers",
     blurb: "Self-service conversational AI across chat, voice, and screen-share, with people sharing the same conversation and context when it's needed.",
+  },
+  {
+    id: "employee-assist",
+    categoryId: "agentic-cx",
+    name: "Assist",
+    tag: "Empower Agents",
+    blurb: "Training, coaching, real-time assist, knowledge, and after-call automation that get agents ready and keep them supported on every interaction.",
   },
   {
     id: "supervisor-qa-insights",
     categoryId: "agentic-cx",
-    name: "Supervisor & QA Insights",
+    name: "Insights",
+    tag: "Elevate Quality",
     blurb: "Real-time QA, sentiment, and compliance dashboards that give supervisors and quality teams a measurable view of every conversation.",
   },
   {
